@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="main.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<div class="header">
@@ -51,7 +51,15 @@
 			<span class="danhmucsanpham">
 				Danh mục sản phẩm
 			</span>
+			<div class="dropdown-content">
+				<a href="VĂN HỌC.html">VĂN HỌC</a>
+ 				<a href="THIẾU NHI.html">THIẾU NHI</a>
+  				<a href="TIỂU THUYẾT.html">TIỂU THUYẾT</a>
+  				<a href="KỸ NĂNG.html">KỸ NĂNG</a>
+			</div>
+
 		</div>
+		
 		<div class="camketsanpham">
 			<p>Cam kết sản phẩm<br>Chính hãng 100%</p>
 		</div>
@@ -86,14 +94,15 @@
 
 </div>
 
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 <div class="mySlides fade">
  
   <img src="sagobomauxanh.png" style="width:100%; background-color:pink;">
 
 </div>
+	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
 </div>
 <br>
 
@@ -109,22 +118,21 @@
 
 	<div class="trending">
 		<div class="button3">
-			<a href="index.html">
-				<div class="noibat">
-				<span> Nổi bật </span>
-				</div>
+			<a onclick="change(0)" id="noibat" class="items active">
+				
+				 Nổi bật 	
+				
 			</a>
-
-			<a href="index.html">
-				<div class="banchay">
-				<span> Bán chạy </span>
-				</div>
+		&nbsp  &nbsp &nbsp &nbsp  &nbsp  &nbsp &nbsp &nbsp  
+			<a onclick="change(1)" id="moiphathanh" class="items">
+				Mới phát hành 
+				  
+				
 			</a>
-
-			<a onclick="test(this.id)" id="moiphathanh" >
-				<div class="moiphathanh">
-				<span> Mới phát hành </span>
-				</div>
+		&nbsp  &nbsp &nbsp &nbsp  &nbsp  &nbsp &nbsp &nbsp  
+			<a onclick="change(2)" id="banchay" class="items">
+				
+				Bán chạy 
 			</a>
 		</div>
 	</div>

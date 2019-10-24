@@ -40,9 +40,13 @@ function register(){
 }
 
 
-function test(o){
-  alert(o);
-  document.getElementsByClassName(o)[0].classList.add("change");
+function change(num){
+  var item = document.getElementsByClassName("items");
+		for (let i=0;i<item.length;i++){
+
+			 item[i].className = item[i].className.replace(" active", "");
+		}
+    item[num].className += " active";
 }
 
 function login(){
@@ -213,11 +217,11 @@ function showSlides(n){
       slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+      dots[i].className = dots[i].className.replace(" actived", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  dots[slideIndex-1].className += " actived";
 }
 
-
 //END OF BANNER ANIMATION//
+

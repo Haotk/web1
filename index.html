@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sagobo</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<a href="index.html">
+				<img class="logo" src="sagobomautrang.png">
+			</a>
+		</div>
+		<div class="searchhhhhhhhh">
+			<div class="autocomplete">
+			<input id="suggest"class="search-box" type="text" placeholder="Tìm kiếm..." >
+		</div>
+		<div class="search-iconnnnnnn">
+			<button type="submit", class=search-icon onclick="search()"><i class="fa fa-search"></i>
+				Tìm kiếm
+			</button>
+		</div>
+		</div>
+
+		<div class="dangnhapvadangxuat">
+			<a href="#" class="dangnhap" id="login"></a><br>
+			<a href="#" class="dangky" id="register"></a>
+		</div>
+		<div class="giohang-box">
+		<a href="sagobomautrang.png">
+			<div class="giohang-boxx">
+				<i class="fa fa-shopping-cart"></i>
+				<span class="giohang">Giỏ hàng
+					<span class="soluonggiohang">0</span>
+				</span>
+			</div>
+		</a>
+		</div>
+		<div class="hotline">
+			<p class="lienhe">Liên hệ</p>
+			<p class="sodt">1900 1234</p>
+		</div>
+	</div>
+
+	<div class="header2">
+		<div class="danhmuc">
+			<i class="fa fa-bars"></i>
+			<span class="danhmucsanpham">
+				Danh mục sản phẩm
+			</span>
+		</div>
+		<div class="camketsanpham">
+			<p>Cam kết sản phẩm<br>Chính hãng 100%</p>
+		</div>
+		<div class="giaohangnhanhchong">
+			<p>Giao hàng<br>Nhanh chóng</p>
+		</div>
+		<div class="doitradedang">
+			<p>Đổi trả<br>dễ dàng</p>
+		</div>
+		<div class="bocsachmienphi">
+			<p>Bọc sách<br>miễn phí</p>
+		</div>
+	</div>
+
+	<div class="banner">
+
+
+<div class="mySlides fade">
+
+  <img src="sagobomauxanh.png" style="width:100%; background-color:red;">
+
+</div>
+
+<div class="mySlides fade">
+  <img src="sagobomauxanh.png" style="width:100%; background-color:blue;">
+ 
+</div>
+
+<div class="mySlides fade">
+
+  <img src="sagobomauxanh.png" style="width:100%; background-color:orange;">
+
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<div class="mySlides fade">
+ 
+  <img src="sagobomauxanh.png" style="width:100%; background-color:pink;">
+
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+   <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+
+	</div>
+
+	<div class="trending">
+		<div class="button3">
+			<a href="index.html">
+				<div class="noibat">
+				<span> Nổi bật </span>
+				</div>
+			</a>
+
+			<a href="index.html">
+				<div class="banchay">
+				<span> Bán chạy </span>
+				</div>
+			</a>
+
+			<a onclick="test(this.id)" id="moiphathanh" >
+				<div class="moiphathanh">
+				<span> Mới phát hành </span>
+				</div>
+			</a>
+		</div>
+	</div>
+	<script>autocomplete(document.getElementById("suggest"), countries);
+</script>
+
+</body>
+</html>

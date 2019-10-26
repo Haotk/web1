@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sagobo</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="giohang.css">
+  <script type="text/javascript" src="main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+  <script type="text/javascript "src="giohang.js"></script>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <a href="index.html">
+        <img class="logo" src="sagobomautrang.png">
+      </a>
+    </div>
+    <div class="searchhhhhhhhh">
+      <div class="autocomplete">
+      <input id="suggest"class="search-box" type="text" placeholder="Tìm kiếm..." >
+    </div>
+    <div class="search-iconnnnnnn">
+      <button type="submit", class=search-icon onclick="search()"><i class="fa fa-search"></i>
+        Tìm kiếm
+      </button>
+    </div>
+    </div>
+
+    <div class="dangnhapvadangxuat">
+      <a href="#" class="dangnhap" id="login"></a><br>
+      <a href="#" class="dangky" id="register"></a>
+    </div>
+    <div class="giohang-box">
+    <a href="sagobomautrang.png">
+      <div class="giohang-boxx">
+        <i class="fa fa-shopping-cart"></i>
+        <span class="giohang">Giỏ hàng
+          <span class="soluonggiohang">0</span>
+        </span>
+      </div>
+    </a>
+    </div>
+    <div class="hotline">
+      <p class="lienhe">Liên hệ</p>
+      <p class="sodt">1900 1234</p>
+    </div>
+  </div>
+
+  <div class="header2">
+    <div class="danhmuc">
+      <i class="fa fa-bars"></i>
+      <span class="danhmucsanpham">
+        Danh mục sản phẩm
+      </span>
+      <div class="dropdown-content">
+        <a href="VĂN HỌC.html">VĂN HỌC</a>
+        <a href="THIẾU NHI.html">THIẾU NHI</a>
+          <a href="TIỂU THUYẾT.html">TIỂU THUYẾT</a>
+          <a href="KỸ NĂNG.html">KỸ NĂNG</a>
+      </div>
+
+    </div>
+    
+    <div class="camketsanpham">
+      <p>Cam kết sản phẩm<br>Chính hãng 100%</p>
+    </div>
+    <div class="giaohangnhanhchong">
+      <p>Giao hàng<br>Nhanh chóng</p>
+    </div>
+    <div class="doitradedang">
+      <p>Đổi trả<br>dễ dàng</p>
+    </div>
+    <div class="bocsachmienphi">
+      <p>Bọc sách<br>miễn phí</p>
+    </div>
+  </div>
+  <script>autocomplete(document.getElementById("suggest"), countries);
+</script>
+<div class="dong">
+  <p class="tieudegiohang">GIỎ HÀNG</p>
+<div class="cot1">
+  <div class="sanpham">
+      <div class="chitietsanpham">
+          <div class="hinhanh">
+            <img  src="https://salt.tikicdn.com/cache/175x175/media/catalog/product/1/x/1x2acr3d.u4972.d20170419.t115542.562440.jpg">
+          </div>
+          <div class=tensanpham>
+            <p class="sach">Những Giấc Mơ Ở Hiệu Sách Morisaki</p><p class="tacgia">Tác giả: Yagisawa Satoshi</p><p class="giatien">60.000</p>
+          </div>
+         
+           
+          
+          <div class="soluong">
+            <button onclick="updateQuan(this)">-</button>
+            <input type="tel" value="1" onchange="check(this)" max="30" >
+            <button onclick="updateQuan(this)" onchange="check(this)">+</button>
+            <div class="xoa">
+             <i class="fa fa-trash-o" style="font-size: 20px;color:#0092f2;" onclick="remove(this)"></i>
+           </div>
+          </div>
+
+           
+          
+  </div>
+     
+  </div> <div class="sanpham">
+      <div class="chitietsanpham">
+          <div class="hinhanh">
+            <img  src="https://salt.tikicdn.com/cache/175x175/media/catalog/product/t/r/tren-sa-mac-va-trong-rung-tham_1_2.jpg">
+          </div>
+          <div class=tensanpham>
+            <p class="sach">BTS - Ở Đâu Có Hy Vọng Ở Đó Có Khó Khăn (Tặng Kèm 2 Card Thành Viên & 1 Bookmark Hình Đặc Biệt)</p><p class="tacgia">Tác giả: Vante</p><p class="giatien">129.000</p>
+          </div>
+         
+           
+          
+             <div class="soluong">
+            <button onclick="updateQuan(this)">-</button>
+            <input type="tel" value="1" onchange="check(this)" max="30" >
+            <button onclick="updateQuan(this)" onchange="check(this)">+</button>
+            <div class="xoa">
+             <i class="fa fa-trash-o" style="font-size: 20px;color:#0092f2;" onclick="remove(this)"></i>
+           </div>
+          </div>
+             
+
+  </div>
+     
+  </div> <div class="sanpham">
+      <div class="chitietsanpham">
+          <div class="hinhanh">
+            <img  src="https://salt.tikicdn.com/cache/175x175/ts/product/ed/af/b3/20654d8a2aecf73993e42a16d091179f.jpg">
+          </div>
+          <div class=tensanpham>
+            <p class="sach">Made You Up - Tặng Kèm 1 Bookmark Và 3 Tấm Sticker</p><p class="tacgia">Tác giả: Francesca Zappia
+
+</p><p class="giatien">129.000</p>
+          </div>
+         
+           
+          
+            <div class="soluong">
+            <button onclick="updateQuan(this)">-</button>
+            <input type="tel" value="1" onchange="check(this)" max="30" >
+            <button onclick="updateQuan(this)" onchange="check(this)">+</button>
+            <div class="xoa">
+             <i class="fa fa-trash-o" style="font-size: 20px;color:#0092f2;" onclick="remove(this)"></i>
+           </div>
+          </div>
+             
+
+  </div>
+     
+  </div>
+</div>
+
+
+</div>
+  <div class="cot2">
+    <div class="thanhtoan">
+      <div class="chitietthanhtoan">
+        <p class="hoadon">HÓA ĐƠN</p>
+          <div class="tongtien">
+            <p>
+                <span>Tạm tính: </span>
+                <strong id="tamtinh">238.650đ</strong>
+
+            </p>
+            <p>
+              <span>Tổng giá : </span>
+                <strong id="tonggia">238.650đ</strong>
+                            </p>
+                            <span id="ship">(Đã bao gồm phí giao hàng)</span>
+
+            <p>Mã giảm giá:</p>
+           
+          </div>
+          <div class="okhuyenmai">
+              <input type="text" id="coupon" placeholder="Nhập mã tại đây....">
+              <button type="button" class="btnKhuyenMai">Đồng ý</button>             
+          </div>
+
+      </div>
+          <button type="button" class="btnThanhToan">THANH TOÁN</button>
+      </div>
+      
+  </div>
+  </div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    cal();
+  })
+</script>
+</body>
+
+
+</html>

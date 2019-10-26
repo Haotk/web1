@@ -1,0 +1,473 @@
+body{
+	background:#333;
+	margin:0;
+	padding:0;
+	background:white;
+}
+.header{
+	max-width:100%;
+	background:#0092f2;
+	height: 80px;
+}
+.logo{
+	width: 180px;
+	position: relative;
+	left: 70px;
+	top: 6px;
+}
+.search-box{
+	width: 420px;
+	height: 24px;
+	font-size: 14px;
+	position: relative;
+	left: 320px;
+	top: -46px;
+	border-radius: 3px;
+	border: 0px;
+	padding: 6px;	
+	outline: none;
+	}
+.autocomplete{
+	position: relative;
+
+	display: inline-block;
+}
+.search-icon{
+	background: #edeef2;
+	width: 110px;
+	height: 36px;
+	border: 0px;
+	border: 0px;
+	border-radius: 0px 3px 3px 0px;
+	position: relative;
+	left: 641px;
+	top: -82px;
+	font-size: 14px;
+	outline: none;
+	cursor:pointer;
+
+}
+.autocomplete-items {
+  width:320px;
+  position: absolute;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: -12px;
+  left: 320px;
+  
+
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+.dangnhap{
+	text-decoration: none;
+	position: relative;
+	left: 790px;
+	top: -118px;
+	color: white;
+	font-size: 16px;
+	font-family: helvetica;
+}
+.dangky{
+	text-decoration: none;
+	position: relative;
+	left: 790px;
+	top: -118px;
+	color: white;
+	font-size: 14px;
+	font-family: helvetica;
+}
+a{
+	text-decoration: none;
+	background-color: transparent;
+	width: 100px;
+	height: 20px;
+	margin-right: 1px;
+}
+.giohang-box{
+
+	position: relative;
+	width: 100px;
+	height: 20px;
+	border-radius: 4px;
+	padding: 8px 11px;
+	font-size: 17px;
+
+	left: 600px;
+	margin-top:23px;
+}
+.giohang-boxx{
+	text-decoration: none;
+	color: white;
+	position: relative;
+	width: 100px;
+	height: 20px;
+	border: 2px solid white;
+	border-radius: 4px;
+	padding: 8px 11px;
+	font-size: 17px;
+	margin: 1px 1px 1px 1px;
+	left: 300px;
+	top: -186px;
+}
+.hotline{
+	font-family: helvetica;	
+}
+.lienhe{
+	position: relative;
+	width: 80px;
+	margin: 0px;
+	left: 1104px;
+	top: -213px;
+	color: white;
+	font-size: 17px;
+}
+.sodt{
+	position: relative;
+	width: 100px;
+	margin: 0px;
+	left: 1090px;
+	top: -210px;
+	color: white;
+	font-size: 17px;
+}
+
+
+.header2{
+	max-width:100%;
+	background:#0582d4;
+	height: 60px;
+	border: 1px solid #0582d4;
+}
+
+
+/**DROPDOWN MENU**/
+.danhmuc{	
+  display: inline-block;
+	position: relative;
+	width: 181px;
+	border: 2px solid white;
+	border-radius: 4px;
+	padding: 8px 11px;
+	font-size: 17px;
+	margin: 1px 1px 1px 1px;
+	left: 155px;
+	top: 9px;
+	color: white;
+	font-family: helvetica;
+}
+.danhmucsanpham{
+	padding-left: 4px;
+}
+
+.dropdown-content {
+
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  max-width: 205px;
+  margin-left: -14px;
+  margin-top: 11px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+.dropdown-content a {
+  width:150px;
+  color: black;	
+  margin-top: 5px;
+  margin-left: 5px;
+
+  padding: 12px 20px;
+  font-size: 15px;
+  font-family: helvetica;
+  text-decoration: none;
+  display: inline-block;
+ 
+  border-radius: 4px;
+}
+
+.dropdown-content a:hover {
+	background-color: #0092f2;
+	color:white;
+}
+.dropdown-content a:last-child {
+	margin-bottom: 5px;
+	padding-bottom: 10px;
+}
+.danhmuc:hover .dropdown-content {
+  display: block;
+}
+/**END OF DROPDOWN MENU**/
+.camketsanpham{
+	position: relative;
+	width: 150px;
+	text-align: center;
+	left: 800px;
+	top: -43px;
+	color: white;
+	font-size: 15px;
+	font-family: helvetica;
+}
+.giaohangnhanhchong{
+	position: relative;
+	width: 100px;
+	text-align: center;
+	left: 980px;
+	top: -93px;
+	color: white;
+	font-size: 15px;
+	font-family: helvetica;
+}
+.doitradedang{
+	position: relative;
+	width: 60px;
+	text-align: center;
+	left: 1100px;
+	top: -143px;
+	color: white;
+	font-size: 15px;
+	font-family: helvetica;
+}
+.bocsachmienphi{
+	position: relative;
+	width: 70px;
+	text-align: center;
+	left: 1195px;
+	top: -193px;
+	color: white;
+	font-size: 15px;
+	font-family: helvetica;
+}
+.banner{
+	width: 1250px;
+	height: 400px;
+	margin: 0 auto;
+	margin-top: 40px;
+	
+}
+.trending{
+	width: 1250px;
+	height: 500px;
+	position: relative;
+	margin: 0 auto;
+}
+.button3{
+	margin-top: 40px;
+	width: 650px;
+	height: 80px;
+	margin-left:320px;
+	background-color: white;
+	border: 0px solid black;
+	
+}
+
+.items {
+	color:#333;
+	font-size: 35px;
+	width: auto;
+	font-family: helvetica;
+}
+
+.active{
+	cursor: pointer;
+	color:#0092f2;
+}
+.button3 > a:hover{
+	cursor: pointer;
+
+	color :#0092f2;
+}
+
+
+
+
+
+/*BANNER SLIDE ANIMATION*/
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto; 
+  padding:16px;
+ margin-top: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+.next {
+cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto; 
+  padding:16px;
+  margin-top: 50px;
+  margin-left: 1210px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+
+.prev:hover, .next:hover {
+  background-color: #0092f2;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  top:-25px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+.actived, .dot:hover {
+  background-color: #0092f2;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+/*END OF BANNER SLIDE ANIMATION*/
+
+
+
+/*FOOTER*/
+footer{
+}
+.footer1{
+
+	width: 100%;
+	height: 140px;
+	background-color: #fbfafa;
+}
+.footer1>.email{
+	font-family: helvetica;
+	margin-left: 140px;
+	font-weight: bold;
+	font-size: 37px;
+	padding-top: 10px;
+}
+.footer1>.email1{
+	font-family: helvetica;
+	margin-left: 140px;
+	margin-top: -35px;
+	font-size: 20px;
+}
+.footer1>.email-box{
+	float: right;
+	width: 400px;
+	height: 30px;
+	margin-right: 330px;
+	margin-top: -80px;
+	outline: none;
+	border-radius: 3px;
+	border: 2px solid #0092f2;
+	padding-left: 6px;
+}
+.footer1>.email-button{
+	float: right;
+	width: 80px;
+	height: 36px;
+	margin-right: 240px;
+	margin-top: -80px;
+	outline: none;
+	border-radius: 5px;
+	background-color: #0092f2;
+	color: white;
+	border: 0px;
+	font-size: 18px;
+}
+.email-button>p.gui{
+	margin-top: 9px;
+	margin-bottom: 9px;
+}
+
+.footer2{
+	width: 100%;
+	height: 140px;
+
+}
+.footer2>.footer-logo{
+	margin-left: 120px;
+	width: 250px;
+}
+.footer2>.info{
+	margin-left: 140px;
+	width: auto;
+	margin-top: -10px;
+	font-weight: bold;
+	font-family: helvetica;
+}
+.footer2>.connect{
+	float: right;
+	margin-right: 160px;
+	margin-top: -140px;
+	font-size: 25px;
+	font-family: helvetica;
+	font-weight: bold;
+}
+.footer2>.facebook{
+	float: right;
+	margin-right: 200px;
+	margin-top: -100px;
+	font-size: 50px;
+}
+
+.footer3{
+	width: 100%;
+	height: 60px;
+	background-color: black;
+	margin-top: 25px;
+}
+.footer3>.copyright{
+	color: white;
+	margin-left: 140px;
+	font-size: 20px;
+	font-family: helvetica;
+	padding-top: 5px;
+}

@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/qlsp.css">
+    <script>
+        function popup_themsp () {
+            alert("Bạn có muốn thêm sản phẩm");
+        }
+
+        function quaylaiindex(){
+            window.location=".././index.html";
+    }
+    
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <span class="title-header" onclick="quaylaiindex();">NPQ Computer</span>
+            <div class="nav-right">
+                <img src="image/icon/user-icon.svg">
+                <div class="ten-admin">Minh Nhật</div>
+                <a href="index.html"><div style="font-size: 15px;margin:17px 8px 0 8px">Đăng Xuất</div></a>
+            </div>
+        </div>
+        <div class="left-menu">
+            <a class="left-menu__item" href="admin.html"><span id="speed-icon"></span>Thống kê</a>
+            <a class="left-menu__item active" href="qlsp.html"><span class="icon" id="product-icon"></span>Quản lý sản phẩm</a>
+            <a class="left-menu__item" href="qluser.html"><span class="icon" id="user-icon"></span>Quản lý User</a>
+            <a class="left-menu__item" href="qldh.html"><span class="icon" id="don-hang-icon"></span>Quản lý đơn hàng</a>
+                <div class="copyright">© NPQ Computer</div>
+        </div>
+        <div class="main">
+            <div class="section">
+                <div class="them-sp"><button onclick="popup_themsp();" class="nutthem">Thêm Sản Phẩm</button></div>
+                <table id="table-sp">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Hình</th>
+                            <th>Tên</th>
+                            <th>Giá</th>
+                            <th>Loại</th>
+                            <th>Mã</th>
+                            <th>Hiển Thị</th>
+                            <th>Thao tác</th>
+                        </tr>
+                        <tr class="thunghiem">
+                            <td>1</td>
+                            <td><img src="./image./asus-tuf-b360m-plus-gaming-1.jpg" alt="anh1" width="110px" height="110px"></td>
+                            <td><span class="hieuchinh1">Mainboard Asus TUF B360M</span></td>
+                            <td>2.320.000đ</td>
+                            <td>Bo mạch chính</td>
+                            <td>MA01</td>
+                            <td>Có</td>
+                            <td>
+                                <button type="button" class="xoa_sp xoasp11" >Xóa</button>
+                                <button type="button" class="xoa_sp" onclick="nutsua() ;" >Sửa</button>
+                            </td>
+                        </tr>
+                         <tr class="thunghiem">
+                            <td>2</td>
+                            <td><img src="./image./amd_ryzen_athlon_200ge_1.jpg" alt="anh1" width="110px" height="110px"></td>
+                            <td><span class="hieuchinh1">CPU AMD Ryzen Athlon 200GE</span> </td>
+                            <td>1.470.000đ</td>
+                            <td>Bộ vi xử lí</td>
+                            <td>MA02</td>
+                            <td>Có</td>
+                            <td>
+                                <button type="button" class="xoa_sp xoasp11">Xóa</button>
+                                <button type="button" class="xoa_sp " onclick="nutsua() ;">Sửa</button>
+                            </td>
+                        </tr>
+                         <tr class="thunghiem">
+                            <td>3</td>
+                            <td><img src="./image./case-golden-field-n55b-gaming-21_-1_1.jpg" alt="anh1" width="110px" height="110px"></td>
+                            <td><span class="hieuchinh1">Case Golden Field N55B Gaming</span></td>
+                            <td>780.000đ</td>
+                            <td>Thùng máy</td>
+                            <td>MA03</td>
+                            <td>Có</td>
+                            <td>
+                                <button type="button" class="xoa_sp xoasp11" >Xóa</button>
+                                <button type="button" class="xoa_sp" onclick="nutsua() ;">Sửa</button>
+                            </td>
+                        </tr>
+                         <tr class="thunghiem">
+                            <td>4</td>
+                            <td><img src="./image./ddr4-kingston-hyperx-fury-0.jpg" alt="anh1" width="110px" height="110px"></td>
+                            <td><span class="hieuchinh1">Bộ nhớ DDR4 Kingston 4GB (2400)</span></td>
+                            <td>999.000đ</td>
+                            <td>RAM</td>
+                            <td>MA04</td>
+                            <td>Có</td>
+                            <td>
+                                <button type="button" class="xoa_sp xoasp11">Xóa</button>
+                                <button type="button" class="xoa_sp " onclick="nutsua() ;">Sửa</button>
+                            </td>
+                        </tr>
+                         <tr class="thunghiem">
+                            <td>5</td>
+                            <td><img src="./image./corsair-rm1000i-1 (1).jpg" alt="anh1" width="110px" height="110px"></td>
+                            <td><span class="hieuchinh1">Nguồn/ Power Corsair RM1000i - 80 Plus Gold</span> </td>
+                            <td>4.890.000đ</td>
+                            <td>PSU</td>
+                            <td>MA05</td>
+                            <td>Có</td>
+                            <td>
+                                <button type="button" class="xoa_sp xoasp11">Xóa</button>
+                                <button type="button" class="xoa_sp " onclick="nutsua() ;">Sửa</button>
+                            </td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="popup-themsp">
+        <div class="popup-themsp__content">
+            <div class="popup-themsp__title">Thêm Sản Phẩm</div>
+            <div class="popup-themsp-left">
+                <div class="popup-themsp-left__label">Nhập Tên</div>
+                <div class="popup-themsp-left__label">Nhập Giá</div>
+                <div class="popup-themsp-left__label">Nhập Mã</div>
+                <div class="popup-themsp-left__label">Chọn Hình</div>
+                <div class="popup-themsp-left__label">Nhập Loại</div>
+            </div>
+            <div class="popup-themsp-right">
+                <div class="popup-themsp-left__input"><input class="them-ten" type="text" placeholder="Tên sản phẩm"></div>
+                <div class="popup-themsp-left__input"><input class="them-gia" type="text" placeholder="Giá sản phẩm"></div>
+                <div class="popup-themsp-left__input"><input class="them-thu-tu" type="text" placeholder="Mã sản phẩm"></div>
+                <div class="popup-themsp-left__input"><input class="them-hinh" type="file"></div>
+                <div class="popup-themsp-left__input"><input class="them-loai" type="text" placeholder="Loại sản phẩm"></div>
+            </div>
+            <button class="popup-themsp__btn" onclick="alert('Thêm thành công')">Thêm</button>
+            <span class="back" >x</span>
+        </div>
+    </div>
+    <!-- popup sửa sp -->
+    <div class="popup-themsp1">
+        <div class="popup-themsp__content">
+            <div class="popup-themsp__title">Sửa Sản Phẩm</div>
+            <div class="popup-themsp-left">
+                <div class="popup-themsp-left__label">Tên</div>
+                <div class="popup-themsp-left__label">Giá</div>
+                <div class="popup-themsp-left__label">Mã</div>
+                <div class="popup-themsp-left__label">Hình</div>
+                <div class="popup-themsp-left__label">Loại</div>
+            </div>
+            <div class="popup-themsp-right">
+                <div class="popup-themsp-left__input"><input class="them-ten" type="text" placeholder="Tên sản phẩm"></div>
+                <div class="popup-themsp-left__input"><input class="them-gia" type="text" placeholder="Giá sản phẩm"></div>
+                <div class="popup-themsp-left__input"><input class="them-thu-tu" type="text" placeholder="Thứ tự"></div>
+                <div class="popup-themsp-left__input"><input class="them-hinh" type="file"></div>
+                <div class="popup-themsp-left__input"><input class="them-loai" type="text" placeholder="Loại sản phẩm"></div>
+            </div>
+            <button class="popup-themsp__btn" onclick="alert('Sửa thành công')">Sửa</button>
+            <span class="back back12" >x</span>
+            
+        </div>
+    </div>
+        </div>
+    </div>
+    <script src="./js./qllsp1.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+
+</html>

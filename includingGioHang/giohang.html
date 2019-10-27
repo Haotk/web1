@@ -3,7 +3,7 @@
 <head>
   <title>Sagobo</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="giohang.css">
+    <link rel="stylesheet" type="text/css" href="giohang.css">
   <script type="text/javascript" src="main.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,11 +34,11 @@
       <a href="#" class="dangky" id="register"></a>
     </div>
     <div class="giohang-box">
-    <a href="sagobomautrang.png">
+    <a href="giohang.html">
       <div class="giohang-boxx">
         <i class="fa fa-shopping-cart"></i>
         <span class="giohang">Giỏ hàng
-          <span class="soluonggiohang">0</span>
+          <span class="soluonggiohang" id="soluongsanpham">0</span>
         </span>
       </div>
     </a>
@@ -106,7 +106,77 @@
           
   </div>
      
-  </div> <div class="sanpham">
+  </div> 
+  <div class="sanpham">
+      <div class="chitietsanpham">
+          <div class="hinhanh">
+            <img  src="https://salt.tikicdn.com/cache/175x175/media/catalog/product/t/r/tren-sa-mac-va-trong-rung-tham_1_2.jpg">
+          </div>
+          <div class=tensanpham>
+            <p class="sach">BTS - Ở Đâu Có Hy Vọng Ở Đó Có Khó Khăn (Tặng Kèm 2 Card Thành Viên & 1 Bookmark Hình Đặc Biệt)</p><p class="tacgia">Tác giả: Vante</p><p class="giatien">129.000</p>
+          </div>
+         
+           
+          
+             <div class="soluong">
+            <button onclick="updateQuan(this)">-</button>
+            <input type="tel" value="1" onchange="check(this)" max="30" >
+            <button onclick="updateQuan(this)" onchange="check(this)">+</button>
+            <div class="xoa">
+             <i class="fa fa-trash-o" style="font-size: 20px;color:#0092f2;" onclick="remove(this)"></i>
+           </div>
+          </div>
+             
+
+  </div>
+     
+  </div>  <div class="sanpham">
+      <div class="chitietsanpham">
+          <div class="hinhanh">
+            <img  src="https://salt.tikicdn.com/cache/175x175/media/catalog/product/t/r/tren-sa-mac-va-trong-rung-tham_1_2.jpg">
+          </div>
+          <div class=tensanpham>
+            <p class="sach">BTS - Ở Đâu Có Hy Vọng Ở Đó Có Khó Khăn (Tặng Kèm 2 Card Thành Viên & 1 Bookmark Hình Đặc Biệt)</p><p class="tacgia">Tác giả: Vante</p><p class="giatien">129.000</p>
+          </div>
+         
+           
+          
+             <div class="soluong">
+            <button onclick="updateQuan(this)">-</button>
+            <input type="tel" value="1" onchange="check(this)" max="30" >
+            <button onclick="updateQuan(this)" onchange="check(this)">+</button>
+            <div class="xoa">
+             <i class="fa fa-trash-o" style="font-size: 20px;color:#0092f2;" onclick="remove(this)"></i>
+           </div>
+          </div>
+             
+
+  </div>
+     
+  </div>  <div class="sanpham">
+      <div class="chitietsanpham">
+          <div class="hinhanh">
+            <img  src="https://salt.tikicdn.com/cache/175x175/media/catalog/product/t/r/tren-sa-mac-va-trong-rung-tham_1_2.jpg">
+          </div>
+          <div class=tensanpham>
+            <p class="sach">BTS - Ở Đâu Có Hy Vọng Ở Đó Có Khó Khăn (Tặng Kèm 2 Card Thành Viên & 1 Bookmark Hình Đặc Biệt)</p><p class="tacgia">Tác giả: Vante</p><p class="giatien">129.000</p>
+          </div>
+         
+           
+          
+             <div class="soluong">
+            <button onclick="updateQuan(this)">-</button>
+            <input type="tel" value="1" onchange="check(this)" max="30" >
+            <button onclick="updateQuan(this)" onchange="check(this)">+</button>
+            <div class="xoa">
+             <i class="fa fa-trash-o" style="font-size: 20px;color:#0092f2;" onclick="remove(this)"></i>
+           </div>
+          </div>
+             
+
+  </div>
+     
+  </div>  <div class="sanpham">
       <div class="chitietsanpham">
           <div class="hinhanh">
             <img  src="https://salt.tikicdn.com/cache/175x175/media/catalog/product/t/r/tren-sa-mac-va-trong-rung-tham_1_2.jpg">
@@ -155,12 +225,90 @@
   </div>
      
   </div>
+  <div class="sanpham">
+      <div class="chitietsanpham">
+          <div class="hinhanh">
+            <img  src="https://salt.tikicdn.com/cache/175x175/ts/product/ed/af/b3/20654d8a2aecf73993e42a16d091179f.jpg">
+          </div>
+          <div class=tensanpham>
+            <p class="sach">Made You Up - Tặng Kèm 1 Bookmark Và 3 Tấm Sticker</p><p class="tacgia">Tác giả: Francesca Zappia
+
+</p><p class="giatien">129.000</p>
+          </div>
+         
+           
+          
+            <div class="soluong">
+            <button onclick="updateQuan(this)">-</button>
+            <input type="tel" value="1" onchange="check(this)" max="30" >
+            <button onclick="updateQuan(this)" onchange="check(this)">+</button>
+            <div class="xoa">
+             <i class="fa fa-trash-o" style="font-size: 20px;color:#0092f2;" onclick="remove(this)"></i>
+           </div>
+          </div>
+             
+
+  </div>
+     
+  </div>
+  <div class="sanpham">
+      <div class="chitietsanpham">
+          <div class="hinhanh">
+            <img  src="https://salt.tikicdn.com/cache/175x175/ts/product/ed/af/b3/20654d8a2aecf73993e42a16d091179f.jpg">
+          </div>
+          <div class=tensanpham>
+            <p class="sach">Made You Up - Tặng Kèm 1 Bookmark Và 3 Tấm Sticker</p><p class="tacgia">Tác giả: Francesca Zappia
+
+</p><p class="giatien">129.000</p>
+          </div>
+         
+           
+          
+            <div class="soluong">
+            <button onclick="updateQuan(this)">-</button>
+            <input type="tel" value="1" onchange="check(this)" max="30" >
+            <button onclick="updateQuan(this)" onchange="check(this)">+</button>
+            <div class="xoa">
+             <i class="fa fa-trash-o" style="font-size: 20px;color:#0092f2;" onclick="remove(this)"></i>
+           </div>
+          </div>
+             
+
+  </div>
+     
+  </div>
+  <div class="sanpham">
+      <div class="chitietsanpham">
+          <div class="hinhanh">
+            <img  src="https://salt.tikicdn.com/cache/175x175/ts/product/ed/af/b3/20654d8a2aecf73993e42a16d091179f.jpg">
+          </div>
+          <div class=tensanpham>
+            <p class="sach">Made You Up - Tặng Kèm 1 Bookmark Và 3 Tấm Sticker</p><p class="tacgia">Tác giả: Francesca Zappia
+
+</p><p class="giatien">129.000</p>
+          </div>
+         
+           
+          
+            <div class="soluong">
+            <button onclick="updateQuan(this)">-</button>
+            <input type="tel" value="1" onchange="check(this)" max="30" >
+            <button onclick="updateQuan(this)" onchange="check(this)">+</button>
+            <div class="xoa">
+             <i class="fa fa-trash-o" style="font-size: 20px;color:#0092f2;" onclick="remove(this)"></i>
+           </div>
+          </div>
+             
+
+  </div>
+     
+  </div>
 </div>
 
 
-</div>
+
   <div class="cot2">
-    <div class="thanhtoan">
+    <div class="thanhtoan" id="test">
       <div class="chitietthanhtoan">
         <p class="hoadon">HÓA ĐƠN</p>
           <div class="tongtien">
@@ -186,14 +334,64 @@
       </div>
           <button type="button" class="btnThanhToan">THANH TOÁN</button>
       </div>
-      
+      </div>
+
   </div>
   </div>
+  <div id="scroll"></div>
 <script type="text/javascript">
   $(document).ready(function(){
     cal();
+    $(window).scroll(sticky_relocate());
   })
+  window.onload(countCheckOut());
+
 </script>
+
+
+
+<!--footer-->
+
+<div class="footer" id="footer">
+  <div class="footer1">
+          <div class="sub-email ">
+            <label>
+              ĐĂNG KÝ NHẬN ƯU ĐÃI
+            </label>
+            <span>Đăng ký nhận thông tin sách mới, sách bán</span>
+          </div>
+          <div class="mail">
+            
+            <input type="text" placeholder="Nhập email của bạn">
+            <button type="submit">Đăng ký ngay</button>
+          </div>
+         
+        </div>
+  </div>
+  <div class="footer2">
+    <div class="logofooter">
+        <img src="sagobomauxanh.png">
+    </div>
+    <div class="info">
+        <p>Địa chỉ văn phòng: 69/96 Đào Duy Từ, phường 6 quận 9 TP.HCM.</p>
+        <p>Hotline: 1900 1234.</p>
+        <p>Email: support@sagabo.com</p>
+    </div>
+    <div class="Social">
+        <p>LIÊN HỆ VỚI CHÚNG TÔI</p>
+        <a target="_blank" href="https://www.facebook.com/" title="Facebook">
+                <img alt="Facebook" src="social/Facebook-on.png">
+        </a>
+        <a target="_blank" href="https://www.instagram.com/" title="Instagram">
+                <img alt="Instagram" src="social/Insta-on.png">
+        </a> 
+        <a target="_blank" href="https://www.youtube.com/channel/UCUZcVOLSxK1q6RfgzQ9-HYQ" title="Youtube">
+                <img alt="Youtube" src="social/Youtube-on.png">
+        </a>
+    </div>
+  </div>
+  <div class="cpyright"><p >© Bản quyền thuộc về công ty cổ phần SAGOBO.</p></div>
+</div>
 </body>
 
 

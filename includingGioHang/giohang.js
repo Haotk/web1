@@ -4,7 +4,6 @@ function updateQuan(x){
 		if(x.textContent=="+"){
 		 $(quantity).val(parseInt($(quantity).val())+1);
 			cal();
-		
 		}
 		if($(quantity).val()>50){
 
@@ -16,10 +15,33 @@ function updateQuan(x){
 			cal();
 		}
 	}
+function sticky_relocate() {
+  var window_top = $(window).scrollTop();
+  var div_top = $('.cot1').height();
+  if (window_top > div_top-500) {
+    $('.thanhtoan').css("position","relative").css("top",div_top-500);
+      } else {
+    $('.thanhtoan').css("position","fixed").css("top","");
+  }
+}
+
+$(function() {
+  $(window).scroll(sticky_relocate);
+  sticky_relocate();
+});
+function countCheckOut(){
+	var soluong =  $(".sanpham").length;
+	console.log(soluong);
+	$("#soluongsanpham").fadeOut(150);
+	document.getElementById("soluongsanpham").innerHTML = parseInt(soluong);
+	$("#soluongsanpham").fadeIn(150);
+}
 function remove(x){
 
 	$(x).parent().parent().parent().parent().remove();
 	cal();
+	sticky_relocate();
+	countCheckOut();
 }
 function check(x){
 	var parent = $(x).parent();

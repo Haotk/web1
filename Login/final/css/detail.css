@@ -1,0 +1,227 @@
+ul {
+ list-style-type: none; margin: 0; padding: 0; background-color: #fbfafa; 
+}
+.breadcrumb li{
+		display: inline;
+		margin-left: 23px;
+		font-family: helvetica;
+}
+.breadcrumb span{
+	color: black;
+}
+.breadcrumb{
+	position: absolute;
+	margin-top: 15px;
+	height: 30px;
+}
+.breadcrumb-wrap{
+
+	height: 45px;
+	background-color: #fbfafa;
+
+}
+.container{
+	height: 40px;
+	margin-left: 133px;
+	margin-right: 133px;
+}
+.chitietsanpham{
+	width: 100%;
+	height: 40%;
+}
+.anhsach{
+	width: 50%;
+	height: 70%;
+}
+.anhsach img{
+	margin-top: 50px;
+	width: 100%;
+	height: 60%;
+	float: left;
+	margin-bottom: 50px;
+}
+.tensach{
+	margin-top: 30px;
+	width: 50%;
+	float: right;
+	font-family: helvetica;
+}
+.motasanpham{
+	width: 100%;	
+}
+.stars {
+  width: 50%;
+  display: inline-block;
+}
+.fa.fa-star{
+  float: left;
+  padding: 5px;
+  font-size: 25px;
+  color: #ffc120;
+}
+.luotdanhgia p{
+	margin-top: 8px;
+	width: 50%;	
+	font-family: helvetica;
+}
+.gia h1{
+	width: 50%;
+	display: inline-block;
+	font-size: 200%;
+	color: red;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+.giagoc p{
+	margin-top: 0px;
+	margin-bottom: 20px;
+	font-size: 100%;
+}
+.giagoc{
+	display: inline-block;
+	width: 50%;
+}
+.chitietsanpham hr{
+	margin-right: 100px;
+}
+.soluong p{
+	font-size: 20px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	font-family: helvetica;
+}
+.soluong{
+	display: inline-block;
+	width: 50%;
+	margin-bottom: 25px;
+}
+.nhapsoluong{
+	display: table;
+	display: inline-block;
+	width: 20%;
+}
+.soluongmua{
+	width: 20px;
+}
+.nhapsoluong button:hover{
+	background-color: #fcfcfc;
+}
+.nhapsoluong input{
+	text-align: center;
+}
+.cong{
+	width: 25px;
+}
+.tru{
+	width: 25px;
+}
+.nhapsoluong span{
+	position: relative;
+}
+.chonmua{
+	width: 50%;
+}
+.chon h3{
+	font-family: helvetica;
+}
+.chonmua button{
+	width: 50%;
+	height: 40px;
+	background-color: #fc0000;
+	color: white;
+	border-radius: 5px;
+	margin-right: 20px;
+}
+.chonmua h3{
+	margin-top: 10px; 
+}
+.chonmua{
+	display: inline-block;
+}
+.chonmua button:hover{
+	background-color: #f75959;
+}
+.yeuthich{
+	display: inline-block;
+	color: #938c8c;
+	font-size: 25px;
+}
+.yeuthich i:hover{
+	color: #f20707;
+}
+.thongtin{
+	display: inline-block;
+	width: 50%;
+}
+.thongtinsanpham p{
+	font-size: 25px;
+	font-family: helvetica;
+}
+.thongtinchitiet p{
+	font-size: 18px;
+	margin-bottom: 20px;
+	font-family: helvetica;
+}
+.thongtinchitiet{
+	margin-left: 40px;
+}
+.motasanpham hr {
+	width: 80%;
+}
+.mota{
+	padding-top: 2%;
+	font-family: helvetica;
+	margin-left: 1%;
+}
+.motachitiet p{
+	width: 80%;
+	margin-top: 5%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.motachitiet{
+	width: 1000px;
+	margin-left: 5px;
+	font-family: helvetica;
+}
+.mota{
+	width: 90%;
+}
+.motasp{
+	background-color: #fbfafa;
+	margin-right: 150px;
+	margin-left: 150px;
+	margin-top: 50px;
+	height: 450px;	
+
+}
+.danhgia{
+	padding-top: 2%;
+	font-family: helvetica;
+	margin-left: 1%;	
+}
+.danhgiasp{
+	background-color: #fbfafa;
+	margin-right: 150px;
+	margin-left: 150px;
+	margin-top: 50px;
+	height: 450px;
+}
+.danhgiachitiet{
+	width: 80%;
+	margin-top: 0px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.danhgiachitiet p{
+	width: 80%;
+	font-family: helvetica;
+}
+.saodanhgia{
+	width: 80%;
+	margin-top: 0px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+

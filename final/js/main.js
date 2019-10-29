@@ -21,19 +21,19 @@ function isLogged(){
 	}
 /**check is logged or not*/
 window.addEventListener("load",isLogged);
+/**end of check**/
+
+function validate(ob){
+  console.log(ob);
+     if (ob.value.length< 6){
+     var x = $(ob).parent();    
+      $(ob).children[2].innerHTML ="ĐỘ DÀI PHẢI LỚN HƠN 6";
+     }
+     else $(ob).css("color","");
+}
 
 function register(){
-	var user = {
-		username : "congha",
-		password : "hoanghai",
-		name : "Nguyễn Hữu Nhân",
-		email : "phancongha24@gmail.com",
-		phone : "0913175755",
-		status : 1,
-	};
-	localStorage.setItem(`user`,JSON.stringify(user));
-	alert("Đăng ký thành công");
-	window.location.reload();
+  var user = document.getElementById("regname").value;
 }
 
 
@@ -48,8 +48,13 @@ function change(num){
 
 function login(){
 
-	var user = JSON.parse(localStorage.user);
+	var user = document.getElementById("user").value;
+  var pwd = document.getElementById("pwd").value;
 
+  if(user=="0913175" && pwd=="test"){
+    alert("DANG NHAP THANH CONG");
+  }
+  else alert("DANG NHAP THAT BAI");
 }
 
 
@@ -170,57 +175,4 @@ function search(){
 //KET THUC TIM KIEM KIEU 2
 //ENDOFAUTOCOMPLETE
 
-
-
-//BANNER ANIMATION//
-var slideIndex = 1;
-
-var myTimer;
-
-var slideshowContainer;
-
-window.addEventListener("load",function() {
-    showSlides(slideIndex);
-    myTimer = setInterval(function(){plusSlides(1)}, 3000);
-})
-
-function plusSlides(n){
-  clearInterval(myTimer);
-  if (n < 0){
-    showSlides(slideIndex -= 1);
-  } else {
-   showSlides(slideIndex += 1); 
-  }
-  
-  
-  if (n === -1){
-    myTimer = setInterval(function(){plusSlides(n + 2)}, 3000);
-  } else {
-    myTimer = setInterval(function(){plusSlides(n + 1)}, 3000);
-  }
-}
-
-function currentSlide(n){
-  clearInterval(myTimer);
-  myTimer = setInterval(function(){plusSlides(n + 1)}, 3000);
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n){
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" actived", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " actived";
-}
-
-//END OF BANNER ANIMATION//
 

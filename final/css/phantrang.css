@@ -1,0 +1,95 @@
+
+.tongquanphanloai{
+	font-family: helvetica;
+	padding-top: 1em;
+	min-width: 1000px;
+	min-height: 1000px;
+	margin-left: 50px;
+	margin-bottom: 80px;
+	margin-top: 50px;
+	text-align: center;
+}
+.div11{
+	margin-top: 100px;
+	margin-bottom: 100px;
+	position: fixed;
+	background-color: white;
+	width: 15%;
+	float: left;
+	max-height: 1065px;
+}
+.div12{
+	background-color: white;
+	width: 85%;
+    position: relative;
+    margin: 0 auto;
+	float: right;
+}
+.div121{
+	min-height: 500px;
+	display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.clearzone{
+	clear: both;
+}
+.h1{
+	font-size: 40px;
+}
+.khung{
+	width: 241px;
+    height: 300px;
+    
+    position: relative;
+    margin: 35px 20px 20px;
+    /*cursor: pointer;*/
+}
+.chitiettrongkhung{
+	padding: 3px;
+}
+.tieude{
+	/*max-height:  15px;*/
+	text-align: center;
+	color: black;
+	text-transform: capitalize;
+	line-height: 1.125rem;
+    height: 3.25rem;
+}
+.tacgia{
+	/*max-height:  15px;*/
+	font-style: italic;
+	color: #777777;
+	line-height: 1.125rem;
+    height: 1.5rem;
+   	white-space: nowrap;
+   	text-overflow: ellipsis;
+   	overflow: hidden;
+}
+.gia{
+	/*max-height: 15px;*/
+	color: #242424;
+	font-weight: bold;
+	line-height: 1.125rem;
+    height: 2.25rem;
+    
+}
+
+.phantrang{
+	display: inline-block;
+}
+.phantrang b{
+	color: black;
+	float: left;
+	padding: 16px 20px;
+	text-decoration: none;
+	transition: background-color .3s;
+}
+.phantrang b.trangchinh{
+	background-color: #0092F2;
+	color: white;
+}
+.phantrang b:hover:not(.trangchinh){
+	background-color: #ddd;
+}

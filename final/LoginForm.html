@@ -86,15 +86,17 @@
   <div class="form sign-in">
     <h2>Đăng nhập</h2>
     <label class="label">
-      <span>Email / SĐT</span>
-      <input class ="input" type="email" />
+      <span>Tài khoản</span>
+      <input class ="input"   id="user"/>
+               <label class="warning" id="warning"></label>
     </label>
     <label class="label">
       <span>Mật khẩu</span>
-      <input class ="input" type="password" />
+      <input class ="input" type="password" id="pwd"/>
+               <label class="warning" id="warning"></label>
     </label>
     <a href="#"><p class="forgot-pass">Quên mật khẩu?</p></a>
-    <button class="btn submit" type="button" >Đăng nhập</button>
+    <button class="btn submit" type="button" onclick="login()">Đăng nhập</button>
     <button class="btn fb-btn" type="button" >Đăng nhập bằng <span>facebook</span></button>
     <button class="btn gg-btn" type="button" >Đăng nhập bằng <span>Google</span></button>
     <button class="btn zalo-btn" type="button">Đăng nhập bằng <span>Zalo</span></button>
@@ -120,21 +122,28 @@
       <h2>Tạo tài khoản</h2>
       <label class="label">
         <span>Họ Tên</span>
-        <input class ="input" type="text" placeholder="Nhập Họ và Tên"/>
+        <input class ="input" type="text" placeholder="Nhập Họ và Tên"/ id="regname">
+         <label class="warning" id="warning"></label>
       </label>
       <label class="label">
-        <span>Email</span>
-        <input class ="input" type="email" placeholder="Nhập Email hoặc Số điện thoại"/>
+        <span>TÀI KHOẢN</span>
+        <input class ="input" placeholder="Nhập tài khoản"/ id="reguser" >
+                 <label class="warning" id="warning"></label>
+
       </label>
       <label class="label">
         <span>Mật khẩu</span>
-        <input class ="input" type="password" placeholder="Mật khẩu từ 6 đến 32 ký tự"/>
+        <input class ="input" type="password" placeholder="Mật khẩu từ 6 đến 32 ký tự"/ id="regpwd" onchange="validate(this)">
+                 <label class="warning" id="warning"></label>
+
       </label>
       <label class="label">
         <span>Nhập lại Mật khẩu</span>
-        <input class ="input" type="password" placeholder="Nhập lại mật khẩu"/>
+        <input class ="input" type="password" placeholder="Nhập lại mật khẩu"/ id ="repwd" onchange="validate(this)">
+                 <label class="warning" id="warning"></label>
+
       </label>
-      <button class="btn submit" type="button" >Đăng kí ngay thôi bạn ơi!</button>
+      <button class="btn submit" type="button" onclick="register()">Đăng kí ngay thôi bạn ơi!</button>
     </div>
   </div>
 </div>

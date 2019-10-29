@@ -30,27 +30,37 @@ ul {
 	height: 40%;
 }
 .anhsach{
-	width: 50%;
-	height: 70%;
+	margin-top: 50px;
+	width: 40%;
+	float:left;
+
 }
 .anhsach img{
-	margin-top: 50px;
-	width: 100%;
-	height: 60%;
-	float: left;
+	max-width: 450px;
+	max-height: 450px;
+	margin-left: 60px;
 	margin-bottom: 50px;
 }
-.tensach{
-	margin-top: 30px;
-	width: 50%;
+.detail{
 	float: right;
+	width: 60%;
+}
+.tensach{
+	margin-top: 45px;
 	font-family: helvetica;
 }
+.tensach p{
+	font-size: 30px;
+	display: block;
+	color: #0092f2;
+	word-wrap: break-word;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
 .motasanpham{
-	width: 100%;	
+	
 }
 .stars {
-  width: 50%;
   display: inline-block;
 }
 .fa.fa-star{
@@ -59,95 +69,79 @@ ul {
   font-size: 25px;
   color: #ffc120;
 }
-.luotdanhgia p{
-	margin-top: 8px;
-	width: 50%;	
+.luotdanhgia{
+	float: right;
+	margin-top:-5px;
+}
+.luotdanhgia p{	
 	font-family: helvetica;
 }
 .gia h1{
-	width: 50%;
 	display: inline-block;
 	font-size: 200%;
 	color: red;
 	margin-bottom: 0px;
-	margin-top: 0px;
-}
-.giagoc p{
-	margin-top: 0px;
-	margin-bottom: 20px;
-	font-size: 100%;
-}
-.giagoc{
-	display: inline-block;
-	width: 50%;
+	margin-top: 10px;
+	margin-left: 7px;
 }
 .chitietsanpham hr{
 	margin-right: 100px;
 }
-.soluong p{
-	font-size: 20px;
-	margin-bottom: 0px;
-	margin-top: 0px;
-	font-family: helvetica;
-}
 .soluong{
-	display: inline-block;
-	width: 50%;
-	margin-bottom: 25px;
+	max-width: 200px;
 }
-.nhapsoluong{
-	display: table;
-	display: inline-block;
-	width: 20%;
+.chonsoluong{
+	margin-top: 10px;
+	margin-bottom: 2px;
 }
-.soluongmua{
-	width: 20px;
+.soluong>input{
+  width: 50px;
+  height: 10%;
+  border: 5px solid white;
+  text-align: center;
 }
-.nhapsoluong button:hover{
-	background-color: #fcfcfc;
-}
-.nhapsoluong input{
-	text-align: center;
-}
-.cong{
-	width: 25px;
-}
-.tru{
-	width: 25px;
-}
-.nhapsoluong span{
-	position: relative;
+.soluong>button{
+  width: 40px;
+  margin-left: 2px;
+  background-color: #E1E8EE;
+  border: none;
+  border-radius: 6px;
 }
 .chonmua{
-	width: 50%;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
-.chon h3{
+.chon span{
+	font-size: 20px;
 	font-family: helvetica;
 }
 .chonmua button{
-	width: 50%;
-	height: 40px;
-	background-color: #fc0000;
-	color: white;
-	border-radius: 5px;
-	margin-right: 20px;
+  cursor: pointer;
+  color:white;
+  width: 153px;
+  padding: 2px;
+  border-radius: 5px;
+  border: 1px solid #0092f2;
+  background-color:#0092f2;
 }
 .chonmua h3{
 	margin-top: 10px; 
 }
-.chonmua{
-	display: inline-block;
-}
-.chonmua button:hover{
-	background-color: #f75959;
-}
 .yeuthich{
+	margin-top: 2px;
+	margin-left: 10px;
 	display: inline-block;
 	color: #938c8c;
-	font-size: 25px;
+	font-size: 20px;
 }
-.yeuthich i:hover{
-	color: #f20707;
+.yeuthich:hover{
+	color: red;
+	cursor: pointer;
+}
+.yeuthich p{
+	margin-bottom: 0px;
+	margin-top: 5px;
+	font-size: 15px;
 }
 .thongtin{
 	display: inline-block;
@@ -155,29 +149,38 @@ ul {
 }
 .thongtinsanpham p{
 	font-size: 25px;
+	margin-bottom: px;
+	margin-top: 0px;
 	font-family: helvetica;
 }
 .thongtinchitiet p{
-	font-size: 18px;
-	margin-bottom: 20px;
+	color: #333444;
+	font-size: 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	font-family: helvetica;
 }
 .thongtinchitiet{
 	margin-left: 40px;
 }
 .motasanpham hr {
+	margin-top: 0px;
 	width: 80%;
 }
 .mota{
-	padding-top: 2%;
-	font-family: helvetica;
-	margin-left: 1%;
+	background-color: #fbfafa;
+	padding-left: 1%;
+}
+.mota p{
+	font-weight: 400;
 }
 .motachitiet p{
+	color: #333444;
 	width: 80%;
 	margin-top: 5%;
 	margin-left: 10%;
 	margin-right: 10%;
+	font-size: 20px;
 }
 .motachitiet{
 	width: 1000px;
@@ -214,6 +217,7 @@ ul {
 	margin-right: 10%;
 }
 .danhgiachitiet p{
+	color: #333444;
 	width: 80%;
 	font-family: helvetica;
 }
@@ -222,6 +226,9 @@ ul {
 	margin-top: 0px;
 	margin-left: 10%;
 	margin-right: 10%;
+}
+.sao{
+	float: left;
 }
 
 

@@ -11,7 +11,7 @@
       <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
       <script type="text/javascript "src="js/shoppingcart.js"></script>
       <script type="text/javascript" src="js/main.js"></script>
-      <script type="text/javascript" src="js/login.js"></script>
+      <script type="text/javascript" src="js/login.jss"></script>
     <!--END OF JS-->
  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -85,8 +85,9 @@
 	<div class="anhsach">
 		<img src="img/12 Cách Yêu.jpg">
 	</div>
+	<div class="detail">
 	<div class="tensach">
-		<h1>12 Cách Yêu</h1>	
+		<p>12 Cách Yêu</p>	
 	</div>
 	<div class="stars">
 		<div class="sao">	
@@ -102,54 +103,44 @@
 	</div>
 	<hr>
 	<div class="gia">
-		<div class="giaban">
-			<h1>99.000đ</h1>
-		</div>
-		<div class="giagoc">
-			<p><del>100.000đ</del></p>
-		</div>
+			<h1>90.000đ</h1>
 	</div>
 	<div class="chonsoluong">
-		<div class="soluong">
-			<p>Số lượng : </p>
-			<div class="nhapsoluong">
-				<span class="trusp">
-					<button class ="tru" >-</button>
-				</span>
-				<input value="1" min="1" max="100" class="soluongmua">
-				<span class="congsp">
-					<button class ="cong" >+</button>
-				</span>
-			</div>
+          <div class="soluong">
+            <button onclick="updateQuan(this)">-</button>
+            <input type="tel" value="1" onchange="check(this)" max="30" >
+            <button onclick="updateQuan(this)" onchange="check(this)">+</button>
+          </div>
 			<div class="chonmua">
 				<button class="chon">
-                        <h3>CHỌN MUA</h3>
+                        <span>CHỌN MUA</span>
             	</button>
-            	<div class="yeuthich">
-					<i class="fa fa-heart"></i>
-				</div>
-			</div>	
-		</div>
+			</div>
+            <div class="yeuthich">
+				<p><i class="fa fa-heart"></i> Yêu thích</p>
+			</div>				
 		<hr>
 	</div>
-	<div class="thongtin">
-		<div class="thongtinsanpham">
-			<p>Thông Tin Sản Phẩm : </p>
-		</div>
-		<div class="thongtinchitiet">
-			<p>Tác giả : Hamlet Trương</p>
-			<p>Nhà xuất bản : 	Nhà Xuất Bản Tổng Hợp</p>
-			<p>Ngày xuất bản : 06-2016 </p>
-			<p>Dịch giả : Không </p>
-			<p>Số trang  : 292 </p>
+		<div class="thongtin">
+			<div class="thongtinsanpham">
+				<p>Thông Tin Chi Tiết : </p>
+			</div>
+			<div class="thongtinchitiet">
+					<p>Tác giả : Hamlet Trương</p>
+					<p>Nhà xuất bản : 	Nhà Xuất Bản Tổng Hợp</p>
+					<p>Ngày xuất bản : 06-2016 </p>
+					<p>Dịch giả : Không </p>
+					<p>Số trang  : 292 </p>
+			</div>
 		</div>
 	</div>
 </div>
+
 <div class="motasanpham">
 	<hr>
 	<div class="motasp">
 		<div class="mota">
-			<h3>Mô tả sản phẩm : </h3>
+			<h3>GIỚI THIỆU SÁCH:</h3>
 		</div>
 		<div class="motachitiet">
 			<p>

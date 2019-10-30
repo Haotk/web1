@@ -96,6 +96,7 @@
                <label class="warning" id="warning"></label>
     </label>
     <a href="#"><p class="forgot-pass">Quên mật khẩu?</p></a>
+    
     <button class="btn submit" type="button" onclick="login()">Đăng nhập</button>
     <button class="btn fb-btn" type="button" >Đăng nhập bằng <span>facebook</span></button>
     <button class="btn gg-btn" type="button" >Đăng nhập bằng <span>Google</span></button>
@@ -125,6 +126,11 @@
         <input class ="input" type="text" placeholder="Nhập Họ và Tên"/ id="regname">
          <label class="warning" id="warning"></label>
       </label>
+       <label class="label">
+        <span>Email</span>
+        <input class ="input" type="text" placeholder="Nhập Email"/ id="regmail" onchange="validate(this)">
+         <label class="warning" id="warning"></label>
+      </label>
       <label class="label">
         <span>TÀI KHOẢN</span>
         <input class ="input" placeholder="Nhập tài khoản"/ id="reguser" >
@@ -143,7 +149,7 @@
                  <label class="warning" id="warning"></label>
 
       </label>
-      <button class="btn submit" type="button" onclick="register()">Đăng kí ngay thôi bạn ơi!</button>
+      <button class="btn submit" id="register" type="button" onclick="register()">Đăng kí ngay thôi bạn ơi!</button>
     </div>
   </div>
 </div>

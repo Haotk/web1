@@ -181,6 +181,7 @@ ul {
 	margin-left: 10%;
 	margin-right: 10%;
 	font-size: 20px;
+	text-align: justify;
 }
 .motachitiet{
 	width: 1000px;
@@ -199,7 +200,6 @@ ul {
 
 }
 .danhgia{
-	padding-top: 2%;
 	font-family: helvetica;
 	margin-left: 1%;	
 }
@@ -213,22 +213,50 @@ ul {
 .danhgiachitiet{
 	width: 80%;
 	margin-top: 0px;
-	margin-left: 10%;
+	margin-left: 11%;
 	margin-right: 10%;
 }
-.danhgiachitiet p{
+.nhanxet p{
 	color: #333444;
-	width: 80%;
-	font-family: helvetica;
+	margin-left: 45px;
+	font-size: 1.17em;
 }
-.saodanhgia{
-	width: 80%;
-	margin-top: 0px;
-	margin-left: 10%;
-	margin-right: 10%;
+.nhanxet textarea{
+	width: 90%;
+	height: 100px;
+	margin-left: 45px;
+	border: 1px solid #0092f2;
 }
-.sao{
-	float: left;
+.caichudanhgia label{
+	font-size: 1.17em;
+	margin-left: 45px;
 }
-
-
+.nutdanhgia{
+	width: 17%;
+	float: right;
+}
+.nutdanhgia button{
+	color: white;
+	border-radius: 5px;
+	background-color: #0092f2;
+	cursor: pointer;
+	border: 1px solid rgba(0,0,0,0);
+	padding:10px 20px;
+	text-align: center;
+	text-decoration: none;
+}
+.danhgiachung{
+	min-height: 250px;
+}
+.hienthidanhgia p{
+	position: relative;
+	display: block;
+	padding-top: 6%; 
+	text-align: center;
+}
+.hienthidanhgia{
+	background-color: #33333333;
+	min-height: 120px;
+	margin-left: 5%;
+	margin-right: 5%;
+}

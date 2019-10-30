@@ -1,0 +1,184 @@
+
+.tieudegiohang{
+  margin:0 auto;
+  font-size: 25px;
+  color: #3333333;
+  font-family: helvetica;
+  margin-left:100px;
+  margin-top:20px;
+  font-weight: bold;
+}
+.dong{
+    font-family: helvetica;
+}
+.cot1{
+      width:950px;
+      min-height: 500px;
+      float:left;
+}
+.sanpham{
+  float:left;
+  margin-left:80px;
+  border-bottom:1px solid #eee;
+
+}
+
+.chitietsanpham{
+  padding: 40px;
+  overflow: auto;
+}
+.tensanpham{
+  float:right;
+  font-size: 14px;
+  float:left;
+  min-width: 400px;
+  min-height: 200px;
+}
+.fa-trash-o:hover{
+
+  cursor: pointer;
+}
+.soluong{
+  float:right;
+  margin-left: 30px;
+}
+.soluong>button{
+  width: 40px;
+  margin-left: 2px;
+  background-color: #E1E8EE;
+  border: none;
+  border-radius: 6px;
+
+}
+.xoa{
+  float:right;
+  margin-left: 5px;
+  margin-top: 170px;
+}
+
+.soluong>button:hover{
+
+  cursor: pointer;
+
+}
+.soluong>input{
+  width: 50px;
+  height: 10%;
+  border: 5px solid white;
+  text-align: center;
+}
+
+.hinhanh{
+    float:left;
+    max-width: 175px;
+    max-height: 175px;
+}
+.tensanpham p{
+    max-width: 400px;
+    max-height: 200px;
+}
+.sach{
+  font-size: 20px;
+  color:#0092f2;
+  line-height: 20px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+.tacgia{
+  position: relative;
+  font-size: 16px;
+  color:grey;
+}
+
+.cot2{
+  float:left;
+  display: inline-block;
+}
+
+.giatien{
+  position: relative;
+  color:red;
+  font-size: 25px;
+}
+
+.thanhtoan{
+  margin-left: 50px;
+  position: fixed;
+  height:50px;
+  width: 270px;
+  background-color: #0092f2;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; 
+}
+.thanhtoanafter{
+  position: relative;
+  height:50px;
+  width: 270px;
+  top:50px;
+  background-color: #0092f2;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; 
+}
+.chitietthanhtoan>.hoadon{
+  text-align: center;
+  color:white;
+  margin:10px 0px 0px;
+  padding: 10px;
+}
+.chitietthanhtoan{
+    width: 100%;
+    clear: both;
+}
+
+.okhuyenmai{
+  margin-left:15px;
+  margin-top:-20px;
+  margin-bottom: 10px;
+}
+#coupon{
+  height: 17px;
+  border: 0px solid white;
+  border-radius: 1px;
+ }
+.tongtien{
+      border-radius: 5px;
+      background-color: white;
+      padding: 15px 15px 15px 15px;
+}
+#ship{
+  position: relative;
+  color:red;
+  bottom: 10px;
+  padding: 0;
+  font-size: 14px;
+}
+.tongtien strong{
+    float: right;
+    color:black;
+    font-weight: 500px;
+}
+.btnKhuyenMai{
+  background-color: #0092f2;
+  color: white;
+  height: 23px;
+  border: 1px solid #0092f2;
+  border-radius: 2px;
+  margin-left:5px;
+
+}
+
+
+.btnThanhToan{
+  cursor: pointer;
+  color:white;
+  width: 270px;
+  margin-top: 10px;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid #0092f2;
+  background-color:#0092f2;
+  font-family: helvetica;
+  font-size: 16px;
+
+}

@@ -5,6 +5,7 @@
   <!--CSS HERE-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/detail.css">
+  <link rel="stylesheet" type="text/css" href="css/star.css">
     <!--END OF CSS-->
     <!--JS HERE-->
       <script src="https://code.jquery.com/jquery-latest.js"></script>
@@ -154,22 +155,44 @@
 </div>
 <div class="danhgiasanpham">
 	<div class="danhgiasp">
+    <div class="danhgiachung">
 		<div class="danhgia">
-			<h3>Đánh giá : </h3>
+			<h3>ĐÁNH GIÁ SẢN PHẨM</h3>
 		</div>
-		<div class="danhgiachitiet">
-			<div class="tennguoidanhgia">
-				<p>Soái Thỏ : Chưa thấy cuốn sách nào hay như cuốn này :))</p>
-			</div>
-			<div class="saodanhgia">
-				<i class="fa fa-star"></i>
-				<i class="fa fa-star"></i>
-				<i class="fa fa-star"></i>
-				<i class="fa fa-star"></i>
-				<i class="fa fa-star"></i>
-			</div>
-		</div>
-	</div>			
+    <div class="nhanxet">
+        <p>Nhận xét của bạn</p>
+        <textarea></textarea>
+    </div>
+        <div class="caichudanhgia">
+          <label>Đánh giá</label>
+        </div>
+		    <div class="danhgiachitiet">
+          <div id="rating" class="rating">
+            <input type="radio" id="star5" name="rating" value="5" />
+            <label class = "full" for="star5" title="Awesome - 5 stars"></label>
+ 
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+ 
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label class = "full" for="star3" title="Meh - 3 stars"></label>
+ 
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+ 
+            <input type="radio" id="star1" name="rating" value="1" />
+            <label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+          </div>
+		    </div>
+        <div class="nutdanhgia">
+          <button>Gửi nhận xét</button>
+        </div>
+    </div>
+  <div class="hienthidanhgia">
+      <p>CHƯA CÓ ĐÁNH GIÁ</p>
+  </div>
+	</div>	
+		
 </div>
 
 <div class="footer" id="footer">

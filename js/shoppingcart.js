@@ -31,13 +31,18 @@ $(function() {
 });
 function countCheckOut(){
 	var soluong =  $(".sanpham").length;
-	console.log(soluong);
 	$("#soluongsanpham").fadeOut(150);
 	document.getElementById("soluongsanpham").innerHTML = parseInt(soluong);
 	$("#soluongsanpham").fadeIn(150);
 }
+function addItem(){
+	var laysoluong = document.getElementById('soluongsanpham');
+	var tangsoluong = parseInt(laysoluong.innerText);
+	$("#soluongsanpham").fadeOut(150);
+	document.getElementById("soluongsanpham").innerHTML = ++tangsoluong;
+	$("#soluongsanpham").fadeIn(150);
+}
 function remove(x){
-
 	$(x).parent().parent().parent().parent().remove();
 	cal();
 	sticky_relocate();

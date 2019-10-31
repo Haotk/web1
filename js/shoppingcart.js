@@ -14,6 +14,7 @@ function updateQuan(x){
 		 	$(quantity).val(parseInt($(quantity).val())-1)
 			cal();
 		}
+		if($(quantity).val()==0) remove
 	}
 function sticky_relocate() {
   var window_top = $(window).scrollTop();

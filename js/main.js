@@ -1,40 +1,48 @@
-function isLogin(){
-  var accounts = JSON.parse(localStorage.getItem("user"));
-  for(let user of accounts){
-    if(user.status==1) return user;
-  }
-  return 0;
-}
+
+/**GET/SET DATA FROM LOCAL STORAGE**/
+const getDataFromLocal = (data,key) =>{ 
+
+  data = JSON.parse(localStorage.getItem(key));
+  return data==null ? 0 : data; };
+
+
+const setDataToLocal = (data,key) => localStorage.setItem(key,JSON.stringify(data));
+
+
+/**END OF GET/SET DATA FROM LOCAL STORAGE**/
+
+
 
 function isLogged(){
 	var login = document.getElementById("login");
-  var user = isLogin();
-    if(user==0)  {	
+  var accounts = getDataFromLocal(accounts,'user');
+  var user = accounts.find(users => users.status==1);
+    if(typeof user==`undefined`)  {	
 			login.innerHTML = 'TÀI KHOẢN';
 			login.setAttribute('href','LoginForm.html');
+      return 0;
 		}
 		else {
 			login.innerHTML=user.name;
-			login.setAttribute("onclick","logout()");//DEMO THOAT
-			//login.setAttribute("onmouseover","userDropdown()"); drorp down nhu tiki (neu dung dropdown);
-			register.innerHTML ='';
+			login.setAttribute("onclick","logout()");
 		}
+    return 1;
 	}
-/**check is logged or not*/
+
 window.addEventListener("load",isLogged);
-/**end of check**/
+
 
 function validate(ob){
     var id= ob.id;
      if (id=="regpwd"){
       if(ob.value.length < 6){
-
        $(ob).parent().children("#warning").text("Độ dài mật khẩu phải lớn hơn 6");   
         $("#register").prop("disabled",true);   
      }
-     else { $("#register").prop("disabled",false);
+     else { 
+            $("#register").prop("disabled",false);
             $(ob).parent().children("#warning").text("");   
-}
+          }
 }
     if(id=="repwd"){
       if(ob.value != $("#regpwd").val()){
@@ -53,14 +61,15 @@ function validate(ob){
           $(ob).parent().children("#warning").text("Email không hợp lệ");
           $("#register").prop("disabled",true);   
         }
-
         else{    $("#register").prop("disabled",false);
           $(ob).parent().children("#warning").text("");
      
       }
     }
-
 }
+
+
+
 function isValidate(name,user,email,pwd){
     var count=0;
     if(name==""){
@@ -108,9 +117,7 @@ function register(){
       pwd:pwd,
       status:0,
     }
-
-    var accounts =[];
-  
+    var arr = getDataFromLocal(arr,"user");
       if(JSON.parse(localStorage.getItem("user"))==null){
         accounts[0] = newaccount;
         localStorage.setItem("user",JSON.stringify(accounts));
@@ -118,12 +125,11 @@ function register(){
           window.location ="LoginForm.html";
       }
       else{
-        var accounts =   JSON.parse(localStorage.getItem("user"));
+        var accounts =   getDataFromLocal(accounts,"user");
           for(let users of accounts){
             if(users.username!=newaccount.username && users.email !=newaccount.email){
                   accounts.push(newaccount);
-                  console.log(accounts);
-                  localStorage.setItem("user",JSON.stringify(accounts));
+                  setDataToLocal(accounts,"user");
                   alert("ĐĂNG KÝ THÀNH CÔNG");
                   window.location ="LoginForm.html";
                   break;
@@ -136,68 +142,53 @@ function register(){
             if(users.email==newaccount.email){
                   $("#regmail").parent().children("#warning").text("Email đã được đăng ký"); 
             }
-                else  $("#regmail").parent().children("#warning").text(""); 
-              
-
-              
+                else  $("#regmail").parent().children("#warning").text("");               
           }
-
-      }
-    
+      }  
 }
 
 }
 
 
-function change(num){
-  var item = document.getElementsByClassName("items");
-		for (let i=0;i<item.length;i++){
 
-			 item[i].className = item[i].className.replace(" active", "");
-		}
-    item[num].className += " active";
-}
 
-function isExist(user,pwd){
-   var accounts =   JSON.parse(localStorage.getItem("user"));
+function isExist(accounts,user,pwd){
    for(let users of accounts){
-          if(users.username == user && users.pwd==pwd){
+          if(users.username == user && users.pwd == pwd){
             users.status=1;
-            localStorage.setItem("user",JSON.stringify(accounts));
+            setDataToLocal(accounts,"user");
             return 1;
       }
      }
      return 0;
 }
+
 function login(){
 
 	var user = document.getElementById("user").value;
   var pwd = document.getElementById("pwd").value;
-  var accounts =[];
-
-  if(localStorage.getItem(`user`)==null){
-    alert("Tài khoản không tồn tại");
-  }
-  else if(isExist(user,pwd)) {
+  var accounts =getDataFromLocal(accounts,"user");
+    if(!accounts){
+        alert("Dữ liệu không tồn tại!");
+    }
+  else if(isExist(accounts,user,pwd)) {
         alert("Đăng nhập thành công");
         window.location = "Index.html";
   } 
     else alert("Sai thông tin đăng nhập");
-
 }
      
-
 
 function logout(){
   var isLogout = confirm("Bạn có muốn thoát?");
   if(isLogout) {
-    var accounts =   JSON.parse(localStorage.getItem("user"));
-    for(let key of accounts){
+    var accounts = getDataFromLocal(accounts,"user");
+    for(let key of accounts)
       if(key.status==1) key.status=0; 
-    }
-    localStorage.setItem(`user`,JSON.stringify(accounts));
-	window.location ="index.html";
-}
+    
+      setDataToLocal(accounts,"user");
+      window.location ="index.html";
+  }
 }
 
 
@@ -308,3 +299,11 @@ function search(){
 //ENDOFAUTOCOMPLETE
 
 
+function change(num){
+  var item = document.getElementsByClassName("items");
+    for (let i=0;i<item.length;i++){
+
+       item[i].className = item[i].className.replace(" active", "");
+    }
+    item[num].className += " active";
+}

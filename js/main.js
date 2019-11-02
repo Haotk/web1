@@ -311,7 +311,6 @@ function change(num){
 function slicks(){
 $('.trendingproducts').slick({
     slidesToShow: 5,
-    auto:
     slidesToScroll: 5,
     dots: true,
     infinite: true,

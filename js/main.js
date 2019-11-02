@@ -12,6 +12,7 @@ const setDataToLocal = (data,key) => localStorage.setItem(key,JSON.stringify(dat
 /**END OF GET/SET DATA FROM LOCAL STORAGE**/
 
 
+ 
 
 function isLogged(){
 	var login = document.getElementById("login");
@@ -307,3 +308,14 @@ function change(num){
     }
     item[num].className += " active";
 }
+function slicks(){
+$('.trendingproducts').slick({
+    slidesToShow: 5,
+    auto:
+    slidesToScroll: 5,
+    dots: true,
+    infinite: true,
+    cssEase: 'linear'
+});
+}
+window.addEventListener("load",slicks);

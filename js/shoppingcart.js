@@ -14,7 +14,7 @@ function updateQuan(x){
 		 	$(quantity).val(parseInt($(quantity).val())-1)
 			cal();
 		}
-		if($(quantity).val()==0) remove
+		if($(quantity).val()==0) $()
 	}
 function sticky_relocate() {
   var window_top = $(window).scrollTop();
@@ -32,18 +32,13 @@ $(function() {
 });
 function countCheckOut(){
 	var soluong =  $(".sanpham").length;
+	console.log(soluong);
 	$("#soluongsanpham").fadeOut(150);
 	document.getElementById("soluongsanpham").innerHTML = parseInt(soluong);
 	$("#soluongsanpham").fadeIn(150);
 }
-function addItem(){
-	var laysoluong = document.getElementById('soluongsanpham');
-	var tangsoluong = parseInt(laysoluong.innerText);
-	$("#soluongsanpham").fadeOut(150);
-	document.getElementById("soluongsanpham").innerHTML = ++tangsoluong;
-	$("#soluongsanpham").fadeIn(150);
-}
 function remove(x){
+
 	$(x).parent().parent().parent().parent().remove();
 	cal();
 	sticky_relocate();

@@ -3,19 +3,20 @@
 <head>
   <title>Sagobo</title>
   <!--CSS HERE-->
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/indexbody.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>  
+  <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <!--END OF CSS-->
     <!--JS HERE-->
-      <script src="https://code.jquery.com/jquery-latest.js"></script>
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    
       <script type="text/javascript "src="js/shoppingcart.js"></script>
+      <script type="text/javascript"src="js/detail.js"></script>
       <script type="text/javascript" src="js/main.js"></script>
       <script type="text/javascript" src="js/login.js"></script>
       <script type="text/javascript" src="js/index_banner.js"></script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
+      <script type="text/javascript" src="js/slick.min.js"></script>
     <!--END OF JS-->
  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,7 +40,7 @@
 
     <div class="account-container">
       <i class="fa fa-user"></i>
-      <a href="#" class="dangnhap" id="login"></a>
+      <a href="LoginForm.html" class="dangnhap" id="login"></a>
     </div>
     <div class="shoppingcart-box">
     <a href="ShoppingCart.html">
@@ -62,10 +63,10 @@
         Danh mục sản phẩm
       </span>
       <div class="dropdown-content">
-          <a href="VĂN HỌC.html">VĂN HỌC</a>
-          <a href="THIẾU NHI.html">THIẾU NHI</a>
-          <a href="TIỂU THUYẾT.html">TIỂU THUYẾT</a>
-          <a href="KỸ NĂNG.html">KỸ NĂNG</a>
+          <a href="Pagination.html?Văn Học">VĂN HỌC</a>
+          <a href="Pagination.html?Thiếu Nhi">THIẾU NHI</a>
+          <a href="Pagination.html?Tiểu Thuyết">TIỂU THUYẾT</a>
+          <a href="Pagination.html?Kỹ Năng">KỸ NĂNG</a>
       </div>
 
     </div>
@@ -90,25 +91,25 @@
 
 <div class="mySlides fade">
 
-  <img src="banner/bn1.jpg" style="width:100%; background-color:red;">
+  <img src="banner/bn1.jpg" >
 
 </div>
 
 <div class="mySlides fade">
-  <img src="banner/bn2.jpg" style="width:100%; background-color:blue;">
+  <img src="banner/bn2.jpg" >
  
 </div>
 
 <div class="mySlides fade">
 
-  <img src="banner/bn3.jpg" style="width:100%; background-color:orange;">
+  <img src="banner/bn3.jpg" >
 
 </div>
 
 
 <div class="mySlides fade">
  
-  <img src="banner/bn4.jpg" style="width:100%; background-color:pink;">
+  <img src="banner/bn4.jpg" >
 
 </div>
 	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -117,7 +118,7 @@
 </div>
 <br>
 
-<div style="text-align:center">
+<div class="dots">
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
@@ -129,65 +130,794 @@
 
 	<div class="trending">
 		<div class="button3">
-			<a onclick="change(0)" id="noibat" class="items active">
+			<a onclick="change(0,this)" id="noibat" class="items active">
 				
 				 Nổi bật 	
 				
 			</a>
 		&nbsp  &nbsp &nbsp &nbsp  &nbsp  &nbsp &nbsp &nbsp  
-			<a onclick="change(1)" id="moiphathanh" class="items">
+			<a onclick="change(1,this)" id="moiphathanh" class="items">
 				Mới phát hành 
 				  
 				
 			</a>
 		&nbsp  &nbsp &nbsp &nbsp  &nbsp  &nbsp &nbsp &nbsp  
-			<a onclick="change(2)" id="banchay" class="items">
+			<a onclick="change(2,this)" id="banchay" class="items">
 				
 				Bán chạy 
 			</a>
 		</div>
 
+
+
     <div class="trendingproducts">
-  
-      <div class="trendingproduct">
-        <img src="img/Buổi Sáng Diệu Kỳ Dành Cho Doanh Nhân.jpg">
-        
-      </div>
-      <div class="trendingproduct">
-        <img src="img/Da Thịt Trong Cuộc Chơi - Skin In The Game.jpg">
-      </div>      
-      <div class="trendingproduct">
-        <img src="img/12 Cách Yêu.jpg">
-        
-      </div> 
-      <div class="trendingproduct">
-        <img src="img/51 Chìa Khóa Vàng Để Trở Thành Người Ai Cũng Muốn Làm Việc Cùng.jpg">
-        
-      </div> 
-      <div class="trendingproduct">
-        <img src="img/Càng Mạnh Mẽ, Càng Dịu Dàng.jpg">
-        
-      </div>
-      <div class="trendingproduct">
-        <img src="img/Cặp Đôi Thông Minh Sống Trong Giàu Có.jpg">
-        
-      </div> 
-      <div class="trendingproduct">
-        <img src="img/Con Đường Lập Thân.jpg">
-        
-      </div> 
-      <div class="trendingproduct">
-        <img src="img/Buổi Sáng Diệu Kỳ Dành Cho Doanh Nhân.jpg">
-        
-      </div> 
+      <div class="khung Trending">
 
+        <a href="Detail.html?All In Love- Ngập Tràn Yêu Thương"><img src="img/All In Love- Ngập Tràn Yêu Thương.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?All In Love- Ngập Tràn Yêu Thương">All In Love- Ngập Tràn Yêu Thương</a>
+        </div>
+        <div class="tacgia">
+          Cố Tây Tước
+        </div>
+        <div class="gia">
+            118.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('All In Love- Ngập Tràn Yêu Thương')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung Trending">
+
+        <a href="Detail.html?Cảm Ơn Người Lớn"><img src="img/Cảm Ơn Người Lớn.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Cảm Ơn Người Lớn">Cảm Ơn Người Lớn</a>
+        </div>
+        <div class="tacgia">
+          Nguyễn Nhật Ánh
+        </div>
+        <div class="gia">
+            110.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Cảm Ơn Người Lớn')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung Trending">
+
+        <a href="Detail.html?51 Chìa Khóa Vàng Để Trở Thành Người Ai Cũng Muốn Làm Việc Cùng"><img src="img/51 Chìa Khóa Vàng Để Trở Thành Người Ai Cũng Muốn Làm Việc Cùng.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?51 Chìa Khóa Vàng Để Trở Thành Người Ai Cũng Muốn Làm Việc Cùng">51 Chìa Khóa Vàng Để Trở Thành Người Ai Cũng Muốn Làm Việc Cùng</a>
+        </div>
+        <div class="tacgia">
+          Matsuo Iwata
+        </div>
+        <div class="gia">
+            125.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('51 Chìa Khóa Vàng Để Trở Thành Người Ai Cũng Muốn Làm Việc Cùng')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung Trending">
+
+        <a href="Detail.html?Tương Lai Bạn Nhất Định Sẽ Cảm Ơn Nỗ Lực Hiện Tại"><img src="img/Tương Lai Bạn Nhất Định Sẽ Cảm Ơn Nỗ Lực Hiện Tại.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Tương Lai Bạn Nhất Định Sẽ Cảm Ơn Nỗ Lực Hiện Tại">Tương Lai Bạn Nhất Định Sẽ Cảm Ơn Nỗ Lực Hiện Tại</a>
+        </div>
+        <div class="tacgia">
+          Diệu Thúy, Thủy Tiên
+        </div>
+        <div class="gia">
+            99.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Tương Lai Bạn Nhất Định Sẽ Cảm Ơn Nỗ Lực Hiện Tại')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung Trending">
+
+        <a href="Detail.html?101 Truyện Cổ Tích Chọn Lọc"><img src="img/101 Truyện Cổ Tích Chọn Lọc.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?101 Truyện Cổ Tích Chọn Lọc">101 Truyện Cổ Tích Chọn Lọc</a>
+        </div>
+        <div class="tacgia">
+          Vương Diễm Nga
+        </div>
+        <div class="gia">
+            125.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('101 Truyện Cổ Tích Chọn Lọc')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung Trending">
+
+        <a href="Detail.html?Con Gà Đẻ Trứng Vàng"><img src="img/Con Gà Đẻ Trứng Vàng.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Con Gà Đẻ Trứng Vàng">Con Gà Đẻ Trứng Vàng</a>
+        </div>
+        <div class="tacgia">
+          Thiền sư Thích Nhất Hạnh
+        </div>
+        <div class="gia">
+            159.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Con Gà Đẻ Trứng Vàng')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung Trending">
+
+        <a href="Detail.html?Có Hai Con Mèo Ngồi Bên Cửa Sổ"><img src="img/Có Hai Con Mèo Ngồi Bên Cửa Sổ.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Có Hai Con Mèo Ngồi Bên Cửa Sổ">Có Hai Con Mèo Ngồi Bên Cửa Sổ</a>
+        </div>
+        <div class="tacgia">
+          Nguyễn Nhật Ánh
+        </div>
+        <div class="gia">
+            85.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Có Hai Con Mèo Ngồi Bên Cửa Sổ')">Thêm vào giỏ</button>
+         </div>
+        </div>  
     </div>
-	</div>
+	
 
+
+    <div class="bestseller" ><div class="khung">
+
+        <a href="Detail.html?Phải Lòng Với Cô Đơn"><img src="img/Phải Lòng Với Cô Đơn.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Phải Lòng Với Cô Đơn">Phải Lòng Với Cô Đơn</a>
+        </div>
+        <div class="tacgia">
+          Kulzsc
+        </div>
+        <div class="gia">
+            86.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Phải Lòng Với Cô Đơn')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Đừng Lựa Chọn An Nhàn Khi Còn Trẻ"><img src="img/Đừng Lựa Chọn An Nhàn Khi Còn Trẻ.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Đừng Lựa Chọn An Nhàn Khi Còn Trẻ">Đừng Lựa Chọn An Nhàn Khi Còn Trẻ</a>
+        </div>
+        <div class="tacgia">
+          Cảnh Thiên
+        </div>
+        <div class="gia">
+            80.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Đừng Lựa Chọn An Nhàn Khi Còn Trẻ')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Thói Quen Tốt Rèn Luyện Trí Não Siêu Việt"><img src="img/Thói Quen Tốt Rèn Luyện Trí Não Siêu Việt.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Thói Quen Tốt Rèn Luyện Trí Não Siêu Việt">Thói Quen Tốt Rèn Luyện Trí Não Siêu Việt</a>
+        </div>
+        <div class="tacgia">
+          Kubota Kisou
+        </div>
+        <div class="gia">
+            85.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Thói Quen Tốt Rèn Luyện Trí Não Siêu Việt')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Tương Lai Bạn Nhất Định Sẽ Cảm Ơn Nỗ Lực Hiện Tại"><img src="img/Tương Lai Bạn Nhất Định Sẽ Cảm Ơn Nỗ Lực Hiện Tại.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Tương Lai Bạn Nhất Định Sẽ Cảm Ơn Nỗ Lực Hiện Tại">Tương Lai Bạn Nhất Định Sẽ Cảm Ơn Nỗ Lực Hiện Tại</a>
+        </div>
+        <div class="tacgia">
+          Diệu Thúy, Thủy Tiên
+        </div>
+        <div class="gia">
+            99.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Tương Lai Bạn Nhất Định Sẽ Cảm Ơn Nỗ Lực Hiện Tại')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Truyện Tranh Tư Duy Cho Bé"><img src="img/Truyện Tranh Tư Duy Cho Bé.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Truyện Tranh Tư Duy Cho Bé">Truyện Tranh Tư Duy Cho Bé</a>
+        </div>
+        <div class="tacgia">
+          Hải Minh
+        </div>
+        <div class="gia">
+            85.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Truyện Tranh Tư Duy Cho Bé')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Điều Kỳ Diệu Của Tiệm Tạp Hóa"><img src="img/Điều Kỳ Diệu Của Tiệm Tạp Hóa.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Điều Kỳ Diệu Của Tiệm Tạp Hóa">Điều Kỳ Diệu Của Tiệm Tạp Hóa</a>
+        </div>
+        <div class="tacgia">
+          Higachino Keigo
+        </div>
+        <div class="gia">
+            105.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Điều Kỳ Diệu Của Tiệm Tạp Hóa')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Sự Im Lặng Của Bầy Cừu"><img src="img/Sự Im Lặng Của Bầy Cừu.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Sự Im Lặng Của Bầy Cừu">Sự Im Lặng Của Bầy Cừu</a>
+        </div>
+        <div class="tacgia">
+          Thomas Harris
+        </div>
+        <div class="gia">
+            115.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Sự Im Lặng Của Bầy Cừu')">Thêm vào giỏ</button>
+         </div>
+        </div>
+  </div>
+      <div class="newest">
+        <div class="khung">
+
+        <a href="Detail.html?Làm Bạn Với Bầu Trời"><img src="img/Làm Bạn Với Bầu Trời.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Làm Bạn Với Bầu Trời">Làm Bạn Với Bầu Trời</a>
+        </div>
+        <div class="tacgia">
+          Nguyễn Nhật Ánh
+        </div>
+        <div class="gia">
+            65.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Làm Bạn Với Bầu Trời')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Ngồi Khóc Trên Cây(Truyện Dài)"><img src="img/Ngồi Khóc Trên Cây(Truyện Dài).jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Ngồi Khóc Trên Cây(Truyện Dài)">Ngồi Khóc Trên Cây(Truyện Dài)</a>
+        </div>
+        <div class="tacgia">
+          Nguyễn Nhật Ánh
+        </div>
+        <div class="gia">
+            115.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Ngồi Khóc Trên Cây(Truyện Dài)')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Nhà Giả Kim"><img src="img/Nhà Giả Kim.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Nhà Giả Kim">Nhà Giả Kim</a>
+        </div>
+        <div class="tacgia">
+          Paulo Coelho
+        </div>
+        <div class="gia">
+            69.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Nhà Giả Kim')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Truyện Tranh Tư Duy Cho Bé"><img src="img/Truyện Tranh Tư Duy Cho Bé.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Truyện Tranh Tư Duy Cho Bé">Truyện Tranh Tư Duy Cho Bé</a>
+        </div>
+        <div class="tacgia">
+          Hải Minh
+        </div>
+        <div class="gia">
+            85.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Truyện Tranh Tư Duy Cho Bé')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Đông Cung"><img src="img/Đông Cung.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Đông Cung">Đông Cung</a>
+        </div>
+        <div class="tacgia">
+          Phỉ Ngã Tư Tồn
+        </div>
+        <div class="gia">
+            126.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Đông Cung')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Your Name"><img src="img/Your Name.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Your Name">Your Name</a>
+        </div>
+        <div class="tacgia">
+          Shinkai Makoto
+        </div>
+        <div class="gia">
+            75.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Your Name')">Thêm vào giỏ</button>
+         </div>
+        </div>
+    </div>
+  
+
+</div>
 	<script>autocomplete(document.getElementById("suggest"), countries);
 </script>
+<div class="container">
+  <div class="tieude">
+	 <a href="Pagination.html?Văn Học" class="tensach">Văn Học</a>
+   <hr>
+  </div>
+		<div class="vanhoc">
+				<div class="khung">
 
+        <a href="Detail.html?Chinh Phục Hạnh Phúc"><img src="img/Chinh Phục Hạnh Phúc.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Chinh Phục Hạnh Phúc">Chinh Phục Hạnh Phúc</a>
+        </div>
+        <div class="tacgia">
+          Bertrand Russell
+        </div>
+        <div class="gia">
+            109.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Chinh Phục Hạnh Phúc')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
 
+        <a href="Detail.html?Ở Lại Thành Phố Hay Về Quê"><img src="img/Ở Lại Thành Phố Hay Về Quê.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Ở Lại Thành Phố Hay Về Quê">Ở Lại Thành Phố Hay Về Quê</a>
+        </div>
+        <div class="tacgia">
+          Mèo Maverick
+        </div>
+        <div class="gia">
+            85.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Ở Lại Thành Phố Hay Về Quê')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Đừng Lựa Chọn An Nhàn Khi Còn Trẻ"><img src="img/Đừng Lựa Chọn An Nhàn Khi Còn Trẻ.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Đừng Lựa Chọn An Nhàn Khi Còn Trẻ">Đừng Lựa Chọn An Nhàn Khi Còn Trẻ</a>
+        </div>
+        <div class="tacgia">
+          Cảnh Thiên
+        </div>
+        <div class="gia">
+            80.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Đừng Lựa Chọn An Nhàn Khi Còn Trẻ')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Càng Mạnh Mẽ, Càng Dịu Dàng"><img src="img/Càng Mạnh Mẽ, Càng Dịu Dàng.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Càng Mạnh Mẽ, Càng Dịu Dàng">Càng Mạnh Mẽ, Càng Dịu Dàng</a>
+        </div>
+        <div class="tacgia">
+          Lý Ái Linh
+        </div>
+        <div class="gia">
+            99.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Càng Mạnh Mẽ, Càng Dịu Dàng')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Tuổi Trẻ Đáng Giá Bao Nhiêu"><img src="img/Tuổi Trẻ Đáng Giá Bao Nhiêu.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Tuổi Trẻ Đáng Giá Bao Nhiêu">Tuổi Trẻ Đáng Giá Bao Nhiêu</a>
+        </div>
+        <div class="tacgia">
+          Rosie Nguyễn
+        </div>
+        <div class="gia">
+            70.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Tuổi Trẻ Đáng Giá Bao Nhiêu')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Chinh Phục Hạnh Phúc"><img src="img/Chinh Phục Hạnh Phúc.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Chinh Phục Hạnh Phúc">Chinh Phục Hạnh Phúc</a>
+        </div>
+        <div class="tacgia">
+          Bertrand Russell
+        </div>
+        <div class="gia">
+            109.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Chinh Phục Hạnh Phúc')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Trả Cho Anh Tự Do, Trả Cho Em Bình Yên"><img src="img/Trả Cho Anh Tự Do, Trả Cho Em Bình Yên.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Trả Cho Anh Tự Do, Trả Cho Em Bình Yên">Trả Cho Anh Tự Do, Trả Cho Em Bình Yên</a>
+        </div>
+        <div class="tacgia">
+          Trí
+        </div>
+        <div class="gia">
+            90.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Trả Cho Anh Tự Do, Trả Cho Em Bình Yên')">Thêm vào giỏ</button>
+         </div>
+        </div>
+		</div>
+  <div class="tieude">
+   <a href="Pagination.html?Kỹ Năng" class="tensach">Kỹ Năng</a>
+   <hr>
+  </div>
+		<div class="kynang">
+     <div class="khung">
+
+        <a href="Detail.html?Thoát Khỏi Bẫy Cảm Xúc"><img src="img/Thoát Khỏi Bẫy Cảm Xúc.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Thoát Khỏi Bẫy Cảm Xúc">Thoát Khỏi Bẫy Cảm Xúc</a>
+        </div>
+        <div class="tacgia">
+          Daniel Rutley
+        </div>
+        <div class="gia">
+            129.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Thoát Khỏi Bẫy Cảm Xúc')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Tony Buổi Sáng - Trên Đường Băng"><img src="img/Tony Buổi Sáng - Trên Đường Băng.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Tony Buổi Sáng - Trên Đường Băng">Tony Buổi Sáng - Trên Đường Băng</a>
+        </div>
+        <div class="tacgia">
+          Nassim Nicholas Taleb
+        </div>
+        <div class="gia">
+            120.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Giới Hạn Của Bạn Chỉ Là Xuất Phát Điểm Của Tôi')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Có Hai Con Mèo Ngồi Bên Cửa Sổ"><img src="img/Có Hai Con Mèo Ngồi Bên Cửa Sổ.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Có Hai Con Mèo Ngồi Bên Cửa Sổ">Có Hai Con Mèo Ngồi Bên Cửa Sổ</a>
+        </div>
+        <div class="tacgia">
+          Nguyễn Nhật Ánh
+        </div>
+        <div class="gia">
+            85.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Có Hai Con Mèo Ngồi Bên Cửa Sổ')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Lời Chia Tay Đẹp Nhất Thế Gian"><img src="img/Lời Chia Tay Đẹp Nhất Thế Gian.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Lời Chia Tay Đẹp Nhất Thế Gian">Lời Chia Tay Đẹp Nhất Thế Gian</a>
+        </div>
+        <div class="tacgia">
+          Nguyễn Nhật Ánh
+        </div>
+        <div class="gia">
+            89.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Lời Chia Tay Đẹp Nhất Thế Gian')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Đắc Nhân Tâm (Khổ Lớn)"><img src="img/Đắc Nhân Tâm (Khổ Lớn).jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Đắc Nhân Tâm (Khổ Lớn)">Đắc Nhân Tâm (Khổ Lớn)</a>
+        </div>
+        <div class="tacgia">
+          Dale Carnegie
+        </div>
+        <div class="gia">
+            76.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Đắc Nhân Tâm (Khổ Lớn)')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Giới Hạn Của Bạn Chỉ Là Xuất Phát Điểm Của Tôi"><img src="img/Giới Hạn Của Bạn Chỉ Là Xuất Phát Điểm Của Tôi.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Giới Hạn Của Bạn Chỉ Là Xuất Phát Điểm Của Tôi">Giới Hạn Của Bạn Chỉ Là Xuất Phát Điểm Của Tôi</a>
+        </div>
+        <div class="tacgia">
+          Mèo Maverick
+        </div>
+        <div class="gia">
+            82.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Giới Hạn Của Bạn Chỉ Là Xuất Phát Điểm Của Tôi')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Nghệ Thuật Tinh Tế Của Việc Đếch Quan Tâm"><img src="img/Nghệ Thuật Tinh Tế Của Việc Đếch Quan Tâm.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Nghệ Thuật Tinh Tế Của Việc Đếch Quan Tâm">Nghệ Thuật Tinh Tế Của Việc Đếch Quan Tâm</a>
+        </div>
+        <div class="tacgia">
+          Mark Manson
+        </div>
+        <div class="gia">
+            95.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Nghệ Thuật Tinh Tế Của Việc Đếch Quan Tâm')">Thêm vào giỏ</button>
+         </div>
+        </div>
+    </div>
+		
+  <div class="tieude">
+   <a href="Pagination.html?Tiểu Thuyết" class="tensach">Tiểu Thuyết</a>
+   <hr>
+  </div>
+		<div class="tieuthuyet">
+		  <div class="khung">
+
+        <a href="Detail.html?Charlotte Và Wilbur (Tái Bản 2018)"><img src="img/Charlotte Và Wilbur (Tái Bản 2018).jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Charlotte Và Wilbur (Tái Bản 2018)">Charlotte Và Wilbur (Tái Bản 2018)</a>
+        </div>
+        <div class="tacgia">
+          E.B.White
+        </div>
+        <div class="gia">
+            56.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Charlotte Và Wilbur (Tái Bản 2018)')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Mắt Biếc"><img src="img/Mắt Biếc.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Mắt Biếc">Mắt Biếc</a>
+        </div>
+        <div class="tacgia">
+          Nguyễn Nhật Ánh
+        </div>
+        <div class="gia">
+            111.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Mắt Biếc')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Nhà Giả Kim"><img src="img/Nhà Giả Kim.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Nhà Giả Kim">Nhà Giả Kim</a>
+        </div>
+        <div class="tacgia">
+          Paulo Coelho
+        </div>
+        <div class="gia">
+            69.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Nhà Giả Kim')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Càng Mạnh Mẽ, Càng Dịu Dàng"><img src="img/Càng Mạnh Mẽ, Càng Dịu Dàng.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Càng Mạnh Mẽ, Càng Dịu Dàng">Càng Mạnh Mẽ, Càng Dịu Dàng</a>
+        </div>
+        <div class="tacgia">
+          Lý Ái Linh
+        </div>
+        <div class="gia">
+            99.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Càng Mạnh Mẽ, Càng Dịu Dàng')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Tớ Thích Cậu Hơn Cả Harvard"><img src="img/Tớ Thích Cậu Hơn Cả Harvard.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Tớ Thích Cậu Hơn Cả Harvard">Tớ Thích Cậu Hơn Cả Harvard</a>
+        </div>
+        <div class="tacgia">
+          Lan Rùa
+        </div>
+        <div class="gia">
+            98.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Tớ Thích Cậu Hơn Cả Harvard')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Hay Là Hạnh Phúc Trừ Mình Ra"><img src="img/Hay Là Hạnh Phúc Trừ Mình Ra.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Hay Là Hạnh Phúc Trừ Mình Ra">Hay Là Hạnh Phúc Trừ Mình Ra</a>
+        </div>
+        <div class="tacgia">
+          Huỳnh Thắng
+        </div>
+        <div class="gia">
+            95.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Hay Là Hạnh Phúc Trừ Mình Ra')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Phải Lòng Với Cô Đơn"><img src="img/Phải Lòng Với Cô Đơn.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Phải Lòng Với Cô Đơn">Phải Lòng Với Cô Đơn</a>
+        </div>
+        <div class="tacgia">
+          Kulzsc
+        </div>
+        <div class="gia">
+            86.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Phải Lòng Với Cô Đơn')">Thêm vào giỏ</button>
+         </div>
+        </div>
+		</div>	
+      <div class="tieude">
+   <a href="Pagination.htm?Thiếu Nhi" class="tensach">Thiếu Nhi</a>
+   <hr>
+  </div>
+    <div class="thieunhi">
+        <div class="khung">
+
+        <a href="Detail.html?Charlotte Và Wilbur (Tái Bản 2018)"><img src="img/Charlotte Và Wilbur (Tái Bản 2018).jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Charlotte Và Wilbur (Tái Bản 2018)">Charlotte Và Wilbur (Tái Bản 2018)</a>
+        </div>
+        <div class="tacgia">
+          E.B.White
+        </div>
+        <div class="gia">
+            56.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Charlotte Và Wilbur (Tái Bản 2018)')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Những Chàng Trai Xấu Tính"><img src="img/Những Chàng Trai Xấu Tính.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Những Chàng Trai Xấu Tính">Những Chàng Trai Xấu Tính</a>
+        </div>
+        <div class="tacgia">
+          Nguyễn Nhật Ánh
+        </div>
+        <div class="gia">
+            50.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Những Chàng Trai Xấu Tính')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Truyện Tranh Tư Duy Cho Bé"><img src="img/Truyện Tranh Tư Duy Cho Bé.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Truyện Tranh Tư Duy Cho Bé">Truyện Tranh Tư Duy Cho Bé</a>
+        </div>
+        <div class="tacgia">
+          Hải Minh
+        </div>
+        <div class="gia">
+            85.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Truyện Tranh Tư Duy Cho Bé')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?101 Truyện Cổ Tích Chọn Lọc"><img src="img/101 Truyện Cổ Tích Chọn Lọc.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?101 Truyện Cổ Tích Chọn Lọc">101 Truyện Cổ Tích Chọn Lọc</a>
+        </div>
+        <div class="tacgia">
+          Vương Diễm Nga
+        </div>
+        <div class="gia">
+            125.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('101 Truyện Cổ Tích Chọn Lọc')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Ehon Hình Khối - Chấm Tròn Ơi! Đi Đâu Thế"><img src="img/Ehon Hình Khối - Chấm Tròn Ơi! Đi Đâu Thế.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Ehon Hình Khối - Chấm Tròn Ơi! Đi Đâu Thế">Ehon Hình Khối - Chấm Tròn Ơi! Đi Đâu Thế</a>
+        </div>
+        <div class="tacgia">
+          Suzuki Mio
+        </div>
+        <div class="gia">
+            39.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Ehon Hình Khối - Chấm Tròn Ơi! Đi Đâu Thế')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?Cây Táo Yêu Thương"><img src="img/Cây Táo Yêu Thương.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?Cây Táo Yêu Thương">Cây Táo Yêu Thương</a>
+        </div>
+        <div class="tacgia">
+          Shel Silverstein
+        </div>
+        <div class="gia">
+            69.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('Cây Táo Yêu Thương')">Thêm vào giỏ</button>
+         </div>
+        </div><div class="khung">
+
+        <a href="Detail.html?TotoChan Cô Bé Bên Cửa Sổ (Tái Bản 2018)"><img src="img/TotoChan Cô Bé Bên Cửa Sổ (Tái Bản 2018).jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?TotoChan Cô Bé Bên Cửa Sổ (Tái Bản 2018)">TotoChan Cô Bé Bên Cửa Sổ (Tái Bản 2018)</a>
+        </div>
+        <div class="tacgia">
+          Kuroyanagi Tetsuko
+        </div>
+        <div class="gia">
+            95.000đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('TotoChan Cô Bé Bên Cửa Sổ (Tái Bản 2018)')">Thêm vào giỏ</button>
+         </div>
+        </div>
+    </div>    	
+
+</div>
 
 
 
@@ -225,7 +955,7 @@
         <img src="sagobomauxanh.png">
     </div>
     <div class="info">
-        <p>Địa chỉ văn phòng: 69/96 Đào Duy Từ, phường 6 quận 9 TP.HCM.</p>
+        <p>Địa chỉ văn phòng: 273 An Dương Vương, Phường 3, Quận 5, Hồ Chí Minh.</p>
         <p>Hotline: 1900 1234.</p>
         <p>Email: support@sagabo.com</p>
     </div>
@@ -237,7 +967,7 @@
         <a target="_blank" href="https://www.instagram.com/" title="Instagram">
                 <img alt="Instagram" src="social/Insta-on.png">
         </a> 
-        <a target="_blank" href="https://www.youtube.com/channel/UCUZcVOLSxK1q6RfgzQ9-HYQ" title="Youtube">
+        <a target="_blank" href="https://www.youtube.com/" title="Youtube">
                 <img alt="Youtube" src="social/Youtube-on.png">
         </a>
     </div>

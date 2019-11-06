@@ -1,0 +1,154 @@
+
+.container{
+	width: 100%;
+	padding: 0;
+	margin-bottom: 10px;
+}
+#angia{
+	display: block;
+}
+.locsanpham{
+	padding: 0;
+    margin: 5px 0;
+    float: left;
+    width: 250px;
+    background-color: #ECECEC;
+    margin-left: 50px;
+}
+.blockcontent{
+	width: 100%;
+}
+.block>p{
+	text-align: center;
+	background-color: #0092f2;
+    font-size: 14px;
+    color: #fff;
+    line-height: 27px;
+    padding: 0 10px;
+    font-weight: bold;
+    font-family: Helvetica,serif;
+    text-transform: uppercase;
+}
+.blockcontent p{
+	margin-left: 6px;
+}
+.blockcontent p:hover{
+	cursor: pointer;
+	color:#0092f2;
+}
+.theogia{
+	display: flex;
+	align-items: center;
+  	justify-content: center;                  
+}
+.theogia span{
+    font-size: 15px;
+    color: #0092f2;
+    margin: 0 4px;
+}
+.theogia input{
+	text-align: center;
+	font-size: 15px;
+	width: 70px;
+	border: 1px solid #0092f2;
+	border-radius: 5px;
+	height: 25px;
+}
+.theogia button{
+	border: 1px solid #0092f2;
+	border-radius: 5px;
+	height: 30px;
+	width: 60px;
+	color:white;
+	background-color: #0092f2;
+	margin-left: 5px;
+}
+.theoloai input{
+	margin-left: 20px;
+}
+.tieudegia{
+	text-align: center;
+}
+.timkiem{
+	margin: 0 auto;
+}
+.timkiem p{
+	font-size: 20px;
+}
+.div12{
+	float: right;
+	background-color: white;
+	width: 915px;
+	margin-bottom: 20px;
+}
+.div121{
+	min-height: 500px;
+	display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.clearzone{
+	clear: both;
+}
+.h1{
+	font-size: 40px;
+}
+.khung{
+	width: 25%!important;
+    height: 100%;
+
+    /*cursor: pointer;*/
+}
+.chitiettrongkhung{
+	position: relative;
+	margin:10px auto;
+	padding: 5px;
+}
+.tieude{
+	/*max-height:  15px;*/
+	text-align: center;
+	color: black;
+	text-transform: capitalize;
+	line-height: 1.125rem;
+    height: 3.25rem;
+}
+.tacgia{
+	/*max-height:  15px;*/
+	font-style: italic;
+	color: #777777;
+	line-height: 1.125rem;
+    height: 1.5rem;
+   	white-space: nowrap;
+   	text-overflow: ellipsis;
+   	overflow: hidden;
+
+}
+.gia{
+	/*max-height: 15px;*/
+	color: #242424;
+	font-weight: bold;
+	line-height: 1.125rem;
+    height: 2.25rem;
+    
+}
+
+.phantrang{
+	display: inline-block;
+	margin-left: 40%;
+	margin-bottom: 2%;
+}
+.phantrang b{
+	color: black;
+	float: left;
+	padding: 16px 20px;
+	text-decoration: none;
+	transition: background-color .3s;
+}
+.phantrang b.trangchinh{
+	background-color: #0092F2;
+	color: white;
+}
+.phantrang b:hover:not(.trangchinh){
+	background-color: #ddd;
+}

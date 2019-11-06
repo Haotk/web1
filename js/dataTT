@@ -1,0 +1,516 @@
+var newBook = {
+	tensach: "Ác Ý",
+	tacgia:"Keigo Higashino",
+	gia:98,
+	nhaxuatban:"Nhà Xuất Bản Hồng Đức",
+	ngayxuatban:"06-2019",
+	dichgia:"Không",
+	sotrang:320,
+	gioithieusach:"“Hàng xóm nuôi con mèo lông trắng điểm nâu. Mèo nhà mà cứ thả rông, để nó chạy sang vườn mình bứt cây đi bậy, phiền toái vô cùng, không làm sao mà chịu đựng được.”
+
+Một nhà văn có bài tùy bút đăng báo, đại ý như vậy.
+
+Báo phát hành được vài hôm thì con mèo hàng xóm chết vì trúng bả. Tình cờ là, chủ nó bắt gặp bài tùy bút. Và vấn đề là, con mèo của chị ta lông trắng điểm nâu.
+
+Chiều hôm ấy, chị ta sang vườn nhà văn để tìm vết tích bả độc.
+
+Tối hôm ấy, nhà văn bị giết.
+
+Có một nhân vật nổi tiếng từng tiêu diệt rất nhiều người, thậm chí phá tan cả mấy băng đảng, chỉ để báo thù cho một con chó.
+
+Vậy đây, liệu có phải án mạng để báo thù cho một con mèo?
+
+Từ xuất phát điểm là vụ sát hại một nhà văn nhân cách vàng trong khu phố giàu sang, Keigo Higashino kéo tuột người đọc vào một lịch sử được viết lại bằng gian dối, một ma trận được vận hành theo nguyên tắc lấy oán trả ơn",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Điều Kỳ Diệu Của Tiệm Tạp Hóa",
+	tacgia:"Higachino Keigo",
+	gia:105,
+	nhaxuatban:"Nhà Xuất Bản Hội Nhà Văn",
+	ngayxuatban:"07-2018",
+	dichgia:"Không",
+	sotrang:358,
+	gioithieusach:"Một đêm vội vã lẩn trốn sau phi vụ khoắng đồ nhà người, Atsuya, Shota và Kouhei đã rẽ vào lánh tạm trong một căn nhà hoang bên con dốc vắng người qua lại. Căn nhà có vẻ khi xưa là một tiệm tạp hóa với biển hiệu cũ kỹ bám đầy bồ hóng, khiến người ta khó lòng đọc được trên đó viết gì. Định bụng nghỉ tạm một đêm rồi sáng hôm sau chuồn sớm, cả ba không ngờ chờ đợi cả bọn sẽ là một đêm không ngủ, với bao điều kỳ bí bắt đầu từ một phong thư bất ngờ gửi đến…
+
+Tài kể chuyện hơn người đã giúp Keigo khéo léo thay đổi các mốc dấu thời gian và không gian, chắp nối những câu chuyện tưởng chừng hoàn toàn riêng rẽ thành một kết cấu chặt chẽ, gây bất ngờ từ đầu tới cuối.",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Đông Cung",
+	tacgia:"Phỉ Ngã Tư Tồn",
+	gia:126,
+	nhaxuatban:"Nhà Xuất Bản Văn Học",
+	ngayxuatban:"06-2013",
+	dichgia:"Không",
+	sotrang:528,
+	gioithieusach:"Nàng, vốn là cửu công chúa của Tây Lương quốc, ở Tây Lương nàng được vô vàn ân sủng, chỉ vì cầu thân mới phải lên đường đến Trung Nguyên.
+
+Hắn, thân là đương kim thái tử, địa vị chỉ khom lưng dưới một người mà đứng trên cả ngàn vạn kẻ khác, vì hôn nhân chính trị, bất đắc dĩ mới phải lấy công chúa của dị quốc.
+
+Hắn có ái phi của riêng mình, Triệu lương đệ. Nàng cũng có cuộc sống của riêng nàng, ấy là lén xuất cung, chặn ngựa lồng dở chứng, trừ gian diệt ác, đuổi trộm cắp, tiễn trẻ lạc về tận nhà, lại còn có uống rượu, ngao du kỹ viện….",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Nếu Chỉ Còn Một Ngày Để Sống",
+	tacgia:"Nicola Yoon",
+	gia:90,
+	nhaxuatban:"Nhà Xuất Bản Văn Học",
+	ngayxuatban:"07-2017",
+	dichgia:"Đỗ Hoàng Nguyên",
+	sotrang:277,
+	gioithieusach:"Nếu Chỉ Còn Một Ngày Để Sống
+“Nếu chỉ còn một ngày để sống” tên sách gốc Everything, Everything là cuốn tiểu thuyết bán chạy số 1 của New York Times – đồng thời được chuyển thể thành phim điện ảnh với sự góp mặt của hai diễn viên nổi tiếng là Amandla Stenberg trong vai Maddy và Nick Robinson trong vai Olly. Ngay từ khi công chiếu, bộ phim đã gây bão tại các phòng vé trên toàn thế giới kéo theo cơn sốt tìm đọc cuốn sách đặc biệt này đến từ các fan yêu thích bộ phim.
+
+Một chuyện tình cảm động được kể dưới ngòi bút tràn đầy những xúc cảm khác biệt đem đến cho người đọc những rung cảm chân thật chạm đến từng ngóc ngách trong trái tim. Một cuốn sách đã khiến hàng triệu độc giả phải khóc phải cười qua từng trang giấy.
+
+“Nếu cuộc đời là một cuốn sách thì bạn đọc ngược từ dưới lên cũng sẽ chẳng có gì thay đổi. Hôm nay chẳng khác gì hôm qua. Ngày mai cũng giống hệt ngày hôm nay. Trong cuốn sách về cuộc đời em, chương nào cũng giống hệt chương nào, cho tới khi anh xuất hiện.”",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Nguồn Cội - Origin",
+	tacgia:"Dan Brown",
+	gia:250,
+	nhaxuatban:"Nhà Xuất Bản Lao Động",
+	ngayxuatban:"02-2018",
+	dichgia:"Nguyễn Xuân Hồng",
+	sotrang:712,
+	gioithieusach:"Robert Langdon, giáo sư biểu tượng và biểu tượng tôn giáo đến từ trường đại học Harvard, đã tới Bảo tàng Guggenheim Bilbao để tham dự một sự kiện quan trọng - công bố một phát hiện "sẽ thay đổi bộ mặt khoa học mãi mãi".
+
+Edmond Kirsch là một tỷ phú bốn mươi tuổi, một nhà tiên tri. Những phát minh kỹ thuật cao và những dự đoán táo bạo đã làm cho anh trở thành một nhân vật nổi tiếng toàn cầu. Kirsch - cũng chính là một trong những sinh viên đầu tiên của Langdon tại đại học Harvard cách đây hai thập kỷ - sẽ tiết lộ một bước đột phá đáng kinh ngạc...
+
+Nó sẽ trả lời hai câu hỏi cơ bản về sự tồn tại của con người:
+
+"Chúng ta đến từ đâu?" và "Chúng ta đang đi về đâu?"
+
+Khi sự kiện bắt đầu, Langdon và vài trăm quan khách bị cuốn hút bởi một bài thuyết trình độc đáo mà chính Langdon cũng nhận thấy rằng sẽ gây ra nhiều tranh cãi hơn những gì ông tưởng tượng. Nhưng sự kiện này đột nhiên biến thành cuộc hỗn loạn, và khám phá quý giá của Kirsch đang dần biến mất vĩnh viễn. Trước nguy cơ phải đối mặt với một mối đe doạ sắp xảy ra, Langdon bị buộc phải bỏ trốn để thoát khỏi Bilbao cùng Ambra Vidal - Hoàng hậu tương lai của Tây Ban Nha để tìm ra mật khẩu bí ẩn sẽ mở ra bí mật của Kirsch.
+
+Để chiến thắng những bí mật được giấu kín của lịch sử và tôn giáo cực đoan, Langdon và Ambra phải trốn tránh một thế lực với sức mạnh dường như xuất phát từ chính Hoàng gia Tây Ban Nha... và đang cố tìm cách để giữ Edmond Kirsch im lặng. Trên một hành trình được đánh dấu bởi các tác phẩm nghệ thuật hiện đại và các ký hiệu bí ẩn, Langdon và Vidal đã tìm ra những manh mối cuối cùng đưa họ đối mặt với khám phá gây sốc của Kirsch... và sự thật mà từ lâu chúng ta đã tìm kiếm.",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Sự Cứu Rỗi Của Thánh Nữ",
+	tacgia:"Higashino Keigo",
+	gia:128,
+	nhaxuatban:"Nhà Xuất Bản Văn Học",
+	ngayxuatban:"04-2019",
+	dichgia:"Mia Nguyễn",
+	sotrang:382,
+	gioithieusach:"Sự Cứu Rỗi Của Thánh Nữ
+Trong biệt thự nhà Mashiba Yoshitaka, người chồng trúng độc chết trên sàn, thạch tín còn sót lại trong cốc cà phê đổ lênh láng bên cạnh. Mọi nghi vấn tập trung vào hai đối tượng: người vợ Ayane vốn là nghệ nhân nổi tiếng với các tác phẩm thảm ghép vải độc đáo đắt tiền trưng bày ở khu Ginza, và cô người tình bí mật Wakayama Hiromi, cũng là học trò của Ayane. Nhưng cả hai đều có chứng cứ ngoại phạm vững chắc. Và cảnh sát đau đầu vì vấn đề hóc búa: Làm thế nào hung thủ bỏ thạch tín hạ độc Yoshitaka, khi không ai khác có khả năng tiếp cận nạn nhân quanh thời điểm xảy ra vụ án.
+
+Một lần nữa thiên tài “thám tử Galileo” Yukawa Manabu nhập cuộc. Anh đã tìm ra đáp án, nhưng là một “đáp án ảo”, chỉ “có thể suy nghĩ về mặt lý thuyết nhưng không thể tồn tại trong hiện thực”. Từng bước lật lại các tình tiết, tác giả đại tài Keigo đã chìa ra cho chúng ta chân tướng đáng kinh ngạc của một sự thật vô cùng chua xót.",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Sự Im Lặng Của Bầy Cừu",
+	tacgia:"Thomas Harris",
+	gia:115,
+	nhaxuatban:"Nhà Xuất Bản Hội Nhà Văn",
+	ngayxuatban:"12-2018",
+	dichgia:"Phạm Hồng Anh",
+	sotrang:347,
+	gioithieusach:"Những cuộc phỏng vấn ở xà lim với kẻ ăn thịt người ham thích trò đùa trí tuệ, những tiết lộ nửa chừng hắn chỉ dành cho kẻ nào thông minh, những cái nhìn xuyên thấu thân phận và suy tư của cô mà đôi khi cô muốn lảng trá Clarice Starling đã dấn thân vào cuộc điều tra án giết người lột da hàng loạt như thế, để rồi trong tiếng bức bối của chiếc đồng hồ đếm ngược về cái chết, cô phải vật lộn để chấm dứt tiếng kêu bao lâu nay vẫn đeo đẳng giấc mơ mình: tiếng kêu của bầy cừu sắp bị đem đi giết thịt.
+
+Sự im lặng của bầy cừu hội tụ đầy đủ những yếu tố làm nên một cuốn tiểu thuyết trinh thám kinh dị xuất sắc nhất: không một dấu vết lúng túng trong những chi tiết thuộc lĩnh vực chuyên môn, với các tình tiết giật gân, cái chết luôn lơ lửng, với cuộc so găng của những bộ óc lớn mà không có chỗ cho kẻ ngu ngốc để cuộc chơi trí tuệ trở nên dễ dàng. Bồi đắp vào cốt truyện lôi cuốn đó là cơ hội được trải nghiệm trong trí não của cả kẻ gây tội lẫn kẻ thi hành công lý, khi mỗi bên phải vật vã trong ngục tù của đau đớn để tìm kiếm, khẩn thiết và liên tục, một sự lắng dịu cho tâm hồn.",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Tên Của Trò Chơi Là Bắt Cóc",
+	tacgia:"Higashino Keigo",
+	gia:86,
+	nhaxuatban:"Nhà Xuất Bản Phụ Nữ",
+	ngayxuatban:"04-2019",
+	dichgia:"Không",
+	sotrang:304,
+	gioithieusach:"Sakuma Shunsuke là một kẻ hiếu thắng, không biết từ đâu cũng chẳng biết do ai ảnh hưởng, từ nhỏ đến lớn, từ chuyện học hành, thi cử đến tình yêu, sự nghiệp, Sakuma luôn coi mọi thứ xung quanh là trò chơi thắng thua.
+Mặc kệ chuyện có khiến người khác tổn thương hay không, càng chẳng hề quan tâm đến hậu quả hay trách nhiệm gì gì đó, tất cả những gì Sakuma cần là chiến thắng, hết.
+Có lẽ cũng chính vì thế mà anh ta chưa từng thua cuộc, dù là trước bất kỳ ai.
+Thế mà, trong một dự án quảng cáo mà Sakuma dồn mọi tâm huyết, anh ta lại bị một kẻ tên Katsuragi Katsutoshi chê bai kém cỏi, sau đó thẳng tay sa thải?!
+Lần đầu tiên nếm qua mùi vị của kẻ bại trận, cộng với men say sẵn có trong người, Sakuma đã tìm đến nhà Katsuragi trong vô thức, để rồi tình cờ bắt gặp Juri – con gái của Katsuragi - đang cố gắng trốn ra khỏi nhà.
+Có lẽ chính số phận đã đưa hai kẻ cực kỳ thông minh nhưng lại đang lâm vào bước cùng ấy gặp được nhau.
+Chuyện gì sẽ xảy ra khi hai bộ não xảo quyệt hạ quyết tâm cùng nhau toan tính cho một kế hoạch điên rồ?
+Sẽ ra sao khi cảnh sát, con tin, tiền chuộc… tất cả sẽ chỉ là những con tốt thí trong một trò chơi với quy mô không tưởng này?
+Trò chơi được xoay vần dưới bàn tay của hai kẻ tự mãn, mọi thứ diễn ra đúng như những gì trong kế hoạch. Và khi trò chơi chính thức hạ màn, xin thông báo phần thắng sẽ thuộc về…
+Khoan đã, hình như cục diện đã bị thay đổi, có điều gì đó không ổn thì phải… Đợi một chút, chuyện quái gì đang xảy ra vậy?
+Một cuộc đấu trí giữa những “kẻ điên” với trí thông minh tuyệt đỉnh.
+Một vở kịch xuất sắc với những diễn viên đại tài được ẩn giấu sau lớp mặt nạ.
+Một màn so tài giữa những kẻ sẵn sàng hy sinh cả mạng sống để trở thành người thắng cuộc.
+Vẫn là giọng văn cùng khả năng logic đã đi vào huyền thoại của Higashino Keigo, “Tên của trò chơi là Bắt cóc” sẽ đưa bạn vào một câu chuyện với những nút thắt không ngờ và khó đoán đến tận những giây phút cuối cùng!",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Tớ Thích Cậu Hơn Cả Harvard",
+	tacgia:"Lan Rùa",
+	gia:98,
+	nhaxuatban:"Nhà Xuất Bản Phụ Nữ",
+	ngayxuatban:"02-2019",
+	dichgia:"Không",
+	sotrang:368,
+	gioithieusach:"Tuổi trẻ đầy mộng mơ và tươi đẹp của ai cũng đã từng có một chàng trai bàn bên, một cô nàng lớp kế, một người mà chúng ta dùng tất cả mọi sự thuần khiết và vô tư của mình để tưởng nhớ về một thời Thanh Xuân ấy.
+
+Những rung động ngọt ngào, những cảm xúc giản đơn, những khoảnh khắc tuổi trẻ đáng mến ấy, suy cho cùng ai cũng chỉ có một lần trong đời mà thôi.
+
+Có lẽ vì vậy mà Tớ Thích Cậu Hơn Cả Harvard của nữ tác giả ngôn tình hàng đầu Việt Nam- Lan Rùa sẽ là cuốn sách thanh xuân tuyệt vời nhất cho tất cả chúng ta trong mùa hè năm nay !
+
+TỚ THÍCH CẬU HƠN CẢ HARVARD của Lan Rùa, là cuốn tiểu thuyết viết về những tháng năm hồn nhiên nhất trong cuộc đời mỗi người, từng trang sách sẽ cùng bạn đi tìm lại những dư vị ngọt ngào của mối tình thanh xuân năm nào qua mối tình “gà bông” của Thu và Khôi.",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Yêu Em Từ Cái Nhìn Đầu Tiên",
+	tacgia:"Cố Mạn",
+	gia:119,
+	nhaxuatban:"Nhà Xuất Bản Văn Học",
+	ngayxuatban:"10-2014",
+	dichgia:"Nguyễn Trang",
+	sotrang:508,
+	gioithieusach:"Nhắc đến Yêu em từ cái nhìn đầu tiên có lẽ không cần dùng quá nhiều lời, bởi cùng với Sam Sam đến đây ăn nào, Bên nhau trọn đời, Yêu em từ cái nhìn đầu tiên đã làm nên tên tuổi của Cố Mạn tại Việt Nam.
+
+Yêu em từ cái nhìn đầu tiên từ khi phát hành cho đến nay đã nhận được vô vàn lời khen tặng của độc giả:
+
+"Văn chương của Cố Mạn lãng mạn, dịu dàng, khiến người đọc có cảm giác như đang trôi bồng bềnh trong mơ, vừa đọc vừa vén môi cười dịu dàng… Giồng như khi đối diện với mặt nước hồ phẳng lặng, Cố Mạn sẽ rải lên đó một vài cánh hoa hồng…"",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Yêu Những Điều Không Hoàn Hảo",
+	tacgia:"Hae Min",
+	gia:139,
+	nhaxuatban:"Nhà Xuất Bản Thế Giới",
+	ngayxuatban:"05-2014",
+	dichgia:"Nguyễn Việt Tú Anh",
+	sotrang:300,
+	gioithieusach:"giới thiệu ở đây",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Your Name",
+	tacgia:"Shinkai Makoto",
+	gia:75,
+	nhaxuatban:"Nhà Xuất Bản Văn Học",
+	ngayxuatban:"05-2017",
+	dichgia:"Thủy An",
+	sotrang:256,
+	gioithieusach:"Mitsuha là nữ sinh trung học sống ở vùng quê hẻo lánh. Một ngày nọ, cô mơ thấy mình ở Tokyo trong một căn phòng xa lạ, biến thành con trai, gặp những người bạn chưa từng quen biết.
+
+Trong khi đó ở một nơi khác, Taki, một nam sinh trung học người Tokyo lại mơ thấy mình biến thành con gái, sống ở vùng quê hẻo lánh.
+
+Cuối cùng hai người họ nhận ra đang bị hoán đổi với nhau qua giấc mơ. Kể từ lúc hai con người xa lạ ấy gặp nhau, bánh xe số phận bắt đầu chuyển động.
+
+Đây là phiên bản tiểu thuyết của bộ phim hoạt hình Your Name, do chính đạo diễn Shinkai Makoto chấp bút.",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Cảm Ơn Người Lớn",
+	tacgia:"Nguyễn Nhật Ánh",
+	gia:110,
+	nhaxuatban:"NXB Trẻ",
+	ngayxuatban:"01-2018",
+	dichgia:"Không",
+	sotrang:264,
+	gioithieusach:"Cảm ơn người lớn - một áng văn lãng mạn trong giọng hài hước đặc biệt “dành cho trẻ em, và những ai từng là trẻ em”..
+
+Bạn sẽ gặp lại Mùi, Tủn, Tí sún, Hải cò… của Cho tôi xin một vé đi tuổi thơ, cùng chơi những trò chơi quen thuộc, và được đắm mình vào những ước mơ điên rồ, ngốc nghếch nhưng trong veo của tuổi mới lớn hồn nhiên và đầy ắp dự định.
+
+Và cả khi họ đã trưởng thành, bạo chúa thời gian đã vùng vẫy thế nào trong cuộc đời của những nhân vật mà bạn yêu quý…Hãy bắt đầu đọc từ bất cứ trang nào, có thể đọc bất cứ lúc nào, và cùng với bất cứ ai. Bạn sẽ nhận được món quà “n trong 1” của nhà văn Nguyễn Nhật Ánh: sẽ n lần thổn thức qua 1 cuốn sách 19 chương đầy ắp tình bạn ngây thơ, tình xóm giềng tốt lành nhân ái, tình yêu đắm đuối ngọt ngào…
+Cảm ơn người lớn được Nguyễn Nhật Ánh đặt bút viết đúng sau 10 năm ra đời Cho tôi xin một vé đi tuổi thơ – cuốn sách bán chạy tới nay đã 400.000 bản.",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Cáp Treo Tình Yêu",
+	tacgia:"Keigo Higashino",
+	gia:89,
+	nhaxuatban:"NXB Hà Nội",
+	ngayxuatban:"01-2019",
+	dichgia:"Nguyễn Hải Hà",
+	sotrang:292,
+	gioithieusach:"Trong tuần đầu tiên xuất bản (01/11/2016), Cáp treo tình yêu đã nắm giữ vị trí đầu trong bảng doanh số hàng tuần. Và tiếp tục ở trong top 10 nhiều tuần sau đó.
+
+Một nữ nhân viên văn phòng bị hôn phu phản bội,
+
+Một chàng trai ôm mộng tìm được tình yêu đích thực sau năm lần bảy lượt thất bại tình trường,
+
+Một cô gái trẻ gặp phải gã đàn ông dối trá,
+
+Một cặp đôi mới cưới vướng vào rắc rối với bố mẹ vợ.
+
+Mỗi người họ đều ôm trong lòng nỗi phiền muộn riêng. Những cuộc đời tưởng chừng như không có điểm giao thoa ấy lại được gắn kết với nhau tại một khu trượt tuyết lạ kỳ, nơi có khả năng phơi bày sự thật và những điều thầm kín dù chúng ta có được con người ta che đậy kỹ càng tới đâu.
+
+Vậy, sự thật liệu có luôn là điều mà con người ta muốn biết?
+
+Đứng trước tình yêu, con người sẽ trở nên thảm hại, ích kỷ, hoặc nhiều dũng khí đến thế nào?
+
+Những tình tiết bất ngờ trong Cáp treo tình yêu sẽ khiến bạn phải bật cười và tự hỏi điều gì tiếp theo có thể xảy ra.",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Có Hai Con Mèo Ngồi Bên Cửa Sổ",
+	tacgia:"Nguyễn Nhật Ánh",
+	gia:85,
+	nhaxuatban:"Nha Xuat Ban",
+	ngayxuatban:"02-2018",
+	dichgia:"Không",
+	sotrang:208,
+	gioithieusach:"Số trang	208
+Hình thức	Bìa Mềm
+Ngôn ngữ	Sách tiếng Việt
+
+Giới Thiệu Nội Dung Sản Phẩm
+Có Hai Con Mèo Ngồi Bên Cửa Sổ (Tái Bản 2018)
+
+Ó HAI CON MÈO NGỒI BÊN CỬA SỔ là tác phẩm đầu tiên của nhà văn Nguyễn Nhật Ánh viết theo thể loại đồng thoại. Đặc biệt hơn nữa là viết về tình bạn của hai loài vốn là thù địch của nhau mèo và chuột. Đó là tình bạn giữa mèo Gấu và chuột Tí Hon.
+
+Để biết tại sao mèo Gấu lại chơi thân với chuột Tí Hon, thì mời bạn hãy mở sách ra.
+
+Cuốn truyện mỏng mảnh vừa phải, hình vẽ của họa sĩ Hoàng Tường sinh động đến từng nét nũng nịu hay kiêu căng của nàng mèo người yêu mèo Gấu, câu chuyện thì hấp dẫn duyên dáng điểm những bài thơ tình lãng mạn nao lòng song đọc to lên thì khiến cười hinh hích…
+
+Bạn hãy đọc nhé, để thấy, Nguyễn Nhật Ánh đã viết truyện đồng thoại theo cái cách của riêng mình độc đáo như thế nào.",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Cô Gái Đến Từ Hôm Qua",
+	tacgia:"Nguyễn Nhật Ánh",
+	gia:80,
+	nhaxuatban:"NXB Trẻ",
+	ngayxuatban:"01-2017",
+	dichgia:"Không",
+	sotrang:170,
+	gioithieusach:"Cô Gái Đến Từ Hôm Qua
+
+Cô gái đến từ hôm qua được ví như một cuốn phim của quá khứ và hiện tại được ngòi bút tài hoa của tác giả dẫn dắt ta đi từ bất ngờ này đến thú vị khác. Nếu ngày xưa còn bé, Thư luôn tự hào mình là cậu con trai thông minh có quyền bắt nạt và sai khiến các cô bé cùng lứa tuổi (nạn nhân cụ thể là bé Tiểu Li) thì giờ đây lớn lên, anh luôn khổ sở khi thấy mình ngu ngơ và bị một cô bạn tên là Việt Án “xỏ mũi”. Và điều nghịch lý ấy xem ra ngày càng “trớ trêu” hơn… Trong lần tái bản này, tác phẩm được ra mắt theo phong cách mới, với phiên bản bìa thứ 14, được in trên chất liệu giấy dầy và nhẹ, kèm bài thơ “Cô gái đến từ hôm qua” của nhà văn Nguyễn Nhật Ánh và 10 hình minh họa của họa sĩ Đỗ Hoàng Tường.
+
+Tác phẩm Cô gái đến từ hôm qua đã được mua bản quyền và chuyển thể thành phim điện ảnh, do Phan Gia Nhật Linh làm đạo diễn, với sự tham gia của các diễn viên Miu Lê, Ngô Kiến Huy, Jun Phạm, Hoàng Yến Chibi, Lê Hạ Anh... Phim được dự kiến ra mắt trên toàn quốc vào ngày 21/7/2017.",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Đảo Mộng Mơ",
+	tacgia:"Nguyễn Nhật Ánh",
+	gia:60,
+	nhaxuatban:"NXB Trẻ",
+	ngayxuatban:"03-2018",
+	dichgia:"Không",
+	sotrang:254,
+	gioithieusach:"Đảo Mộng Mơ
+
+Đảo Mộng Mơ là một lát cắt đời sống của những đứa trẻ lên 10 giàu trí tưởng tượng như tất cả mọi đứa trẻ. Chúng mơ mộng, tưởng tượng, và tự làm "hiện thực hóa" những khao khát của mình.
+
+Câu chuyện bắt đầu từ một đống cát, và được diễn ra theo nhân vật tôi - cu Tin. Có một hòn đảo hoang, trên đảo có Chúa đảo, phu nhân Chúa đảo, và một chàng Thứ... Bảy. Hàng ngày vợ chồng Chúa đảo và Thứ Bảy vẫn phải đi học, nhưng sau giờ học là một thế giới khác, của đảo, của biển có cá mập, và rừng có thú dữ. Hấp dẫn, đầy quyến rũ, có cãi vã, có cai trị, có yêu thương, có ẩu đả, và cả...những nụ hôn!
+
+Tuổi thơ trong Đảo Mộng mơ như trong những tác phẩm khác của Nguyễn Nhật Ánh, trong veo và ngọt ngào. Những muốn bé lại bằng cu Tin để được cười, được khóc, được làm Chúa đảo thích đọc sách và biết đánh lại lưu manh, bắt giam kẻ cắp. Để được hiểu rằng, đối với trẻ con, nhu cầu được tôn trọng đôi khi lớn hơn gấp bội so với nhu cầu được yêu thương.",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Kim Ji Young, Born 1982",
+	tacgia:"Cho Nam Joo",
+	gia:59,
+	nhaxuatban:"Nha Xuat Ban",
+	ngayxuatban:"02-2019",
+	dichgia:"Dương Thanh Hoài",
+	sotrang:212,
+	gioithieusach:"Sinh năm 1982 là cuốn sách kể về cuộc đời của một người phụ nữ bị chứng rối loạn tâm lí sau sinh, tên là Kim Ji Young. Câu chuyện mở đầu bằng những dòng giới thiệu về cô - ở thời điểm hiện tại. Nếu tinh ý, độc giả sẽ có thể nhận thấy ở nhiều phân đoạn, tác giả thường gọi cả họ tên của nhân vật chính, lặp đi lặp lại chứ ít dùng đại từ thay thế. Đó là vì trong tiểu thuyết này tác giả đóng vai trò là một nam bác sĩ tâm lí trị liệu cho Kim Ji Young, và phần đầu được viết dưới dạng hồ sơ bệnh án của bác sĩ, mô tả chi tiết về bệnh chứng của bệnh nhân. Những trang viết dần hé lộ về cuộc đời tưởng như rất đỗi bình thường của thiếu phụ trẻ, từ khi cô sinh ra đến khi lấy chồng rồi sinh con như bao người phụ nữ Hàn Quốc rất bình thường khác.
+
+Các triệu chứng kì lạ của Kim Ji Young xuất hiện sau khi cô sinh con, có những lúc dường như cô không phải là một Kim Ji Young thực sự, mà đã hóa thân thành những người phụ nữ khác, lúc thành mẹ cô, lúc lại thành người bạn gái cũ của chồng... Dường như cái vỏ thân xác Kim Ji Young cùng lúc có rất nhiều người khác nhau cùng tồn tại, có người còn sống và có người đã khuất, nhưng điểm chung nhất là họ đều là phụ nữ. Kim Ji Young như người phát ngôn hộ những người phụ nữ ấy những lời tự đáy lòng, nhưng bản thân họ thì có lẽ sẽ không bao giờ tự dám nói: “Ông thông gia, tôi xin mạn phép được nói điều này. Chỉ có nhà ông là có gia đình thôi sao? Chúng tôi cũng có gia đình chứ. Ba đứa nhà tôi cũng chỉ có ngày lễ tết mới có thể gặp mặt nhau. Bây giờ cuộc sống của đám trẻ đứa nào chẳng như vậy. Nhưng nếu con gái ông đã về thăm nhà rồi, thì cũng phải cho con gái chúng tôi về thăm nhà chứ”. Nghe những lời ấy, những người sống quanh cô sững sờ, thậm chí là bị sốc, bởi cô đã nói ra một cách khá thẳng thắn, đòi lại công bằng cho phụ nữ trước đặc quyền mà từ trước đến nay gần như cả xã hội vẫn mặc nhiên dành cho nam giới.",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Kính Sợ Và Run Rẩy",
+	tacgia:"Soren Kierkegaard",
+	gia:169,
+	nhaxuatban:"Nha Xuat Ban",
+	ngayxuatban:"03-2019",
+	dichgia:"Nguyễn Nguyên Phước",
+	sotrang:303,
+	gioithieusach:"Từ câu chuyện trong Kinh Thánh Cựu Ước mô tả việc Tổ phụ Abraham tuân lệnh Thiên Chúa, sẵn sàng sát tế con trai mình là Isaac (thường được ngợi ca như một điển tích về sự trung thành vô điều kiện), triết gia Soren Kierkegaard triển khai ba luận đề truy vấn: liệu có tồn tại một sự đình bỏ có tính mục đích luận đối với luân lý hay không?; liệu có tồn tại một bổn phận tuyệt đối với Thượng đế hay không?; Liệu Abraham có thể biện hộ được về mặt luân lý khi che giấu mục đích của mình không cho Sarah, Eleazar và Isaac biết hay không?
+
+Qua đó, ông đưa ra một phép biện chứng hiện sinh, một cái nhìn giải thiêng xuyên qua chân lý, lòng kính sợ, sự xao xuyến, bổn phận và hành động đức tin…
+
+Với Kính sợ và Run rẩy, Soren Kierkegaard bắc một cây cầu suy tưởng nối văn chương, thần học và triết học. Đây cũng là tác phẩm độc đáo, hay nhất và gây tranh cãi nhất của ông; gây kinh ngạc đối với độc giả phổ thông và cả giới nghiên cứu chuyên sâu.",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Làm Bạn Với Bầu Trời",
+	tacgia:"Nguyễn Nhật Ánh",
+	gia:110,
+	nhaxuatban:"NXB Trẻ",
+	ngayxuatban:"09-2019",
+	dichgia:"Không",
+	sotrang:220,
+	gioithieusach:"Làm Bạn Với Bầu Trời 
+
+Một câu chuyện giản dị, chứa đầy bất ngờ cho tới trang cuối cùng. Và đẹp lộng lẫy, vì lòng vị tha và tình yêu thương, khiến mắt rưng rưng vì một nỗi mừng vui hân hoan. Cuốn sách như một đốm lửa thắp lên lòng khát khao sống tốt trên đời.
+
+Viết về điều tốt đã không dễ, viết sao cho người đọc có thể đón nhận đầy cảm xúc tích cực, và muốn được hưởng, được làm những điều tốt dù nhỏ bé... mới thật là khó. Làm bạn với bầu trời của Nguyễn Nhật Ánh đã làm được điều này.",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Mắt Biếc",
+	tacgia:"Nguyễn Nhật Ánh",
+	gia:110,
+	nhaxuatban:"NXB Trẻ",
+	ngayxuatban:"08-2019",
+	dichgia:"Không",
+	sotrang:300,
+	gioithieusach:"Mắt Biếc 
+
+Mắt biếc là một tác phẩm được nhiều người bình chọn là hay nhất của nhà văn Nguyễn Nhật Ánh. Tác phẩm này cũng đã được dịch giả Kato Sakae dịch sang tiếng Nhật để giới thiệu với độc giả Nhật Bản.
+
+“Tôi gửi tình yêu cho mùa hè, nhưng mùa hè không giữ nổi. Mùa hè chỉ biết ra hoa, phượng đỏ sân trường và tiếng ve nỉ non trong lá. Mùa hè ngây ngô, giống như tôi vậy. Nó chẳng làm được những điều tôi ký thác. Nó để Hà Lan đốt tôi, đốt rụi. Trái tim tôi cháy thành tro, rơi vãi trên đường về.”
+
+… Bởi sự trong sáng của một tình cảm, bởi cái kết thúc buồn, rất buồn khi xuyên suốt câu chuyện vẫn là những điều vui, buồn lẫn lộn… ",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Nếu Chỉ Còn Một Ngày Để Sống",
+	tacgia:"Nicola Yoon",
+	gia:90,
+	nhaxuatban:"NXB Văn Học",
+	ngayxuatban:"07-2017",
+	dichgia:"Đỗ Hoàng Nguyên",
+	sotrang:303,
+	gioithieusach:"Ngôn ngữ	Sách tiếng Việt
+
+Nếu Chỉ Còn Một Ngày Để Sống
+
+“Nếu chỉ còn một ngày để sống” tên sách gốc Everything, Everything là cuốn tiểu thuyết bán chạy số 1 của New York Times – đồng thời  được chuyển thể thành phim điện ảnh với sự góp mặt của hai diễn viên nổi tiếng là Amandla Stenberg trong vai Maddy và Nick Robinson trong vai Olly.  Ngay từ khi công chiếu,  bộ phim đã gây bão tại các phòng vé trên toàn thế giới kéo theo cơn sốt tìm đọc cuốn sách đặc biệt này đến từ các fan yêu thích bộ phim.
+
+Một chuyện tình cảm động được kể dưới ngòi bút tràn đầy những xúc cảm khác biệt đem đến cho người đọc những rung cảm chân thật chạm đến từng ngóc ngách trong trái tim. Một cuốn sách đã khiến hàng triệu độc giả phải khóc phải cười qua từng trang giấy.
+
+ “Nếu cuộc đời là một cuốn sách thì bạn đọc ngược từ dưới lên cũng sẽ chẳng có gì thay đổi. Hôm nay chẳng khác gì hôm qua. Ngày mai cũng giống hệt ngày hôm nay. Trong cuốn sách về cuộc đời em, chương nào cũng giống hệt chương nào, cho tới khi anh xuất hiện.”
+
+Đánh đổi mọi thứ... vì tình yêu. Liệu điều đó có hoàn toàn xứng đáng ?
+
+Điều gì sẽ xảy ra nếu bạn không thể chạm vào bất cứ thứ gì trong thế giới ngoài kia? Không bao giờ được hít thở bầu không khí trong lành, cảm nhận ánh nắng ban ngày làm bỏng rát khuôn mặt... hay thử hẹn hò và hôn lên môi cậu chàng hàng xóm? Những thứ giản đơn và ý nghĩa của cuộc sống mà bất kì ai cũng sẽ phải trải qua.",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Nhà Giả Kim",
+	tacgia:"Paulo Coelho",
+	gia:69,
+	nhaxuatban:"NXB Văn Học",
+	ngayxuatban:"06-2017",
+	dichgia:"Lê Chu Cầu",
+	sotrang:224,
+	gioithieusach:"Nhà Giả Kim (Tái Bản 2017)
+
+NHÀ GIẢ KIM là cuốn sách được in nhiều nhất chỉ sau Kinh Thánh. Cuốn sách của Paulo Coelho có sự hấp dẫn ra sao khiến độc giả không chỉ các xứ dùng ngôn ngữ Bồ Đào Nha mà các ngôn ngữ khác say mê như vậy?
+
+Tiểu thuyết NHÀ GIẢ KIM của Paulo Coelho như một câu chuyện cổ tích giản dị, nhân ái, giàu chất thơ, thấm đẫm những minh triết huyền bí của phương Đông. Trong lần xuất bản đầu tiên tại Brazil vào năm 1988, sách chỉ bán được 900 bản. Nhưng, với số phận đặc biệt của cuốn sách dành cho toàn nhân loại, vượt ra ngoài biên giới quốc gia, Nhà giả kim đã làm rung động hàng triệu tâm hồn, trở thành một trong những cuốn sách bán chạy nhất mọi thời đại, và có thể làm thay đổi cuộc đời người đọc",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Tôi Thấy Hoa Vàng Trên Cỏ Xanh",
+	tacgia:"Nguyễn Nhật Ánh",
+	gia:125,
+	nhaxuatban:"NXB Trẻ",
+	ngayxuatban:"05-2018",
+	dichgia:"Không",
+	sotrang:378,
+	gioithieusach:"Giới Thiệu Nội Dung Sản Phẩm
+Những câu chuyện nhỏ xảy ra ở một ngôi làng nhỏ: chuyện người, chuyện cóc, chuyện ma, chuyện công chúa và hoàng tử , rồi chuyện đói ăn, cháy nhà, lụt lội,... Bối cảnh là trường học, nhà trong xóm, bãi tha ma. Dẫn chuyện là cậu bé 15 tuổi tên Thiều. Thiều có chú ruột là chú Đàn, có bạn thân là cô bé Mận. Nhưng nhân vật đáng yêu nhất lại là Tường, em trai Thiều, một cậu bé học không giỏi. Thiều, Tường và những đứa trẻ sống trong cùng một làng, học cùng một trường, có biết bao chuyện chung. Chúng nô đùa, cãi cọ rồi yêu thương nhau, cùng lớn lên theo năm tháng, trải qua bao sự kiện biến cố của cuộc đời.
+Tác giả vẫn giữ cách kể chuyện bằng chính giọng trong sáng hồn nhiên của trẻ con. 81 chương ngắn là 81 câu chuyện hấp dẫn với nhiều chi tiết thú vị, cảm động, có những tình tiết bất ngờ, từ đó lộ rõ tính cách người. Cuốn sách, vì thế, có sức ám ảnh.",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Truyện Cổ Grim",
+	tacgia:"Jacob Grim",
+	gia:50,
+	nhaxuatban:"NXB Trẻ",
+	ngayxuatban:"09-2019",
+	dichgia:"Không",
+	sotrang:21,
+	gioithieusach:"Truyện Cổ Grim
+
+Một câu chuyện giản dị, chứa đầy bất ngờ cho tới trang cuối cùng. Và đẹp lộng lẫy, vì lòng vị tha và tình yêu thương, khiến mắt rưng rưng vì một nỗi mừng vui hân hoan. Cuốn sách như một đốm lửa thắp lên lòng khát khao sống tốt trên đời.
+
+Viết về điều tốt đã không dễ, viết sao cho người đọc có thể đón nhận đầy cảm xúc tích cực, và muốn được hưởng, được làm những điều tốt dù nhỏ bé... mới thật là khó. Làm bạn với bầu trời của Nguyễn Nhật Ánh đã làm được điều này.",
+        soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Từ Điển Cảm Xúc Thế Giới",
+	tacgia:"Nhóm Của Truyện",
+	gia:70,
+	nhaxuatban:"NXB Trẻ",
+	ngayxuatban:"09-2019",
+	dichgia:"Không",
+	sotrang:21,
+	gioithieusach:"Sách này không có mô tả.",
+    soluong:0,
+	theloai:"Tiểu Thuyết",
+}
+Books.push(newBook);

@@ -1,0 +1,689 @@
+var newBook = {
+	tensach: "Cái Tết Của Mèo Con",
+	tacgia:"Nguyễn Đình Thi",
+	gia:45,
+	nhaxuatban:"Không",
+	ngayxuatban:"03-2017",
+	dichgia:"Không",
+	sotrang:144,
+	gioithieusach:"Mèo con mới về nhà, đêm đầu tiên đã giáp mặt lão Chuột cống dữ dằn cùng lũ chuột nhắt hung hăng.
+Mèo con khiếp sợ, nhưng vốn là một chú mèo dũng cảm, Mèo con bắt đầu học hỏi, can đảm đánh nhau với rắn hổ mang.
+Không những thế, Mèo con còn truyền lòng quả cảm của mình cho cả bác Nồi đồng và chị Chổi. Họ đã cùng nhau đánh bại lão Chuột cống hung ác và đám chuột nhắt.
+“Cái Tết của Mèo con” là bài học về lòng quả cảm và tinh thần đoàn kết. Câu chuyện mang đến thông điệp cho các bạn nhỏ của chúng ta: Lòng dũng là một phẩm chất, được hình thành khi ta rèn luyện mỗi ngày.
+Ra đời cách nay hơn nửa thế kỉ, tác phẩm của nhà văn Nguyễn Đình Thi đã chinh phục bao thế hệ độc giả nhỏ tuổi.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "101 Truyện Cổ Tích Chọn Lọc",
+	tacgia:"Vương Diễm Nga",
+	gia:125,
+	nhaxuatban:"Nhà Xuất Bản Tổng Hợp",
+	ngayxuatban:"10-2015",
+	dichgia:"Không",
+	sotrang:203,
+	gioithieusach:"Có thể nói, trong ký ức tuổi thơ của bất cứ ai cũng lung linh sắc màu của thế giới cổ tích. Những câu chuyện cổ tích diệu kỳ được bà, được mẹ kể cho nghe trước khi đi ngủ giúp chúng ta lớn lên với bao nhiêu cảm nhận về cái đẹp, cái thiện trong cuộc sống.
+
+	Tập truyện 101 truyện cổ tích chọn lọc bao gồm những câu chuyện thần tiên kỳ ảo, phản ánh ước mơ và khát vọng của con người. Ở đó,những người chăm chỉ, lương thiện sẽ được số phận đền bù; những kẻ chây lười, gian ác đều bị trừng trị. Mở rộng tâm hồn đón cái Thiện, sống với những nhân vật trong các câu chuyện cổ tích, bé sẽ có những cảm nhận ban đầu về cuộc sống, về tình yêu thương, lòng bao dung nhân ái và những khám phá thú vị về các hiện tượng cuộc sống.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "365 Truyện Kể Hàng Đêm - Mùa Hè",
+	tacgia:"Lưu Hồng Hà",
+	gia:60,
+	nhaxuatban:"Không",
+	ngayxuatban:"07-2015",
+	dichgia:"Không",
+	sotrang:191,
+	gioithieusach:"Trẻ nhỏ thường nhận thức thế giới qua những điều đơn giản. Chính vì thế, những quan điểm chuẩn mực về đạo đức của mỗi người thường bắt nguồn từ những câu chuyện nghe kể từ thuở ấu thơ.
+
+365 truyện kể hàng đêm là series truyện kể dành cho bé được tuyển chọn theo “tinh thần” bốn mùa xuân, hạ, thu, đông… gồm những truyện kể ở xứ thần tiên, truyện kể tri thức, truyện hay rèn thói quen tốt, truyện kể về danh nhân, truyện kể dân gian… Mỗi câu chuyện sẽ mở ra một trải nghiệm đặc biệt, cung cấp một kiến thức thú vị, bồi dưỡng một phẩm chất ưu tú giúp bé trưởng thành.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+
+var newBook = {
+	tensach: "Ai Ở Sau Lưng Bạn Thế? - Những Người Bạn Trên Hoang Mạc",
+	tacgia:"Accototo",
+	gia:29,
+	nhaxuatban:"Không",
+	ngayxuatban:"09-2015",
+	dichgia:"Không",
+	sotrang:21,
+	gioithieusach:"Ai ở sau lưng bạn thế? là bộ truyện Ehon Nhật Bản gồm 6 cuốn dành cho các bé từ 0 - 3 tuổi theo chủ đề về các loài động vật. Điểm thú vị của truyện chính là những bức tranh gồm một loài động vật cụ thể và một phần chi tiết về một con vật khác. Các mẹ và các bé có thể cùng đọc và cùng chơi trò chơi đoán xem bộ phận đó của con vật nào? Các bức tranh đều mở ra những câu hỏi như “Ai ở sau lưng bạn Nhím nhỉ?”, “Ai ở bên dưới bạn Cá Ngựa nhỉ?” “Ai ở bên trên bạn Hươu cao cổ nhỉ?”… chắc chắn sẽ đem lại cho các bé từ 0 - 3 tuổi những kiến thức mới, vô cùng bổ ích.
+
+Các bé đã từng nghe về hoang mạc chưa? Trên hoang mạc thì có những loài động vật nào sinh sống nhỉ? Bạn Ngựa Vằn, bạn Voi, bạn Tê Giác, và cả bạn Tắc Kè cùng vô vàn bạn khác nữa. Các bé hãy nhận biết từng bạn thông qua trò chơi “nhìn bộ phận đoán tên loài vật” trong cuốn sách này.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Bách Khoa Cho Trẻ Em - Bách Khoa Vũ Trụ",
+	tacgia:"Nhóm tác giả",
+	gia:120,
+	nhaxuatban:"Nhà Xuất Bản Dân Trí",
+	ngayxuatban:"11-2015",
+	dichgia:"Không",
+	sotrang:128,
+	gioithieusach:"Bộ sách Bách khoa cho trẻ em mang đến những thông tin thú vị về thế giới tự nhiên, con người, động vật... Mỗi chủ đề được trình bày một cách khoa học, súc tích và hấp dẫn, kích thích sự tò mò, ham hiểu biết của trẻ. Cuối mỗi trang đều có một câu hỏi để giúp các em củng cố và ghi nhớ kiến thức.
+
+Với các hình ảnh minh họa trực quan sinh động, bắt mắt, cuốn sách cung cấp một lượng kiến thức phong phú, súc tích, dễ hiểu và những câu hỏi vui, mẩu tin thú vị về về những hành tinh gần Trái Đất, tới các ngôi sao xa nhất mà con người biết đến. Ngoài ra, các em còn được biết thêm về hành trình khám phá vũ trụ kì bí của loài người.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Bảy Bước Tới Mùa Hè",
+	tacgia:"Nguyễn Nhật Ánh",
+	gia:115,
+	nhaxuatban:"NXB Trẻ",
+	ngayxuatban:"02	-2015",
+	dichgia:"Không",
+	sotrang:288,
+	gioithieusach:"Bảy bước tới mùa hè là tác phẩm mới nhất của Nguyễn Nhật Ánh, được nhà văn đề tặng "Những năm ấu thơ", như một món quà dành tặng các bạn đọc thân thiết của mình nhân dịp đầu năm mới.
+
+Câu chuyện về một mùa hè ngọt ngào, những trò chơi nghịch ngợm và bâng khuâng tình cảm tuổi mới lớn. Chỉ vậy thôi nhưng chứng tỏ tác giả đúng là nhà kể chuyện hóm hỉnh, khiến độc giả cuốn hút từ trang đầu đến trang cuối cùng. Chúng ta sẽ bắt gặp giọng văn giản dị, trong trẻo của nhà văn Nguyễn Nhật Ánh và một kết thúc có hậu đầy thuyết phục ở cuối truyện. Câu chuyện về tuổi học trò đầy ắp những kỷ niệm thơ bé ngọt ngào với tình thầy trò, bè bạn, tình xóm giềng, họ hàng qua cách nhìn đời nhẹ nhàng, rộng lượng.
+
+Nhà văn chia sẻ: "Tôi thích sự vui tươi của câu chuyện và sự hồn nhiên của nhân vật. Có thể nói đây là tác phẩm đầy ắp tiếng cười. Tạm thời xa rời những trang văn chứa nhiều chiêm nghiệm của người lớn, qua tác phẩm này tôi muốn quay trở lại lối viết mà tác giả không cố ý để lại quá nhiều dấu tay trên bản thảo. Tác giả trong tác phẩm này cũng đang ở… tuổi mười lăm!"",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+
+var newBook = {
+	tensach: "BTS Comic",
+	tacgia:"Yến Phạm",
+	gia:89,
+	nhaxuatban:"NXB Trẻ",
+	ngayxuatban:"09 -2019",
+	dichgia:"Không",
+	sotrang:176,
+	gioithieusach:"Chào cậu!
+
+Ngày hôm nay của cậu thế nào?
+
+Nếu mây đen u ám kéo đến thì hãy đọc cuốn sách này và hát “Không sao đâu, đếm 1,2,3 và quên hết tất cả đi nhé!”
+
+Hãy để BTS Comic thắp sáng ngày hôm nay của cậu!"",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+
+var newBook = {
+	tensach: "Búp Sen Xanh (Tái Bản 2019)",
+	tacgia:"Sơn Tùng",
+	gia:72,
+	nhaxuatban:"Không",
+	ngayxuatban:"01 -2019",
+	dichgia:"Không",
+	sotrang:364,
+	gioithieusach:"Có thể xếp “Búp Sen Xanh” vào nhóm tác phẩm văn học dành cho thiếu nhi và là tác phẩm nổi tiếng nhất viết về chủ tịch Hồ Chí Minh trong suốt thời thơ ấu cho đến khi rời Việt Nam sang Pháp.
+
+Búp Sen Xanh” là nơi tiểu thuyết và lịch sử đã gặp nhau và hoạ nên một giai đoạn trong cuộc đời người Cha già của dân tộc Việt Nam. Nơi ấy, có quê nhà xứ Nghệ, có làng Sen, có khung dệt của mẹ, có lời dạy của cha, có những người bạn và những kỷ niệm ấu thơ. Nơi ấy có xứ Huế mà trong cuộc sống nghèo khổ có trăn trở tuổi trẻ, về con người, về vận mệnh dân tộc, có mất mát và đau thươ
+
+“Búp Sen Xanh” vượt ra ngoài những giới hạn của một tác phẩm thiếu nhi, có thể làm bất kỳ ai rung động đến rơi nước mắt trong đêm chia ly, khi người con từ biệt cha ra đi để tìm một con đường cho chính mình và cho dân tộc. Một phần cuộc đời, trọn vẹn lý tưởng và dấn thâ Búp Sen Xanh không chỉ là câu chuyện về lãnh tụ mà còn là câu chuyện để làm người.,
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Cánh Buồm Đỏ Thắm (Đinh Tị)",
+	tacgia:"Alexander Grin",
+	gia:27,
+	nhaxuatban:"Nhà Xuất Bản Văn Học",
+	ngayxuatban:"06 -2014",
+	dichgia:"Không",
+	sotrang:140,
+	gioithieusach:"Một hôm, ông già Ê-giơn đã kể cho cô bé A-xôn câu chuyện về chàng hoàng tử lái con tàu có cánh buồm đỏ thắm đến đón ý trung nhân. A- xôn đã sống qua tuổi thơ với khát vọng chờ mong cánh buồm đỏ thắm. Rồi một ngày, con tàu mang cánh buồm rực rỡ ấy đã ghé vào làng Ca-péc-na để đón A-xôn.
+
+Thiên truyện tuyệt vời Cánh buồm đỏ thắm chan hòa ánh sáng mặt trời và thắm đượm tình người được viết cách đây gần một thế kỉ, cho đến nay vẫn đủ sức làm xao xuyến hàng triệu con tim...",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Cây Táo Yêu Thương",
+	tacgia:"Shel Silverstein",
+	gia:69,
+	nhaxuatban:"Nhà Xuất Bản Dân Trí",
+	ngayxuatban:"11 -2017",
+	dichgia:"Lương Quỳnh Mai",
+	sotrang:54,
+	gioithieusach:"Cây Táo Yêu Thương lạ khi toàn bộ câu chuyện chỉ là 25 bức vẽ trắng đen. Đã vậy, cốt truyện của sách được gói gọn trong những câu kể ngắn, rất ngắn, không có phù thủy, không có công chúa, càng chẳng có phép màu, chẳng li kỳ thú vị như những truyện thiếu nhi khác. Kết thúc truyện cũng không có "cái thiện chiến thắng cái ác" hay "họ sống chung bên nhau hạnh phúc suốt đời", mà thay vào đó, lại là một câu chuyện buồn nhiều dư vị...
+
+Dẫu có thế nào đi nữa, quyển sách của Shel Silverstein vẫn đứng vững trong lòng bạn đọc suốt 50 năm, được dịch ra 30 ngôn ngữ khác nhau trên thế giới và trở thành cuốn sách yêu thích của hàng triệu trẻ em. The Giving Tree liên tục nằm trong những truyện thiếu nhi bán chạy nhất, xếp thứ 24 trong 100 cuốn sách thiếu nhi được yêu thích nhất theo khảo sát của Hiệp hội Giáo dục Quốc gia Hoa Kì (NEA), và gần đây là vị trí thứ 3 trong danh sách The Giving Tree của cộng đồng Goodreads với gần 50.000 lượt bình chọn.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Charlotte Và Wilbur (Tái Bản 2018)",
+	tacgia:"E.B.White",
+	gia:56,
+	nhaxuatban:"Không",
+	ngayxuatban:"11 -2017",
+	dichgia:"Nguyễn Quế Dương",
+	sotrang:156,
+	gioithieusach:"Một cuốn sách xuất chúng dành cho thiếu nhi. (The Times Literary Supplement)
+
+Wilbur, chú lợn xuân cứ đinh ninh mình sẽ vui hưởng thái bình mãi trong trang trại nhà Zuckerman, thế nên, chú tưởng như phát cuồng lên được khi biết rằng người ta sẽ giết thịt chú khi mùa đông tới... Mọi hy vọng của chú, giờ đây, chỉ còn biết đổ dồn lại vào Charlotte, chị nhện xám vẫn tĩnh tại giăng mắc ở trên chuồng lợn...
+
+Charlotte và Wilbur, câu chuyện kể về việc một con nhện đã cứu sống con lợn bạn mình như thế nào, là tác phẩm kinh điển của văn học thiếu nhi Mỹ; và tình bạn của chúng đã được hàng triệu độc giả trên thế giới cùng chia sẻ.
+
+Charlotte và Wilbur là cuốn sách gõ vào cánh cửa tưởng tượng của tuổi thơ, với tất cả những ai đang là trẻ nhỏ và từng là trẻ nhỏ. Nó mang đến thế giới kỳ diệu mà chỉ những cô bé biết khóc vì chú lợn kẹ sắp bị giết như Fern mới thấu hiểu. Lắng đọng với nhiều tình tiết cảm động, như chuyện Fern đã chăm sóc lợn Wilbur hồi nhỏ, cuộc chia tay cuối cùng giữa Charlotte và Wilbur, và tình bạn nối tiếp với những đứa con, cháu, chắt của Charlotte sau này…",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Chiến Binh Cầu Vồng",
+	tacgia:"Andrea Hirata",
+	gia:100,
+	nhaxuatban:"Nhà Xuất Bản Hội Nhà Văn",
+	ngayxuatban:"09 -2017",
+	dichgia:"Dạ Thảo",
+	sotrang:0,
+	gioithieusach:"Một tác phẩm có tầm ảnh hưởng sâu rộng nhất Indonesia.
+
+Thầy Harfan và cô Mus nghèo khổ đã mang đến cho tôi tuổi thơ đẹp nhất, tình bạn đẹp nhất, và tâm hồn phong phú, một thứ gì đó vô giá, thậm chí còn có giá trị hơn những khao khát mơ ước. Có thể tôi lầm, nhưng theo ý tôi, đây thật sự là hơi thở của giáo dục và linh hồn của một chốn được gọi là trường học. - (Trích tác phẩm)
+
+Trong ngày khai giảng, nhờ sự xuất hiện vào phút chót của cậu bé thiểu năng trí tuệ Harun, trường Muhammadiyah may mắn thoát khỏi nguy cơ đóng cửa. Nhưng ước mơ dạy và học trong ngôi trường Hồi giáo ấy liệu sẽ đi về đâu, khi ngôi trường xập xệ dường như sẵn sàng sụp xuống bất cứ lúc nào, khi lời đe dọa đóng cửa từ viên thanh tra giáo dục luôn lơ lửng trên đầu, khi những cỗ máy xúc hung dữ đang chực chờ xới tung ngôi trường để dò mạch thiếc…? Và liệu niềm đam mê học tập của những Chiến binh Cầu vồng đó có đủ sức chinh phục quãng đường ngày ngày đạp xe bốn mươi cây số, rồi đầm cá sấu lúc nhúc bọn ăn thịt người, chưa kể sự mê hoặc từ những chuyến phiêu lưu chết người theo tiếng gọi của ngài pháp sư bí ẩn trên đảo Hải Tặc, cùng sức cám dỗ khôn cưỡng từ những đồng tiền còm kiếm được nhờ công việc cu li toàn thời gian ...?
+
+Chiến binh Cầu vồng có cả trong sáng tuổi học trò lẫn những trò đùa tinh quái, cả nước mắt lẫn tiếng cười – một bức tranh chân thực về hố sâu ngăn cách giàu nghèo, một tác phẩm văn học cảm động truyền tải sâu sắc nhất ý nghĩa đích thực của việc làm thầy, việc làm trò và việc học.
+
+Tác phẩm đã bán được trên năm triệu bản, được dịch ra 26 thứ tiếng, là một trong những đại diện xuất sắc nhất của  văn học Indonesia hiện đại.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Chuyện Con Mèo Dạy Hải Âu Bay",
+	tacgia:"ALuis Sepulveda",
+	gia:149,
+	nhaxuatban:"Không",
+	ngayxuatban:"06 -2019",
+	dichgia:"Không",
+	sotrang:144,
+	gioithieusach:"Cô hải âu Kengah bị nhấn chìm trong váng dầu – thứ chất thải nguy hiểm mà những con người xấu xa bí mật đổ ra đại dương. Với nỗ lực đầy tuyệt vọng, cô bay vào bến cảng Hamburg và rơi xuống ban công của con mèo mun, to đùng, mập ú Zorba. Trong phút cuối cuộc đời, cô sinh ra một quả trứng và con mèo mun hứa với cô sẽ thực hiện ba lời hứa chừng như không tưởng với loài mèo:
+Không ăn quả trứng.
+Chăm sóc cho tới khi nó nở.
+Dạy cho con hải âu bay.
+Lời hứa của một con mèo cũng là trách nhiệm của toàn bộ mèo trên bến cảng, bởi vậy bè bạn của Zorba bao gồm ngài mèo Đại Tá đầy uy tín, mèo Secretario nhanh nhảu, mèo Einstein uyên bác, mèo Bốn Biển đầy kinh nghiệm đã chung sức giúp nó hoàn thành trách nhiệm. Tuy nhiên, việc chăm sóc, dạy dỗ một con hải âu đâu phải chuyện đùa, sẽ có hàng trăm rắc rối nảy sinh và cần có những kế hoạch đầy linh hoạt được bàn bạc kỹ càng…
+Chuyện con mèo dạy hải âu bay là kiệt tác dành cho thiếu nhi của nhà văn Chi Lê nổi tiếng Luis Sepúlveda – tác giả của cuốn Lão già mê đọc truyện tình đã bán được 18 triệu bản khắp thế giới. Tác phẩm không chỉ là một câu chuyện ấm áp, trong sáng, dễ thương về loài vật mà còn chuyển tải thông điệp về trách nhiệm với môi trường, về sự sẻ chia và yêu thương cũng như ý nghĩa của những nỗ lực – Chỉ những kẻ dám mới có thể bay.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Có Hai Con Mèo Ngồi Bên Cửa Sổ",
+	tacgia:"Nguyễn Nhật Ánh",
+	gia:85,
+	nhaxuatban:"Nhà Xuất Bản Trẻ",
+	ngayxuatban:"06 -2012",
+	dichgia:"Không",
+	sotrang:210,
+	gioithieusach:"Nhân vật chính thứ nhất tên là Gấu.
+
+Nhân vật thứ hai là Tí Hon.
+
+Nhân vật thứ ba, tên là…; còn nữa, nhân vật thứ tư, tên là…
+
+Để biết tại sao Gấu lại chơi thân với Tí Hon, thì mời bạn hãy mở sách ra.
+
+Gấu và Tí Hon thân nhau đến mức có thể chia sẻ từng chuyện vui buồn trong những phút giây mềm yếu, lo lắng và chăm sóc, giúp nhau từ miếng ăn đến “chiến lược” để tồn tại lâu dài.Tình bạn là gì? Bạn gái là gì? Tình yêu là gì?
+Bọn mèo chuột kể với chúng ta nhiều câu chuyện nhỏ, gửi thông điệp rằng, tình yêu có sức mạnh tuyệt diệu, có thể làm nên mọi điều phi thường trong cuộc sống muôn loài.
+
+Cuốn truyện có độ dầy vừa phải, 67 hình vẽ của họa sĩ Đỗ Hoàng Tường sinh động đến từng nét nũng nịu hay kiêu căng của nàng mèo người yêu mèo Gấu, câu chuyện thì hấp dẫn duyên dáng điểm những bài thơ tình lãng mạn nao lòng song đọc to lên thì khiến cười hinh hích…
+
+Bạn hãy đọc nhé, để thấy, Nguyễn Nhật Ánh đã viết truyện mèo chuột theo cái cách của riêng mình độc đáo như thế nào.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Con Gà Đẻ Trứng Vàng",
+	tacgia:"Thiền sư Thích Nhất Hạnh",
+	gia:159,
+	nhaxuatban:"Không",
+	ngayxuatban:"Không",
+	dichgia:"Không",
+	sotrang:50,
+	gioithieusach:"Con Chừ có đẻ trứng vàng hay không đẻ trứng vàng, điều đó đối với Tâm cũng như nhau. Miễn là nó có đẻ trứng. Và miễn là những quả trứng ấy đều có thể trở thành những con gà con...
+Bằng câu chuyện giản dị, chân phương và gần gũi, Sư Ông Thích Nhất Hạnh mang về trong mỗi người một vùng trời trong trẻo, vi diệu; vừa thấp thoáng bóng dáng ngụ ngôn vừa thênh thang vùng trời cổ tích.
+Trẻ nhỏ sẽ tìm thấy những con gà con của mình. Người lớn cũng vậy. Hãy mở rộng trái tim và tâm hồn mình ra cho câu chữ trong câu chuyện giản dị này ghé thăm.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Cuốn Sách Lớn Đầu Tiên Của Tớ - Động Vật",
+	tacgia:"Catherine D. Hughes",
+	gia:120,
+	nhaxuatban:"Không",
+	ngayxuatban:"04 -2015",
+	dichgia:"Không",
+	sotrang:127,
+	gioithieusach:"Thế giới có muôn vàn điều kì thú và bộ sách Cuốn Sách Lớn Đầu Tiên của Tớ sẽ dẫn bé bước vào cuộc hành trình khám phá thế giới diệu kì ấy.
+Bộ sách gồm 5 cuốn:
+- Đại Dương.
+- Khủng Long.
+- Động Vật.
+- Vũ Trụ.
+- Những Câu Hỏi Tại Sao.
+Tập sách Động Vật với những minh họa ảnh đẹp và sống động, giúp các bạn nhỏ làm quen tới hơn 30 con vật và cuộc sống kì lạ của chúng trong các môi trường khác nhau như: trên thảo nguyên, trong rừng thẳm, trên sa mạc, ở vùng cực. Trong sách, các em có thể tìm thấy hơn 200 tấm ảnh đẹp lạ lùng và những câu chuyện thú vị, những câu hỏi ở mỗi phần gợi cho các em so sánh mình với những con vật, lời khuyên dành cho các bậc phụ huynh và nhiều điều khác nữa",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Đảo Mộng Mơ (Tái Bản)",
+	tacgia:"Nguyễn Nhật Ánh",
+	gia:60,
+	nhaxuatban:"Không",
+	ngayxuatban:"08 -2018",
+	dichgia:"Không",
+	sotrang:220,
+	gioithieusach:"Đảo Mộng mơ là một lát cắt đời sống của những đứa trẻ lên 10 giàu trí tưởng tượng như tất cả mọi đứa trẻ. Chúng mơ mộng, tưởng tượng, và tự làm "hiện thực hóa" những khao khát của mình.
+
+Câu chuyện bắt đầu từ một đống cát, và được diễn ra theo nhân vật tôi - cu Tin. Có một hòn đảo hoang, trên đảo có Chúa đảo, phu nhân Chúa đảo, và một chàng Thứ... Bảy. Hàng ngày vợ chồng Chúa đảo và Thứ Bảy vẫn phải đi học, nhưng sau giờ học là một thế giới khác, của đảo, của biển có cá mập, và rừng có thú dữ. Hấp dẫn, đầy quyến rũ, có cãi vã, có cai trị, có yêu thương, có ẩu đả, và cả...những nụ hôn!",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Đảo Mộng Mơ (Tái Bản)",
+	tacgia:"Nguyễn Nhật Ánh",
+	gia:60,
+	nhaxuatban:"Không",
+	ngayxuatban:"08 -2018",
+	dichgia:"Không",
+	sotrang:220,
+	gioithieusach:"Đảo Mộng mơ là một lát cắt đời sống của những đứa trẻ lên 10 giàu trí tưởng tượng như tất cả mọi đứa trẻ. Chúng mơ mộng, tưởng tượng, và tự làm "hiện thực hóa" những khao khát của mình.
+
+Câu chuyện bắt đầu từ một đống cát, và được diễn ra theo nhân vật tôi - cu Tin. Có một hòn đảo hoang, trên đảo có Chúa đảo, phu nhân Chúa đảo, và một chàng Thứ... Bảy. Hàng ngày vợ chồng Chúa đảo và Thứ Bảy vẫn phải đi học, nhưng sau giờ học là một thế giới khác, của đảo, của biển có cá mập, và rừng có thú dữ. Hấp dẫn, đầy quyến rũ, có cãi vã, có cai trị, có yêu thương, có ẩu đả, và cả...những nụ hôn!",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Dế Mèn Phiêu Lưu Ký (Tái Bản 2019)",
+	tacgia:"Tô Hoài",
+	gia:50,
+	nhaxuatban:"Nhà Xuất Bản Kim Đồng",
+	ngayxuatban:"01 -2019",
+	dichgia:"Không",
+	sotrang:144,
+	gioithieusach:"Ấn bản minh họa màu đặc biệt của Dế Mèn phiêu lưu ký, với phần tranh ruột được in hai màu xanh - đen ấn tượng, gợi không khí đồng thoại.
+
+“Một con dế đã từ tay ông thả ra chu du thế giới tìm những điều tốt đẹp cho loài người. Và con dế ấy đã mang tên tuổi ông đi cùng trên những chặng đường phiêu lưu đến với cộng đồng những con vật trong văn học thế giới, đến với những xứ sở thiên nhiên và văn hóa của các quốc gia khác. Dế Mèn Tô Hoài đã lại sinh ra Tô Hoài Dế Mèn, một nhà văn trẻ mãi không già trong văn chươ” - Nhà phê bình Phạm Xuân Nguyên
+
+“Ông rất hiểu tư duy trẻ thơ, kể với chúng theo cách nghĩ của chúng, lí giải sự vật theo lô gích của trẻ. Hơn thế, với biệt tài miêu tả loài vật, Tô Hoài dựng lên một thế giới gần gũi với trẻ thơ. Khi cần, ông biết đem vào chất du ký khiến cho độc giả nhỏ tuổi vừa hồi hộp theo dõi, vừa thích thú khám phá.” - TS Nguyễn Đăng Điệp",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Dế Mèn Phiêu Lưu Ký",
+	tacgia:"Tô Hoài",
+	gia:150,
+	nhaxuatban:"Nhà Xuất Bản Kim Đồng",
+	ngayxuatban:"02 -2019",
+	dichgia:"Không",
+	sotrang:144,
+	gioithieusach:"Trong hơn nửa thế kỉ kể từ ngày ra mắt bạn đọc lần đầu tiên năm 1941, "Dế Mèn phiêu lưu kí" là một trong những sáng tác tâm đắc nhất của nhà văn Tô Hoài. 
+Tác phẩm đã được tái bản nhiều lần và được dịch ra hơn 20 thứ tiếng trên thế giới và luôn được các thế hệ độc giả nhỏ tuổi đón nhận. 
+Tác phẩm đã được xuất bản với nhiều hình thức khác nhau. 
+Trong đó cuốn "Dế Mèn phiêu lưu kí" gồm 148 trang, trên khổ giấy 18x25 cm với nhiều minh hoạ sinh động của hoạ sĩ Tạ Huy Long - một hoạ sĩ chuyên vẽ cho sách thiếu nhi. 
+Bằng cách sử dụng màu nước điêu luyện, hoạ sĩ Tạ Huy Long đã làm sống động thêm tác phẩm bất hủ của nhà văn Tô Hoài. 
+Cuốn sách là món quà đẹp cả về hình thức lẫn nội dung, là món quà ý nghĩa và bổ ích mà các bậc phụ huynh tặng cho con em của mình.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Đồng Dao Thơ - Truyện Cho Bé Tập Nói",
+	tacgia:"Hải Minh",
+	gia:98,
+	nhaxuatban:"Không",
+	ngayxuatban:"01 -2019",
+	dichgia:"Hải Minh",
+	sotrang:128,
+	gioithieusach:"Đồng dao thơ-truyện cho bé tập nói , giúp bé phát triển ngôn ngữ, khả năng nghe hiểu, khả năng nhận biết,
+
+Ngay từ năm đầu đời, bé có thể bập bẹ những tiếng nói đầu tiên. Theo thời gian, ngôn ngữ của bé càng được hoàn thiện và phát triển. Đọc sách cho bé nghe để khuyến khích bé tập nói là một trong những phương pháp tối ưu giúp bé phát triển ngôn ngữ.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Ehon Hình Khối - Chấm Tròn Ơi! Đi Đâu Thế",
+	tacgia:"Suzuki Mio",
+	gia:39,
+	nhaxuatban:"Không",
+	ngayxuatban:"09 -2018",
+	dichgia:"Ngọc Trâm",
+	sotrang:24,
+	gioithieusach:"Ở Nhật Bản, Ehon được ví như là thực phẩm tâm hồn của trẻ em, là món ăn tinh thần mỗi ngày mà các bậc phụ huynh Nhật, các thầy cô ở trường mẫu giáo Nhật đều dành cho trẻ. Sở dĩ như vậy, vì ngôn ngữ Ehon trong sáng, hồn nhiên; nội dung Ehon phong phú; đề tài Ehon đa dạng; tranh vẽ minh hoa Ehon tỉ mỉ, sâu sắc, màu sắc hài hòa,… được phân theo từng độ tuổi phát triển của trẻ, để phù hợp với sự tập trung và tiếp thu của trẻ ở các giai đoạn khác nhau.
+
+Nhiều cha mẹ quan niệm rằng trẻ nhỏ chưa nhận thức được nội dung truyện? Tuy nhiên, các chuyên gia trên thế giới khuyên rằng nên đọc truyện cho trẻ nghe càng sớm càng tốt, bởi vì giai đoạn từ 0 đến 6 là giai đoạn vô cùng quan trọng để phát triển não bộ của trẻ. Cùng con đọc sách sẽ là khoảng thời gian để qua đó cha mẹ có thể kích thích sự phát triển cả năm giác quan cho bé, tay sờ, mắt nhìn, tai nghe, miệng ê a phấn khích; đọc cho bé nghe cũng là cơ hội tuyệt vời để các bố mẹ gần gũi, âu yếm và gắn kết tình cảm bền chặt với con. Giọng đọc ngọt ngào của quý vị thực sự sẽ truyền tình yêu của quý vị đến các con, giúp các con cảm nhận được mình được nâng niu và bao bọc; đồng thời giúp các con xây dựng vốn từ vựng, phát triển ngôn ngữ.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+
+var newBook = {
+	tensach: "Ehon Hình Khối - Chấm Tròn Ơi! Đi Đâu Thế",
+	tacgia:"Suzuki Mio",
+	gia:39,
+	nhaxuatban:"Không",
+	ngayxuatban:"09 -2018",
+	dichgia:"Ngọc Trâm",
+	sotrang:24,
+	gioithieusach:"Ở Nhật Bản, Ehon được ví như là thực phẩm tâm hồn của trẻ em, là món ăn tinh thần mỗi ngày mà các bậc phụ huynh Nhật, các thầy cô ở trường mẫu giáo Nhật đều dành cho trẻ. Sở dĩ như vậy, vì ngôn ngữ Ehon trong sáng, hồn nhiên; nội dung Ehon phong phú; đề tài Ehon đa dạng; tranh vẽ minh hoa Ehon tỉ mỉ, sâu sắc, màu sắc hài hòa,… được phân theo từng độ tuổi phát triển của trẻ, để phù hợp với sự tập trung và tiếp thu của trẻ ở các giai đoạn khác nhau.
+
+Nhiều cha mẹ quan niệm rằng trẻ nhỏ chưa nhận thức được nội dung truyện? Tuy nhiên, các chuyên gia trên thế giới khuyên rằng nên đọc truyện cho trẻ nghe càng sớm càng tốt, bởi vì giai đoạn từ 0 đến 6 là giai đoạn vô cùng quan trọng để phát triển não bộ của trẻ. Cùng con đọc sách sẽ là khoảng thời gian để qua đó cha mẹ có thể kích thích sự phát triển cả năm giác quan cho bé, tay sờ, mắt nhìn, tai nghe, miệng ê a phấn khích; đọc cho bé nghe cũng là cơ hội tuyệt vời để các bố mẹ gần gũi, âu yếm và gắn kết tình cảm bền chặt với con. Giọng đọc ngọt ngào của quý vị thực sự sẽ truyền tình yêu của quý vị đến các con, giúp các con cảm nhận được mình được nâng niu và bao bọc; đồng thời giúp các con xây dựng vốn từ vựng, phát triển ngôn ngữ.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Ehon Nhật Bản - Cá Vàng Trốn Ở Đâu Rồi Nhỉ?",
+	tacgia:"Gomi Taro",
+	gia:29,
+	nhaxuatban:"Không",
+	ngayxuatban:"07 -2015",
+	dichgia:"Không",
+	sotrang:24,
+	gioithieusach:"Có một bạn cá vàng, bạn rất thích đi trốn để các em nhỏ tìm kiếm. Các em hãy chú ý nhé, bạn trốn rất kỹ trong từng bức tranh, lúc thì ở chậu hoa, lúc lại ở tấm rèm cửa, có khi bạn còn trốn trong hộp kẹo nhiều màu sắc. Làm thế nào tìm ra bạn ấy bây giờ?
+
+Ehon Nhật Bản Cá vàng trốn ở đâu rồi nhỉ? với những hình vẽ ngộ nghĩnh, màu sắc bắt mắt sẽ là món quà ý nghĩa mẹ dành tặng các bé từ 0-3 tuổi để cả nhà cùng bé đọc, cùng bé khám phá.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+
+var newBook = {
+	tensach: "Ehon Nhật Bản - Chuyện Xì Hơi",
+	tacgia:"Shinta Cho",
+	gia:29,
+	nhaxuatban:"Không",
+	ngayxuatban:"10 -2015",
+	dichgia:"Không",
+	sotrang:28,
+	gioithieusach:"Các em nhỏ từ 3 - 8 tuổi có lẽ đều biết tới hoạt động “xì hơi” rồi đúng không? Có bạn thì xì hơi thành tiếng to, cũng có bạn xì hơi nhưng người bên cạnh không nghe thấy. Tại sao lại như vậy nhỉ?
+
+Ehon Nhật Bản - Chuyện xì hơi là một cuốn truyện thú vị giải thích với các em về việc "xì hơi" và giúp các em hiểu rằng đây là một việc rất tự nhiên.
+
+Mời các em cùng đón đọc Ehon - Chuyện xì hơi để cùng khám phá thêm về hoạt động cá nhân này!",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Ehon Nhật Bản - Em Gái Bị Ốm",
+	tacgia:"Tsutsui Yoriko - Hayashi Akiko",
+	gia:29,
+	nhaxuatban:"Không",
+	ngayxuatban:"07 -2015",
+	dichgia:"Không",
+	sotrang:24,
+	gioithieusach:"Asae rất thích búp bê Hoppeko, mỗi lần trước khi đi học, Asae lại cẩn thận đặt búp bê vào xe nôi. Một hôm, khi từ trường mẫu giáo trở về, Asae thấy mẹ cõng em gái Aya trên lưng để đi tới bệnh viên. Ở nhà chỉ còn một mình Asae, bỗng dưng trời tối sầm lại, bên ngoài đổ mưa lớn. Asae ôm búp bê Hoppeko thật chặt, trong lòng vô cùng lo lắng cho em Aya đang ở bệnh viện. Ngày hôm sau, Asae được cùng bố vào bệnh viện thăm em. Cô bé đã chuẩn bị cho Aya rất nhiều món quà, nhưng để em thật vui và mau khỏi bệnh thì nên tặng gì nhỉ?
+
+“A, đúng rồi!” - Asae bèn lấy ra một tờ giấy thật đẹp và bắt đầu gói một gói gì đó rất to. Những câu chuyện xoay quanh Asae và em gái nhỏ chắc chắn sẽ nhận được sự yêu thích của các em nhỏ về nội dung gần gũi và hình vẽ sinh động.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+
+var newBook = {
+	tensach: "Gieo Mầm Tính Cách – Tự Tin",
+	tacgia:"Hạ Yên, Hoài Phương",
+	gia:32,
+	nhaxuatban:"Không",
+	ngayxuatban:"04 -2019",
+	dichgia:"Không",
+	sotrang:79,
+	gioithieusach:"Tính cách của trẻ được hình thành từ rất sớm, thông qua sự giáo dục trong gia đình, qua những việc làm, lời nói, cách ứng xử của những người xung quanh. Nhưng ở độ tuổi nhỏ, không thể ép trẻ phát triển tính cách theo ý muốn của cha mẹ bằng lời dạy dỗ suông, bằng những bài học đạo đức khô khan, mà những tấm gương đẹp về tính cách đó phải được gieo vào trẻ từ từ bằng những câu chuyện sinh động, hấp dẫn.
+Bộ sách Gieo mầm tính cách (12 tập) là tập hợp những câu chuyện như vậy. Mỗi tập là một hạt giống tính cách gieo vào trẻ những bài học Tử tế, Tha thứ, Kiên trì, Thật thà, Quan tâm, Yêu thương, Mạnh mẽ, Tự tin, Ước mơ, Lịch sự, Hiếu thảo, Công bằng bằng những câu chuyện cảm động, đầy ý nghĩa đáng để suy ngẫm.
+Mỗi câu chuyện được trình bày kèm với một câu tục ngữ, thành ngữ, ca dao, danh ngôn nhằm nhấn mạnh thêm thông điệp mà người tuyển chọn muốn gửi gắm. Không chỉ vậy, những bài học sau mỗi câu chuyện được xây dựng gần gũi, nhiều gợi mở cho người đọc triển khai thêm nhiều suy nghĩ sau khi đọc truyện, so sánh, áp dụng thực tế và tự xét bản thân.
+Truyện được minh họa hai màu sinh động.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Hoàng Tử Bé (Tái Bản 2019)",
+	tacgia:"Antoine De Saint-Exupéry",
+	gia:75,
+	nhaxuatban:"Không",
+	ngayxuatban:"05 -2019",
+	dichgia:"Trác Phong",
+	sotrang:102,
+	gioithieusach:"Hoàng tử bé được viết ở New York trong những ngày tác giả sống lưu vong và được xuất bản lần đầu tiên tại New York vào năm 1943, rồi đến năm 1946 mới được xuất bản tại Pháp. Không nghi ngờ gì, đây là tác phẩm nổi tiếng nhất, được đọc nhiều nhất và cũng được yêu mến nhất của Saint-Exupéry. Cuốn sách được bình chọn là tác phẩm hay nhất thế kỉ 20 ở Pháp, đồng thời cũng là cuốn sách Pháp được dịch và được đọc nhiều nhất trên thế giới. Với 250 ngôn ngữ dịch khác nhau kể cả phương ngữ cùng hơn 200 triệu bản in trên toàn thế giới, Hoàng tử bé được coi là một trong những tác phẩm bán chạy nhất của nhân loại
+Ở Việt Nam, Hoàng tử bé được dịch và xuất bản khá sớm. Từ năm 1966 đã có đồng thời hai bản dịch: Hoàng tử bé của Bùi Giáng do An Tiêm xuất bản và Cậu hoàng con của Trần Thiện Đạo do Khai Trí xuất bản. Từ đó đến nay đã có thêm nhiều bản dịch Hoàng tử bé mới của các dịch giả khác nhau. Bản dịch Hoàng tử bé lần này, xuất bản nhân dịp kỷ niệm 70 năm Hoàng tử bé ra đời, cũng là ấn bản đầu tiên được Gallimard chính thức chuyển nhượng bản quyền tại Việt Nam, hy vọng sẽ góp phần làm phong phú thêm việc dịch và tiếp nhận tác phẩm quan trọng này với các thế hệ độc giả.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Hướng Dẫn Sử Dụng Mẹ",
+	tacgia:"Miku Ito, Makiko Sato",
+	gia:49,
+	nhaxuatban:"Không",
+	ngayxuatban:"11 -2017",
+	dichgia:"Tống Hương",
+	sotrang:132,
+	gioithieusach:"Mẹ có bao giờ băn khoăn về hình ảnh của mình trong mắt con không? Chắc có nhỉ! Đây là “phác họa” về mẹ trong mắt một cậu học sinh lớp bốn:
+
+“Trong gia đình mình, mẹ là người có uy nhất. So với bố, mẹ có uy và đáng sợ hơn nhiều. Hôm nay cũng thế, mới sáng sớm đã nghe mẹ cằn nhằn, ồn ào hết cả nhà làm mình rất khó chịu. Trên đường đến trường, mình đã cố nghĩ xem tại sao mẹ lại cằn nhằn như thế, nhưng mẹ nói rất nhiều khiến mình không thể nào nhớ được nguyên nhân làm mẹ cáu. Có điều, mình nghĩ, tức giận là việc của mẹ, còn mình chỉ là chỗ để mẹ trút cơn tức lên thôi.”
+
+Để “đối phó” với mẹ, cậu bé đã viết “cách dùng mẹ” theo gợi ý của bố: “cũng giống như cái máy tính và đầu quay, nếu không biết cách sử dụng, nó sẽ không hoạt động được và trở nên hỏng hóc”.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+
+var newBook = {
+	tensach: "Lũ Trẻ Đường Ray",
+	tacgia:"Không",
+	gia:50,
+	nhaxuatban:"Nhà Xuất Bản Văn Học",
+	ngayxuatban:"08 -2012",
+	dichgia:"Không",
+	sotrang:27,
+	gioithieusach:"Từ buổi tối cha bị hai người lạ mặt đưa đi, cuộc sống của ba chị em Roberta, Peter và Phyllis hoàn toàn đảo lộn. Từ ngôi biệt thự tiện nghi ở London, các em phải cùng mẹ chuyển về nông thôn sống khó khăn vất vả trong một ngôi nhà nhỏ.
+
+Tại nơi xa lạ không ai quen biết, lũ trẻ tìm vui bên con đường sắt chạy ngang qua đó. Các em kết bạn với Perks, người bảo vệ nhà ga, học hỏi những kiến thức về tàu hỏa của ông và thực hiện những cuộc phiêu lưu nho nhỏ. Các em còn có niềm vui ngày nào cũng vẫy chào một ông già quý phái đi tàu ngang qua vào một giờ nhất định. Sau khi các em cứu được một đoàn tàu khỏi tai nạn kinh khủng, ông già quý phái ngày càng thân thiết với bọn trẻ hơn và giúp chúng tìm hiểu vì sao cha lại biến mất một cách bí ẩn.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Mỗi Hơi Thở Một Nụ Cười",
+	tacgia:"Thiền sư Thích Nhất Hạnh",
+	gia:119,
+	nhaxuatban:"Không",
+	ngayxuatban:"Không",
+	dichgia:"Không",
+	sotrang:31,
+	gioithieusach:"Quyển sách nhỏ dạy phương pháp thiền tập của Thiền sư Thích Nhất Hạnh cho trẻ em, do Sư cô Susan kể chuyện, được trình bày song ngữ Việt - Anh và minh họa sinh động. Với Mỗi hơi thở một nụ cười, các em sẽ học được thiền như một trò chơi, thiền thật vui tươi và hạnh phúc",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Ngụ Ngôn Aesop (Nhã Nam)",
+	tacgia:"Aesop",
+	gia:89,
+	nhaxuatban:"Nhà Xuất Bản Văn Học",
+	ngayxuatban:"10 -2015",
+	dichgia:"Không",
+	sotrang:126,
+	gioithieusach:"Một trận lũ lớn cuốn hai cái bình trôi xuống sông; một cái đươc làm bằng đất nung còn cái kia bằng đồng. Trong lúc bọn chúng bị vùi dập trong dòng sông cuồn cuộn, giữa đủ thứ mảnh vỡ, cái bình đồng hét to gọi cái bình đất nung, "Hãy ở sát cạnh bên tôi và tôi sẽ cố hết sức để bảo vệ anh."
+
+Nhưng cái bình đất nung, lúc này đang lo lắng tột độ, đáp lại, "Cảm ơn anh, tôi vô cùng cảm kích sự quan tâm của anh, nhưng đấy đúng là điều tôi e ngại nhất đấy! Nếu tránh xa anh, tôi có thể trôi xuôi dòng sông để rồi chạm bến đỗ an toàn. Nhưng nếu chúng ta đụng vào nhau một lần thôi là tôi sẽ bị vỡ tan thành muôn mảnh.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+var newBook = {
+	tensach: "Người Truyền Ký Ức",
+	tacgia:"Lois Lowry",
+	gia:68,
+	nhaxuatban:"Không",
+	ngayxuatban:"06 -2014",
+	dichgia:"Nguyễn Quỳnh Trang",
+	sotrang:246,
+	gioithieusach:"Cho dù một ai đã từng đọc những lời giới thiệu ngắn gọn xung quanh cuốn sách, không đọc cũng không thể nào cảm nhận hết sự kỳ lạ của nó. Người truyền ký ức tuyệt vời ở trí tưởng tưởng và những thông điệp mang theo.
+
+Một Cộng đồng không được xác định rõ về không gian và thời gian tồn tại, chỉ biết những thành phần của nó có hình hài giống như con người, và một vài cấu trúc cũng giống như con người. Đứng đầu cộng đồng có một Hội đồng quyết định tất thảy mọi việc, dĩ nhiên, vẫn còn một thế lực cao siêu nào đó hơn nữa, chỉ huy về tổng thể. Mỗi cá nhân sinh ra không bởi cha mẹ họ, mà bởi những Mẹ đẻ, những người phụ nữ được nhận Nhiệm vụ sinh nở ra bé mới cho cộng đồng.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Những Chàng Trai Xấu Tính",
+	tacgia:"Nguyễn Nhật Ánh",
+	gia:50,
+	nhaxuatban:"NXB Trẻ",
+	ngayxuatban:"12 -2018",
+	dichgia:"Không",
+	sotrang:198,
+	gioithieusach:"Từ những lần gặp gỡ thường xuyên ở hồ bơi, có một cuộc chiến tranh tưởng bùng nổ giữa hai chàng trai vốn là “chiến hữu”. Tất cả chỉ là vì một cô gái có hành tung khó hiểu và tính nết thay đổi liên tục. Sự hiểu lầm ấy may thay không kéo dài lâu quá, bởi vì sau cùng hai chàng trai xấu tính ấy hiểu ra, họ đang yêu hai chị em sinh đôi.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Oxford Thương Yêu - Tái Bản 2014",
+	tacgia:"Dương Thụy",
+	gia:60,
+	nhaxuatban:"NXB Trẻ",
+	ngayxuatban:"02 -2014",
+	dichgia:"Không",
+	sotrang:280,
+	gioithieusach:"Truyện dài lấy bối cảnh tại trường đại học Oxford - Anh xoay quanh mối tình của cô sinh viên Việt Nam và người trợ giảng Bồ Đào Nha, với một kết thúc có hậu.
+
+“Oxford thương yêu” lôi cuốn người dọc bằng những đoạn tả cảnh thiên nhiên tuyệt đẹp, những quan niệm sống cởi mở và hướng thiện của một lớp thanh niên trưởng thành trong giai đoạn đất nước được đổi mới.
+
+Ở nhiều đoạn, tác phẩm được khắc họa như một bức tranh lung linh màu sắc và sống động hiện thực.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Ruột Ơi Là Ruột",
+	tacgia:"Giulia Enders",
+	gia:75,
+	nhaxuatban:"Nhà Xuất Bản Thế Giới",
+	ngayxuatban:"04 -2017",
+	dichgia:"Không",
+	sotrang:352,
+	gioithieusach:"Ruột Ơi Là Ruột mời gọi chúng ta khám phá một trong những cơ quan phức tạp nhất, quan trọng nhất và có thể nói là diệu kỳ nhất trong cơ thể, nơi cư trú của cả một thế giới sống động – với số lượng đông đảo gấp nhiều lần loài người cư ngụ trên Trái đất gồm các chiến binh tí hon của hệ miễn dịch và vô vàn quần thể vi sinh vật có lợi đang tích cực làm việc để nuôi sống và bảo vệ chúng ta: đường ruột. Qua cuộc hành trình của miếng bánh đi từ miệng, thực quản, dạ dày xuống ruột non, ruột già rồi dừng chân ở một luống rau nào đó, cùng những hình ảnh minh họa ngộ nghĩnh và ví dụ gần gũi, cuốn sách cung cấp những thông tin hữu ích về quá trình hấp thụ chất dinh dưỡng, tầm quan trọng của vi khuẩn tốt với trẻ sơ sinh, mối liên hệ của hệ vi khuẩn đường ruột với các chứng bệnh, từ chứng bất dung nạp, chứng dị ứng, cho đến các chứng bệnh kỳ lạ mà ta tưởng chừng chẳng hề có liên quan như chứng căng thẳng, bệnh Alzheimer và cả hiện tượng tự sát...",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+
+var newBook = {
+	tensach: "TotoChan Cô Bé Bên Cửa Sổ (Tái Bản 2018)",
+	tacgia:"Kuroyanagi Tetsuko",
+	gia:95,
+	nhaxuatban:"Nhà Xuất Bản Thế Giới",
+	ngayxuatban:"04 -2017",
+	dichgia:"Không",
+	sotrang:352,
+	gioithieusach:"Từ những lần gặp gỡ thường xuyên ở hồ bơi, có một cuộc chiến tranh tưởng bùng nổ giữa hai chàng trai vốn là “chiến hữu”. Tất cả chỉ là vì một cô gái có hành tung khó hiểu và tính nết thay đổi liên tục. Sự hiểu lầm ấy may thay không kéo dài lâu quá, bởi vì sau cùng hai chàng trai xấu tính ấy hiểu ra, họ đang yêu hai chị em sinh đôi.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);
+
+
+var newBook = {
+	tensach: "Truyện Tranh Tư Duy Cho Bé -Phát Triển Ngôn Ngữ, PT Trí Tưởng Tượng",
+	tacgia:"Hải Minh",
+	gia:85,
+	nhaxuatban:"Nhà Xuất Bản Thế Giới",
+	ngayxuatban:"04 -2017",
+	dichgia:"Không",
+	sotrang:352,
+	gioithieusach:"Từ những lần gặp gỡ thường xuyên ở hồ bơi, có một cuộc chiến tranh tưởng bùng nổ giữa hai chàng trai vốn là “chiến hữu”. Tất cả chỉ là vì một cô gái có hành tung khó hiểu và tính nết thay đổi liên tục. Sự hiểu lầm ấy may thay không kéo dài lâu quá, bởi vì sau cùng hai chàng trai xấu tính ấy hiểu ra, họ đang yêu hai chị em sinh đôi.",
+	soluong:0,
+	theloai:"Thiếu Nhi",
+}
+Books.push(newBook);

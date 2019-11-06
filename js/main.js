@@ -15,20 +15,20 @@ const setDataToLocal = (data,key) => localStorage.setItem(key,JSON.stringify(dat
  
 
 function isLogged(){
-	var login = document.getElementById("login");
+  var login = document.getElementById("login");
   var accounts = getDataFromLocal(accounts,'user');
   var user = accounts.find(users => users.status==1);
-    if(typeof user==`undefined`)  {	
-			login.innerHTML = 'TÀI KHOẢN';
-			login.setAttribute('href','LoginForm.html');
+    if(typeof user==`undefined`)  { 
+      login.innerHTML = 'TÀI KHOẢN';
+      login.setAttribute('href','LoginForm.html');
       return 0;
-		}
-		else {
-			login.innerHTML=user.name;
-			login.setAttribute("onclick","logout()");
-		}
+    }
+    else {
+      login.innerHTML=user.name;
+      login.setAttribute("onclick","logout()");
+    }
     return 1;
-	}
+  }
 
 window.addEventListener("load",isLogged);
 
@@ -131,8 +131,7 @@ function register(){
             if(users.username!=newaccount.username && users.email !=newaccount.email){
                   accounts.push(newaccount);
                   setDataToLocal(accounts,"user");
-                  alert("ĐĂNG KÝ THÀNH CÔNG");
-                  window.location ="LoginForm.html";
+                  swal("Đăng ký thành công!!", "Mời Bạn Đăng Nhập", "success").then(()=> window.location ="LoginForm.html");
                   break;
                   }
                 else
@@ -166,17 +165,17 @@ function isExist(accounts,user,pwd){
 
 function login(){
 
-	var user = document.getElementById("user").value;
+  var user = document.getElementById("user").value;
   var pwd = document.getElementById("pwd").value;
   var accounts =getDataFromLocal(accounts,"user");
     if(!accounts){
         alert("Dữ liệu không tồn tại!");
     }
   else if(isExist(accounts,user,pwd)) {
-        alert("Đăng nhập thành công");
-        window.location = "Index.html";
+         swal("Đăng nhập thành công!!", "Chào mừng bạn đến với Sagobo Books", "success").then(()=> window.location ="Index.html");
   } 
-    else alert("Sai thông tin đăng nhập");
+    else   swal("Đăng nhập thất bại!!", "Sai tài khoản hoặc mật khẩu", "error");
+
 }
      
 
@@ -220,11 +219,13 @@ function autocomplete(inp, arr) {
           b.innerHTML += arr[i].substr(val.length);
           /*insert a input field that will hold the current array item's value:*/
           b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
-          b.innerHTML += "<a href='"+arr[i]+"'></a>"
+          b.innerHTML += "<a href='Detail.html?"+arr[i]+"'></a>"
           /*execute a function when someone clicks on the item value (DIV element):*/
           b.addEventListener("click", function(e) {
               /*insert the value for the autocomplete text field:*/
-              window.location = this.getElementsByTagName("input")[0].value+".html"; // TIM KIEM KIEU 1
+              window.location = "Detail.html?"+this.getElementsByTagName("input")[0].value.split(' ').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
+
+; // TIM KIEM KIEU 1
               /*close the list of autocompleted values,
               (or any other open lists of autocompleted values:*/
               closeAllLists();
@@ -291,17 +292,44 @@ function autocomplete(inp, arr) {
 }
 
 /*An array containing all the country names in the world:*/
-var countries = ["Những kẻ thất tình","Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","Antigua & Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia & Herzegovina","Botswana","Brazil","British Virgin Islands","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Cape Verde","Cayman Islands","Central Arfrican Republic","Chad","Chile","China","Colombia","Congo","Cook Islands","Costa Rica","Cote D Ivoire","Croatia","Cuba","Curacao","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Estonia","Ethiopia","Falkland Islands","Faroe Islands","Fiji","Finland","France","French Polynesia","French West Indies","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Greece","Greenland","Grenada","Guam","Guatemala","Guernsey","Guinea","Guinea Bissau","Guyana","Haiti","Honduras","Hong Kong","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Isle of Man","Israel","Italy","Jamaica","Japan","Jersey","Jordan","Kazakhstan","Kenya","Kiribati","Kosovo","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Marshall Islands","Mauritania","Mauritius","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Myanmar","Namibia","Nauro","Nepal","Netherlands","Netherlands Antilles","New Caledonia","New Zealand","Nicaragua","Niger","Nigeria","North Korea","Norway","Oman","Pakistan","Palau","Palestine","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Qatar","Reunion","Romania","Russia","Rwanda","Saint Pierre & Miquelon","Samoa","San Marino","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa","South Korea","South Sudan","Spain","Sri Lanka","St Kitts & Nevis","St Lucia","St Vincent","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Timor L'Este","Togo","Tonga","Trinidad & Tobago","Tunisia","Turkey","Turkmenistan","Turks & Caicos","Tuvalu","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States of America","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam","Virgin Islands (US)","Yemen","Zambia","Zimbabwe"];
-//TIM KIEM KIEU 2
+var countries = getDataFromLocal(countries,"sanpham")//TIM KIEM KIEU 2
+countries = countries.map(country => country.tensach);
 function search(){
-	window.location =document.getElementById("suggest").value;
+  var content ="Detail.html?"+document.getElementById("suggest").valuestr.split(' ').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
+
+;
+  window.location =content;
 }
 //KET THUC TIM KIEM KIEU 2
 //ENDOFAUTOCOMPLETE
 
+document.addEventListener("DOMContentLoaded", function(){
 
-function change(num){
-  var item = document.getElementsByClassName("items");
+    $(".bestseller,.trendingproducts,.newest").hide();
+      $(".trendingproducts").fadeIn(300);
+      $(".trendingproducts").css("display","block");
+});
+
+function change(num,value){
+      $(".bestseller,.trendingproducts,.newest").hide();
+    if(value.id=="moiphathanh"){
+      $(".bestseller,.trendingproducts,.newest").fadeOut();
+      $(".newest").fadeIn(3000);
+      $(".newest").css("display","block");
+    }
+    if(value.id=="banchay"){
+      $(".bestseller,.trendingproducts,.newest").fadeOut();
+      $(".bestseller").fadeIn(3000);
+    $(".bestseller").css("display","block");
+      
+    }
+     if(value.id=="noibat"){
+      $(".bestseller,.trendingproducts,.newest").fadeOut();
+      $(".trendingproducts").fadeIn(3000);
+      $(".trendingproducts").css("display","block");
+    }
+      var item = document.getElementsByClassName("items");
+    
     for (let i=0;i<item.length;i++){
 
        item[i].className = item[i].className.replace(" active", "");
@@ -309,12 +337,145 @@ function change(num){
     item[num].className += " active";
 }
 function slicks(){
-$('.trendingproducts').slick({
+$('.kynang,.vanhoc,.tieuthuyet,.thieunhi').slick({
     slidesToShow: 5,
     slidesToScroll: 5,
     dots: true,
     infinite: true,
-    cssEase: 'linear'
+
+});
+$('.trendingproducts,.bestseller,.newest').slick({
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
 });
 }
 window.addEventListener("load",slicks);
+
+
+function rsGia(){
+  var Books = getDataFromLocal(Books,"sanpham");
+  Books.filter(book=>book.soluong=0);
+  setDataToLocal(Books,"sanpham");
+  console.log("DONE!!!!!");
+}
+
+function data(key){
+
+  var content="";
+  var Books = getDataFromLocal(Books,"sanpham");
+  if(key=="Nổi Bật") var Books = Books.filter(book=>book.noibat==1);
+  if( key=="Mới Phát Hành") var Books = Books.filter(book=>book.moiphathanh==1);
+  if(key =="Bán Chạy") var Books = Books.filter(book=>book.banchay==1);
+  else
+  var Books = Books.filter(book => book.theloai==key);
+
+  var number=1;
+  while(number<=7){
+  var i = Math.floor(Math.random() * Books.length)+1;  
+
+  content+= `<div class="khung">
+
+        <a href="Detail.html?`+Books[i].tensach+`"><img src="img/`+Books[i].tensach+`.jpg"></a>
+        <div class="chitiet">
+            <a href="Detail.html?`+Books[i].tensach+`">`+Books[i].tensach+`</a>
+        </div>
+        <div class="tacgia">
+          `+Books[i].tacgia+`
+        </div>
+        <div class="gia">
+            `+parseFloat(Books[i].gia).toFixed(3)+`đ
+        </div>
+         <div class="add">
+           <button class="addtocart" onclick="addToCart('`+Books[i].tensach+`')">Thêm vào giỏ</button>
+         </div>
+        </div>`;
+  number++;
+}
+  return content;
+}
+window.addEventListener("load",document.getElementById("soluongsanpham").innerHTML = getInCart());
+
+
+function addToCart(tenSach){
+  var Books = getDataFromLocal(Books,"sanpham");
+  for(let value of Books){
+    if(value.tensach==tenSach){ value.soluong+=1;
+      alert("Đã thêm vào giỏ hàng");
+      setDataToLocal(Books,"sanpham");
+      break;
+    }
+
+  }
+ document.getElementById("soluongsanpham").innerHTML = getInCart();
+}
+
+
+
+function createDB(){
+
+var Books = getDataFromLocal(Books,"sanpham");
+var kynang = Books.filter(book => book.theloai=="Kỹ Năng");
+setDataToLocal(kynang,"Kỹ Năng");
+var vanhoc = Books.filter(book => book.theloai=="Văn Học");
+setDataToLocal(vanhoc,"Văn Học");
+var thieunhi = Books.filter(book => book.theloai=="Thiếu Nhi");
+setDataToLocal(thieunhi,"Thiếu Nhi");
+var tieuthuyet = Books.filter(book => book.theloai=="Tiểu Thuyết");
+setDataToLocal(tieuthuyet,"Tiểu Thuyết");
+  console.log("DB CREATED!!!!!!");
+}
+
+
+
+
+function getNoiBat(){
+  var Books = getDataFromLocal(Books,"sanpham");
+  number=1;
+while(number<=7){
+  var i = Math.floor(Math.random() * Books.length)+1;  
+  Books[i].noibat=1;
+number++}
+
+
+  var noibat = Books.filter(book => book.noibat==1);
+  setDataToLocal(noibat,"Nổi Bật");
+  console.log('set Noi Bat DONE!!!!');
+}
+
+
+function getMoiPhatHanh(){
+  var Books = getDataFromLocal(Books,"sanpham");
+  number=1;
+while(number<=7){
+  var i = Math.floor(Math.random() * Books.length)+1;  
+  Books[i].moiphathanh=1;
+number++}
+
+
+  var  moiphathanh = Books.filter(book => book.moiphathanh==1);
+  setDataToLocal(moiphathanh,"Mới Phát Hành");
+  console.log('set MPH DONE!!!!');
+}
+
+
+
+function getBanChay(){
+  var Books = getDataFromLocal(Books,"sanpham");
+  number=1;
+while(number<=7){
+  var i = Math.floor(Math.random() * Books.length)+1;  
+  Books[i].banchay=1;
+number++}
+
+
+  var  banchay = Books.filter(book => book.banchay==1);
+  setDataToLocal(banchay,"Bán Chạy");
+  console.log('set Ban Chay DONE!!!!');
+}
+
+
+

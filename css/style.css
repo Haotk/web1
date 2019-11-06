@@ -6,49 +6,61 @@ body{
 	background:white;
 }
 .header{
-	width: 100%;
-	max-width: 100%;
+	max-width:100%;
 	background:#0092f2;
-	height: 80px;
-	max-height: 200px;
+	min-height: 80px;
+
 }
 .hotline{
-	margin-left: 3%;
-	margin-top: 1%;
+	margin-left: 40px;
+	margin-top: -5px;
 	float:left;
 }
 .hotline p{
-	margin-top: 0;
 	font-family: Helvetica;
 	font-size: 17px;
 }
+.shoppingcart-box{
+	margin-top: 10px;
+	margin-left: 20px;
+}
+#soluongsanpham{
+	color: #FADA5E;
+	font-weight: bold;
+}
+.fa.fa-shopping-cart{
+	color: white;
+}
+.giohang{
+	color:white;
+}
+.account-container{
+		margin-top:25px;
+		margin-left: 30px;
+}
 .logo{
 	position: relative;
-	margin-top: 1%;
-	margin-left:3%;
-	width: 10%;
+	margin-top: 5px;
+	margin-left:30px;
+	width: 180px;
 	float:left;
-}
-.logo img{
-	width: 120%;
 }
 
 .autocomplete{
 	position: relative;
 	display: inline-block;
-	width: 42%;
 }
 .search-container{
+	margin-left: 70px;
+	margin-top: 16px;
 	float:left;
-	width: 42%;
-	margin-left: 5%;
-	margin-top: 1.2%;
 }
 .search-icon{
 	background: #edeef2;
-	width: 20%;
+	width: 110px;
 	height: 36px;
 	border: 0px;
+	margin-left: 5px;
 	border-radius: 3px;
 	font-size: 16px;
 	outline: none;
@@ -56,7 +68,7 @@ body{
 	float:right;
 }
 .search-box{
-	width: 184%;
+	width: 420px;
 	height: 24px;
 	font-size: 16px;
 	border-radius: 3px;
@@ -91,11 +103,8 @@ body{
   color: #ffffff; 
 }
 .account-container{
-	width: 8%;
 	float:left;
 	max-height: 40px;
-	margin-top: 2%;
-	margin-left: 3%;
 }
 .dangnhap{
 	text-align: center;
@@ -119,8 +128,6 @@ a{
 	border: 2px solid white;
 	border-radius: 4px;
 	padding: 10px;
-	margin-top: 1%;
-	margin-left: 2%;
 }
 .policy-container{
 	float:right;
@@ -137,15 +144,14 @@ a{
 	background:#0582d4;
 	height: 60px;
 	border: 1px solid #0582d4;
-	max-height: 200px;
 }
 
 
 /**DROPDOWN MENU**/
 .danhmuc{	
 	clear:both;
-	margin-top: 0.5%;
-	margin-left: 4%;
+	margin-top: 5px;
+	margin-left: 45px;
  	display: inline-block;
 	width: 181px;
 	border: 2px solid white;
@@ -199,12 +205,12 @@ a{
 }
 /**END OF DROPDOWN MENU**/
 .policy-container{
-	margin-top: -0.5%;	
-	float:right;
-	width: 45%;
+	margin-top: -10px;
+	float:left;
+	margin-left: 600px;
 }
 .camketsanpham{
-	width: 30%;
+	width: 150px;
 	text-align: center;
 	color: white;
 	font-size: 15px;
@@ -212,7 +218,8 @@ a{
 	float:left;
 }
 .giaohangnhanhchong{
-	width: 20%;
+	margin-left: 10px;
+	width: 100px;
 	text-align: center;
 	color: white;
 	font-size: 15px;
@@ -221,7 +228,8 @@ a{
 	margin-right: 10px;
 }
 .doitradedang{
-	width: 20%;
+	margin-left: 10px;
+	width: 60px;
 	text-align: center;
 	color: white;
 	font-size: 15px;
@@ -230,8 +238,9 @@ a{
 	margin-right: 10px;
 }
 .bocsachmienphi{
-	float:left;
-	width: 15%;
+	margin-left: 10px;
+	float:right;
+	width: 70px;
 	text-align: center;
 	color: white;
 	font-size: 15px;
@@ -240,7 +249,7 @@ a{
 }
 .banner{
 	width: 1250px;
-	height: 400px;
+	height: 300px;
 	margin: 0 auto;
 	margin-top: 40px;
 	
@@ -250,9 +259,10 @@ a{
 	height: 500px;
 	position: relative;
 	margin: 0 auto;
+	margin-top: 30px;
 }
 .button3{
-	margin-top: 40px;
+	margin-top: 100px;
 	width: 650px;
 	height: 80px;
 	margin-left:320px;
@@ -304,10 +314,10 @@ cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto; 
-  padding:16px;
+ padding:16px;
   margin-top: 50px;
   margin-left: 1210px;
-  color: white;
+  color: w;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -319,13 +329,16 @@ cursor: pointer;
 .prev:hover, .next:hover {
   background-color: #0092f2;
 }
-
+.dots{
+	text-align: center;
+	margin-top: 100px;
+}
 .dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
-  top:-25px;
-  background-color: white;
+
+  background-color: #333;
   border-radius: 50%;
   display: inline-block;
   position: relative;
@@ -359,6 +372,7 @@ cursor: pointer;
 /*FOOTER*/
 .footer{
   clear:both;
+  margin-top: 100px;
 }
 .footer1{
 	color:white;
@@ -369,7 +383,7 @@ cursor: pointer;
   	min-height: 60px;
 }
 .sub-email{
-	margin-left: 15%;
+	margin-left: 140px;
 	float: left;
 	margin-top: 10px;
     font-size: 20px;
@@ -412,22 +426,21 @@ cursor: pointer;
 	clear:both;
 	background-color: #fbfafa;
   	overflow: hidden;
-  	max-height: 200px;
+  	max-height: 120px;
 }
 .logofooter{
 	min-height: 120px;
-	width: 20%;
-	margin-left:14%;
-	margin-top: 2%;
 	float:left;
 }
 .logofooter>img{
-	width: 100%;
+	margin-top:20px;
+	margin-left: 120px;
+	width: 250px;
 }
 .info{
 	font-size: 16px;
 	min-height: 120px;
-	width: 30%;
+	margin-left: 50px;
 	font-family: helvetica;
 	float: left;
 }
@@ -443,32 +456,14 @@ cursor: pointer;
 	font-size: 15px;
 }
 .cpyright p{
-	margin-left: 15%;
-	width: 100%;
+	margin-left: 140px;
 }
 .Social{
-	width: 20%;
-	float: left;
-	margin-left:9%;
+	float: right;
+	margin-right: 100px;
 	font-size: 16px;
     padding: 0px;
-    max-height: 120px;
 }
 .Social p{
 	font-family: helvetica;
-}
-/* Defines the width of the carousel and centers it on the page */
-.slick-carousel {
-  margin: 0 auto;
-  width: 1000px;
-}
-
-/* The width of each slide */
-.slick-slide {
-  width: 350px;
-}
-
-/* Color of the arrows */
-.slick-next::before, .slick-prev::before {
-  color: blue;
 }

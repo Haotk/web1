@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thông Tin Tài Khoản</title>
+  <!--CSS HERE-->  
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/indexbody.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>  
+  <link rel="stylesheet" type="text/css" href="css/user.css">
+    <!--END OF CSS-->
+    <!--JS HERE-->
+      <script src="https://code.jquery.com/jquery-latest.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+      <script type="text/javascript "src="js/shoppingcart.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+      <script type="text/javascript" src="js/login.js"></script>
+      <script type="text/javascript" src="js/index_banner.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
+    <!--END OF JS-->
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="header">
+     <div class="logo">
+      <a href="index.html">
+        <img class="logo" src="sagobomautrang.png">
+      </a>
+    </div>
+    <div class="search-container">
+      <div class="autocomplete">
+      <input id="suggest"class="search-box" type="text" placeholder="Tìm kiếm..." >
+      </div>
+      <button type="submit" class=search-icon onclick="search()"><i class="fa fa-search"></i>
+        Tìm kiếm
+      </button>
+    </div>
+
+    <div class="account-container">
+      <i class="fa fa-user"></i>
+      <a href="#" class="dangnhap" id="login"></a>
+    </div>
+
+    <div class="shoppingcart-box">
+      <a href="ShoppingCart.html">
+     
+          <i class="fa fa-shopping-cart"></i>
+          <span class="giohang">Giỏ hàng
+            <span class="soluonggiohang" id="soluongsanpham">0</span>
+          </span>
+      </a>
+    </div>
+
+      <div class="hotline">
+        <p class="lienhe">Liên hệ<br>1900 1234</p>
+      </div>
+  </div>
+
+  <div class="header2">
+    <div class="danhmuc">
+      <i class="fa fa-bars"></i>
+      <span class="danhmucsanpham">
+        Danh mục sản phẩm
+      </span>
+      <div class="dropdown-content">
+          <a href="VĂN HỌC.html">VĂN HỌC</a>
+          <a href="THIẾU NHI.html">THIẾU NHI</a>
+          <a href="TIỂU THUYẾT.html">TIỂU THUYẾT</a>
+          <a href="KỸ NĂNG.html">KỸ NĂNG</a>
+      </div>
+    </div>
+
+     <div class="policy-container">
+        <div class="camketsanpham">
+          <p>Cam kết sản phẩm<br>Chính hãng 100%</p>
+        </div>
+        <div class="giaohangnhanhchong">
+          <p>Giao hàng<br>Nhanh chóng</p>
+        </div>
+        <div class="doitradedang">
+          <p>Đổi trả<br>dễ dàng</p>
+        </div>
+        <div class="bocsachmienphi">
+          <p>Bọc sách<br>miễn phí</p>
+        </div>
+    </div>
+    
+
+
+    <!--tabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb-->
+    <div class="admin-interface"> 
+    <div class="tab">
+        <button class="tablinks" onclick="adminOption(event, 'thongtintaikhoan')" id="defaultOpen">Thông tin tài khoản</button>
+        <button class="tablinks" onclick="adminOption(event, 'donhang')">Đơn hàng</button>
+    </div>
+    <div id="thongtintaikhoan" class="tabcontent">
+        <div class="thongtincanhan">
+              <h1>Thông Tin Cá Nhân</h1>
+            </div>
+            <div class="thongtinkhachhang">
+              <p>Họ và Tên : </p>
+              <p>Giới Tính : </p>
+              <p>Email : </p>
+              <p>Mật Khẩu</p>
+              <p>Số Điện Thoại : </p>
+              <p>Địa chỉ : </p>   
+            </div>
+    </div>
+    <div id="donhang" class="tabcontent">
+            <div class="donhangcuatoi"> 
+          <h1>Đơn Hàng Của Tôi</h1>
+        </div>
+        <div class="chitietdonhang">
+          <div class="makhachhang"> 
+            <b>Mã Khách Hàng</b>
+          </div>
+          <div class="ngaydat">
+            <b>Ngày Đặt</b>
+          </div>
+          <div class="tongtien">
+            <b>Tổng Tiền</b>
+          </div>
+          <div class="trangthai">
+            <b>Trạng Thái</b>
+          </div>
+        </div>
+    </div>
+
+  </div>
+</div>
+  <script>
+function adminOption(evt, userOption) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(userOption).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

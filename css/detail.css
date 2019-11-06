@@ -25,38 +25,7 @@ ul {
 	margin-left: 133px;
 	margin-right: 133px;
 }
-.chitietsanpham{
-	width: 100%;
-	min-height: 40%;
-}
-.anhsach{
-	margin-top: 50px;
-	width: 40%;
-	float:left;
 
-}
-.anhsach img{
-	max-width: 450px;
-	max-height: 450px;
-	margin-left: 60px;
-	margin-bottom: 50px;
-}
-.detail{
-	float: right;
-	width: 60%;
-}
-.tensach{
-	margin-top: 45px;
-	font-family: helvetica;
-}
-.tensach p{
-	font-size: 30px;
-	display: block;
-	color: #0092f2;
-	word-wrap: break-word;
-	text-transform: uppercase;
-	margin-bottom: 0px;
-}
 .motasanpham{
 	
 }

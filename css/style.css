@@ -4,6 +4,7 @@ body{
 	margin:0;
 	padding:0;
 	background:white;
+	overflow-x: hidden;
 }
 .header{
 	width: 100%;
@@ -91,7 +92,7 @@ body{
   color: #ffffff; 
 }
 .account-container{
-	width: 8%;
+	width: 10%;
 	float:left;
 	max-height: 40px;
 	margin-top: 2%;
@@ -112,6 +113,7 @@ a{
 	height: 20px;
 	margin-right: 1px;
 }
+
 .shoppingcart-box{
 	float:left;
 	text-decoration: none;
@@ -121,6 +123,9 @@ a{
 	padding: 10px;
 	margin-top: 1%;
 	margin-left: 2%;
+}
+.giohang{
+	color:white;
 }
 .policy-container{
 	float:right;

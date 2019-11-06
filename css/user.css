@@ -5,26 +5,23 @@
 	color: white;
 	line-height: 220%;
 	margin-top: 0;
+	text-align: center;
 }
 .thongtincanhan{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 	width: 100%;
 	background-color: #0092f2;
 }
-
-.thongtinkhachhang p{
-	font-size: 18px;
-}
-.thongtinkhachhang{
-	margin-left: 10%;
-	width: 80%;
-}
 .donhang{
 	width: 90%;
+
 	margin-left: 5%;
 	height: 70px;
 	margin-top: 5%;
 }
 .donhangcuatoi h1{
+
 	width: 100%;
 	color: white;
 	line-height: 220%;
@@ -32,6 +29,9 @@
 	margin-top: 0;
 }
 .donhangcuatoi{
+	text-align: center;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 	width: 100%;
 	background-color: #0092f2;
 }
@@ -63,8 +63,9 @@
 	margin-right: 10%;
 }
 .tab {
+  border-radius: 5px;
   float: left;
-  border: 1px solid #ccc;
+  border: 1px solid #fbfafa;
   background-color:#fbfafa;
   width: 25%;
   height: auto;
@@ -82,11 +83,27 @@
   transition: 0.3s;
   font-size: 17px;
 }
-.tab button:hover {
+.tab button:first-child:hover{
+  border-top-left-radius: 5px;
+  border-top-right-radius:5px;
   background-color: #0092f2;
-  color: #ffffff;
+  color: #ffffff;	
 }
-.tab button.active {
+.tab button:last-child:hover{
+  background-color: #0092f5;
+  color: #ffffff;		
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;	
+}
+.tab button:first-child.active {
+  border-top-left-radius: 5px;
+  border-top-right-radius:5px;
+  background-color: #0092f2;
+  color: #ffffff;	
+}
+.tab button:last-child.active{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   background-color: #0092f2;
   color: #ffffff;	
 }
@@ -94,4 +111,44 @@
 	background-color: #f1f1f1;
   	float: right;
   	width: 74%;	
+  	border-bottom-left-radius: 5px;
+  	border-bottom-right-radius: 5px;
+  	margin-bottom: 30px;
+  	min-height: 450px;
+}
+
+.thongtin{
+	margin-left: 25%;
+}
+.fullname>p,.email>p,.phonenumber>p,.address>p{
+	float: left;
+}
+.fullname,.email ,.phonenumber ,.address {
+	clear:both;
+}
+.fullname>input,.email>input,.phonenumber>input,.address>input{
+	float: right;
+	width:auto;
+	margin-top: 2%;
+	margin-right: 50%;
+	border:none;
+	border-radius: 2px;
+	height: 25px;
+	text-align: center;
+}
+.save{
+	clear: both;
+	margin-left: 40%;
+}
+.save button{
+	padding: 5px 10px 5px;
+	color: white;
+	margin-right: 6%;
+	background-color: #0092f2;
+	border: 1px solid #0092f2;
+	border-radius: 2px;
+	width: 15%;
+}
+.save button:hover{
+	cursor: pointer;
 }

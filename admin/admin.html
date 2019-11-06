@@ -44,7 +44,7 @@
 					</div>
 					<div class="edit-frame">
 						<button>Xóa</button>
-						<button>Sửa</button>
+						<button onclick="$(`.popup`).toggle()">Sửa</button>
 					</div>
 				</div>
 				<div class="frame">
@@ -230,6 +230,51 @@ function adminOption(evt, adminOption) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
+
+<div class="popup">
+  <div class="khung">
+    <img src="imgwhile.png">
+    <div class="buttonthem">
+      <button>Thêm</button>
+      <button>Xoá</button>
+    </div>
+  </div>
+  <div class="popupchitiet">
+    <div class="tensach">
+        <p>Tên Sách</p>
+    </div>
+    <div class="gia">
+        <h1>50.000đ</h1>
+    </div>
+        <div class="soluong">
+            <input type="tel" value="1" onchange="check(this)" max="30">
+        </div>
+    <div class="thongtin">
+        <div class="thongtinsanpham">
+            <p>Thông Tin Chi Tiết : </p>
+        </div>
+        <div class="thongtinchitiet">
+            <p>Tác giả : </p>
+            <p>Nhà xuất bản : </p>
+            <p>Ngày xuất bản : </p>
+            <p>Dịch giả : </p>
+            <p>Số trang : </p>
+        </div>
+    </div>
+  </div>
+  <div class="motasp">
+    <div class="ten">
+      <p>Mô tả sản phẩm : </p>
+    </div>
+    <div class="nhapmota">
+      <textarea></textarea>
+    </div>
+    <div class="xong">
+      <button>Xong</button>
+    </div>
+  </div>
+</div>
+
 
 </body>
 </html>

@@ -166,28 +166,123 @@ clear: both;
 	color: red;
 }
 .edit-frame{
-	width: 9%;
+	width: 10%;
 	float: left;
     margin-top: 10%; 
 }
 .edit-frame button{
-	height: 30px;
-	background-color: white
+	height: 20px;
+	background-color:white;
+	outline: none;
+	border: 1px solid white;
+}
+.edit-frame button:hover{
+	cursor: pointer;
 }
 .soluong{
 	float: left;
 	margin-left: 20px;
 }
-.soluong input{
-	border: 5px solid white;
-	text-align: center;
-	width: 30px;
 
-}.soluong button{
+.popup{
+
+	margin-top: 5%;
+	width: 60%;
+	margin-left: 20%;
+	float: left;
+}
+.khung {
+	width: 40%;
+	float: left; 
+	background-color: transparent;
+	
+
+}
+.buttonthem{
+	margin-left: 25%;
+}
+.khung img{
+	width:60%;
+	margin-top: 20px;
+	height: 250px;
+	margin-left: 10%;
+}
+.popupchitiet{
+	width: 59%;
+	float: right;
+	background-color: transparent;
+}
+.gia h1{
+	display: inline-block;
+	font-size: 200%;
+	color: red;
+	margin-bottom: 0px;
+	margin-top: 10px;
+	margin-left: 7px;
+}
+.gia{
+	margin-bottom: 20px;
+}
+.chitietsanpham hr{
+	margin-right: 100px;
+}
+.soluong{
+	max-width: 200px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.soluong>input{
+  width: 50px;
+  height: 10%;
+  border: 5px solid white;
+  text-align: center;
+}
+.thongtin{
+	width: 50%;
+}
+.tensach p{
+	text-align: left;
+	font-size: 25px;
+}
+.thongtinsanpham p{
+	font-size: 25px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-family: helvetica;
+	text-align: left;
+}
+.thongtinchitiet p{
+	color: #333444;
+	font-size: 15px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-family: helvetica;
+	text-align: left;
+}
+.thongtinchitiet{
+	float: left;
+	margin-left: 80px;
+
+}
+.motasp{
+	margin-top: 350px;
+}
+.ten p{
+	text-align: left;
+	margin-left: 5%;
+	font-size: 25px;
+}
+.nhapmota textarea{
+	width: 80%;
+	height: 150px;	
+	margin-left: 10%;
+}
+.xong{
+	margin-left: 45%;
+}
+.xong button{
+	width: 20%;
 	border: 1px solid #0092f2;
 	border-radius: 5px;
-	background-color: white;
+	background-color: #0092f2;
 }
-
-
-

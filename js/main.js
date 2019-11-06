@@ -17,8 +17,9 @@ const setDataToLocal = (data,key) => localStorage.setItem(key,JSON.stringify(dat
 function isLogged(){
   var login = document.getElementById("login");
   var accounts = getDataFromLocal(accounts,'user');
+  if(accounts)
   var user = accounts.find(users => users.status==1);
-    if(typeof user==`undefined`)  { 
+    if(!accounts || typeof user==`undefined`)  { 
       login.innerHTML = 'TÀI KHOẢN';
       login.setAttribute('href','LoginForm.html');
       return 0;

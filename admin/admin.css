@@ -30,10 +30,10 @@ hr{
 	margin-right: 10%;
 }
 .search-container{
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 10%;
+
 	margin-top: 16px;
-	width:100%; 	
+	width:80%; 	
 	float:left;
 }
 .search-icon{
@@ -179,8 +179,13 @@ clear: both;
 	margin-left: 20px;
 }
 .soluong input{
+	border: 5px solid white;
+	text-align: center;
 	width: 30px;
+
 }.soluong button{
+	border: 1px solid #0092f2;
+	border-radius: 5px;
 	background-color: white;
 }
 

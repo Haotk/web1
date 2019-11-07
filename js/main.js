@@ -12,18 +12,24 @@ const setDataToLocal = (data,key) => localStorage.setItem(key,JSON.stringify(dat
 /**END OF GET/SET DATA FROM LOCAL STORAGE**/
 
 
- 
+ //[{"username":"congha","name":"Phan Công Hà","email":"phancongha24@gmail.com","pwd":"hoanghai","status":1}]
 
 function isLogged(){
   var login = document.getElementById("login");
   var accounts = getDataFromLocal(accounts,'user');
+<<<<<<< HEAD
   var user = accounts.find(users => users.status==1);
     if(typeof user==`undefined`)  { 
+=======
+  accounts = !accounts ? [] : accounts;
+  var user = accounts.find(users => users.status==1);
+    if( accounts.status==`undefined` ||typeof user==`undefined`)  { 
+>>>>>>> 0139f34c85a1ea486bd118e0170cd6dfad8bc3ea
       login.innerHTML = 'TÀI KHOẢN';
       login.setAttribute('href','LoginForm.html');
       return 0;
     }
-    else {
+    else{
       login.innerHTML=user.name;
       login.setAttribute("onclick","logout()");
     }
@@ -118,20 +124,23 @@ function register(){
       pwd:pwd,
       status:0,
     }
-    var arr = getDataFromLocal(arr,"user");
-      if(JSON.parse(localStorage.getItem("user"))==null){
+    var accounts = getDataFromLocal(accounts,"user");
+    accounts = !accounts ? [] : accounts;
+      if(accounts.length==0){
         accounts[0] = newaccount;
-        localStorage.setItem("user",JSON.stringify(accounts));
-          alert("ĐĂNG KÝ THÀNH CÔNG");
-          window.location ="LoginForm.html";
+        setDataToLocal(accounts,"user");
+        swal("Đăng ký thành công!!", "Mời Bạn Đăng Nhập", "success").then(()=> $(".img__btn").click());
       }
       else{
-        var accounts =   getDataFromLocal(accounts,"user");
           for(let users of accounts){
             if(users.username!=newaccount.username && users.email !=newaccount.email){
                   accounts.push(newaccount);
                   setDataToLocal(accounts,"user");
+<<<<<<< HEAD
                   swal("Đăng ký thành công!!", "Mời Bạn Đăng Nhập", "success").then(()=> window.location ="LoginForm.html");
+=======
+                  swal("Đăng ký thành công!!", "Mời Bạn Đăng Nhập", "success").then(()=> $(".img__btn").click());
+>>>>>>> 0139f34c85a1ea486bd118e0170cd6dfad8bc3ea
                   break;
                   }
                 else
@@ -169,7 +178,7 @@ function login(){
   var pwd = document.getElementById("pwd").value;
   var accounts =getDataFromLocal(accounts,"user");
     if(!accounts){
-        alert("Dữ liệu không tồn tại!");
+        swal("Đăng nhập thất bại!!", "Sai tài khoản hoặc mật khẩu", "error");
     }
   else if(isExist(accounts,user,pwd)) {
          swal("Đăng nhập thành công!!", "Chào mừng bạn đến với Sagobo Books", "success").then(()=> window.location ="Index.html");
@@ -397,7 +406,6 @@ function data(key){
 }
   return content;
 }
-window.addEventListener("load",document.getElementById("soluongsanpham").innerHTML = getInCart());
 
 
 function addToCart(tenSach){
@@ -476,6 +484,5 @@ number++}
   setDataToLocal(banchay,"Bán Chạy");
   console.log('set Ban Chay DONE!!!!');
 }
-
 
 

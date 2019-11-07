@@ -175,6 +175,7 @@ a{
   z-index: 1;
   border: 1px solid white;
   border-radius: 4px;
+
 }
 .account-dropdown a {
 	cursor: pointer;
@@ -197,6 +198,9 @@ a{
 .account-dropdown a:last-child {
 	margin-bottom: 5px;
 	padding-bottom: 5px;
+}
+.account-container:hover .account-dropdown {
+  display: block;
 }
 .dropdown-content {
 

@@ -24,8 +24,8 @@ function isLogged(){
     }
     else{
       login.innerHTML=user.name;
-      $(".account-dropdown").css("display","none");
-      login.setAttribute("onclick",$(".account-dropdown").css("display","block"));
+      $(".account-dropdown").css("display","");
+      login.setAttribute("onclick","logout()");
     }
     return 1;
   }

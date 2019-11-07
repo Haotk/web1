@@ -17,9 +17,8 @@ const setDataToLocal = (data,key) => localStorage.setItem(key,JSON.stringify(dat
 function isLogged(){
   var login = document.getElementById("login");
   var accounts = getDataFromLocal(accounts,'user');
-  if(accounts)
   var user = accounts.find(users => users.status==1);
-    if(accounts==0 && typeof user==`undefined`)  { 
+    if(typeof user==`undefined`)  { 
       login.innerHTML = 'TÀI KHOẢN';
       login.setAttribute('href','LoginForm.html');
       return 0;
@@ -132,8 +131,7 @@ function register(){
             if(users.username!=newaccount.username && users.email !=newaccount.email){
                   accounts.push(newaccount);
                   setDataToLocal(accounts,"user");
-                  alert("ĐĂNG KÝ THÀNH CÔNG");
-                  window.location ="LoginForm.html";
+                  swal("Đăng ký thành công!!", "Mời Bạn Đăng Nhập", "success").then(()=> window.location ="LoginForm.html");
                   break;
                   }
                 else
@@ -174,10 +172,10 @@ function login(){
         alert("Dữ liệu không tồn tại!");
     }
   else if(isExist(accounts,user,pwd)) {
-        alert("Đăng nhập thành công");
-        window.location = "Index.html";
+         swal("Đăng nhập thành công!!", "Chào mừng bạn đến với Sagobo Books", "success").then(()=> window.location ="Index.html");
   } 
-    else alert("Sai thông tin đăng nhập");
+    else   swal("Đăng nhập thất bại!!", "Sai tài khoản hoặc mật khẩu", "error");
+
 }
      
 
@@ -306,29 +304,29 @@ function search(){
 //ENDOFAUTOCOMPLETE
 
 document.addEventListener("DOMContentLoaded", function(){
-   document.getElementById("noibat").click()
-     document.getElementById("moiphathanh").click()
-       document.getElementById("banchay").click()
+
+    $(".bestseller,.trendingproducts,.newest").hide();
+      $(".trendingproducts").fadeIn(300);
+      $(".trendingproducts").css("display","block");
 });
 
 function change(num,value){
+      $(".bestseller,.trendingproducts,.newest").hide();
     if(value.id=="moiphathanh"){
-          $(".bestseller").css("display","none");
-        $(".trendingproducts").css("display","none");
-        $(".newest").fadeOut(300);
-        $(".newest").css("display","block");
-        $(".newest").fadeIn(300);
+      $(".bestseller,.trendingproducts,.newest").fadeOut();
+      $(".newest").fadeIn(3000);
+      $(".newest").css("display","block");
     }
     if(value.id=="banchay"){
-             $(".newest").css("display","none");
-        $(".trendingproducts").css("display","none");
-       $(".bestseller").css("display","block"); 
+      $(".bestseller,.trendingproducts,.newest").fadeOut();
+      $(".bestseller").fadeIn(3000);
+    $(".bestseller").css("display","block");
+      
     }
      if(value.id=="noibat"){
-      $(".newest").css("display","none");
-        $(".bestseller").css("display","none");
-        $(".trendingproducts").css("display","block");
-        
+      $(".bestseller,.trendingproducts,.newest").fadeOut();
+      $(".trendingproducts").fadeIn(3000);
+      $(".trendingproducts").css("display","block");
     }
       var item = document.getElementsByClassName("items");
     
@@ -339,11 +337,20 @@ function change(num,value){
     item[num].className += " active";
 }
 function slicks(){
-$('.trendingproducts,.bestseller,.newest,.kynang,.vanhoc,.tieuthuyet,.thieunhi').slick({
+$('.kynang,.vanhoc,.tieuthuyet,.thieunhi').slick({
     slidesToShow: 5,
     slidesToScroll: 5,
     dots: true,
     infinite: true,
+
+});
+$('.trendingproducts,.bestseller,.newest').slick({
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
 });
 }
 window.addEventListener("load",slicks);

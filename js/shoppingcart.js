@@ -1,4 +1,3 @@
-
 function loadCart(){
 	var Books = getDataFromLocal(Books,"sanpham");
 	var cart = Books.filter(book => book.soluong>0);
@@ -15,15 +14,15 @@ function coupon(){
 	console.log(code);
 	if(code=="sagobofes"){
 		if(x==parseFloat(document.getElementById("tonggia").innerHTML)){
-		alert("Nhập mã thành công bạn được giảm 15%");
+		swal("THÀNH CÔNG","Bạn được giảm 15%","success");
 		    $("#tonggia").fadeOut(300);
 		document.getElementById("tonggia").innerHTML = (parseFloat(document.getElementById("tonggia").innerHTML).toFixed(3)*85/100).toFixed(3);
 		
 		    $("#tonggia").fadeIn(300);
 	}
-	else alert("Bạn đã sử dụng mã này");
+	else swal("XẢY RA LỖI","Bạn đã sử dụng mã này","error");
 }
-	else alert("Mã giảm giá không hợp lệ");
+	else swal("XẢY RA LỖI","Mã giảm giá không hợp lệ","warning");
 }
 function updateQuan(x){
 		var parent = $(x).parent();
@@ -34,7 +33,7 @@ function updateQuan(x){
 		}
 		if($(quantity).val()>50){
 
-			alert("Giới hạn 50 sản phẩm");
+			 swal("CẢNH BÁO","Giới hạn 50 sản phẩm","warning");
 			$(quantity).val(50);
 		}	
 		 if($(quantity).val()>0 && x.textContent=="-"){ 
@@ -101,14 +100,3 @@ function cal(){
 
 
 
-function thanhtoan(){
-	var isUser = isLogged();
-		if(isUser) {
-			var user = getDataFromLocal(user,"user");
-			user = user.filter(user=>user.status==1);
-
-		}
-		else swal("CHƯA ĐĂNG NHẬP / ĐĂNG KÝ","MỜI BẠN ĐĂNG NHẬP / ĐĂNG KÝ","warning").then(()=> window.location="LoginForm.html");
-			
-	
-}

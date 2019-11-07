@@ -5,18 +5,22 @@
   <!--CSS HERE-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/phantrang.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="css/timkiem.css">  
     <!--END OF CSS-->
     <!--JS HERE-->
       <script src="https://code.jquery.com/jquery-latest.js"></script>
       <script src="js/jquery.min.js" charset="utf-8"></script>
-      <script src="js/sweetalert.min.js" charset="utf-8"></script>
-      <script type="text/javascript "src="js/sweetalert.min.js"></script>
+      <script src="js/sweetalert.min.js"></script>
       <script type="text/javascript "src="js/shoppingcart.js"></script>
       <script type="text/javascript" src="js/main.js"></script>
-      <script type="text/javascript" src="js/login.js"></script>
       <script type="text/javascript" src="js/detail.js"></script>
+      <script type="text/javascript" src="js/login.js"></script>
+      <script type="text/javascript" src="js/search.js"></script>
       <script type="text/javascript" src="js/index_banner.js"></script>
-      <script type="text/javascript" src="js/pagination.js"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
     <!--END OF JS-->
  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -41,6 +45,11 @@
     <div class="account-container">
       <i class="fa fa-user"></i>
       <a href="#" class="dangnhap" id="login"></a>
+       <div class="account-dropdown" style="display:none">
+        
+          <a href="User.html">THÔNG TIN</a>
+          <a onclick="logout()">ĐĂNG XUẤT</a>
+      </div>
     </div>
     <div class="shoppingcart-box">
     <a href="ShoppingCart.html">
@@ -62,7 +71,7 @@
       <span class="danhmucsanpham">
         Danh mục sản phẩm
       </span>
-     <div class="dropdown-content">
+      <div class="dropdown-content">
           <a href="Pagination.html?Văn Học">VĂN HỌC</a>
           <a href="Pagination.html?Thiếu Nhi">THIẾU NHI</a>
           <a href="Pagination.html?Tiểu Thuyết">TIỂU THUYẾT</a>
@@ -86,33 +95,66 @@
   </div>
   <script>autocomplete(document.getElementById("suggest"), countries);</script>
 </div>
-  <div class="tongquanphanloai">
-    <div class="div11">
-      <p class="title" onclick="filterPrice()">Lọc Theo Giá</p>
+  
+<br>
 
-      <input class="mini Price" id="min"></input>  <input class="mini Price" id="max"></input>
-      <p class="mini Price" id="btnLoc" onclick="filterFromTo()">Lọc</p>
-      <p class="mini Price filter" id="filter"onclick="decreasing(`Price`)">Giá giảm dần</p>
-      <p class="mini Price filter" id="filter"onclick="increasing(`Price`)">Giá tăng dần</p>
-      <p class="title" onclick="filterName()">Lọc Theo Alphabet</p>
-      <p class="mini Name filter" id="filter"onclick="increasing(`Name`)">A-Z</p>
-      <p class="mini Name filter" id="filter"onclick="decreasing(`Name`)">Z-A</p>
 
+<script>autocomplete(document.getElementById("suggest"), countries);</script>
+<div class="container">
+  <div class="locsanpham">
+    <div class="block">
+      <p>TÌM KIẾM SẢN PHẨM</p>
     </div>
+    <div class="blockcontent">
+        <p onclick="$(`.theogia`).toggle(showMore(this))"><i class="indicator fa fa-caret-down" aria-hidden="true"></i> GIÁ</p>
+
+          <div class="theogia"  >
+            <input class="from" placeholder="from" id="minvalue">
+            <span>-</span>
+            <input class="to" placeholder="to" id="maxvalue">
+            <div><button onclick="filterFromTo()">Tìm</button></div>
+
+          </div>
+         
+        <p onclick="$(`.theoloai`).toggle(showMore(this))"><i class="indicator fa fa-caret-down" aria-hidden="true"></i> THỂ LOẠI</p>
+          <div class="theoloai" >
+            <input type="radio" name="theloai" value="Văn Học" id=> Văn Học<br>
+            <input type="radio" name="theloai" value="Thiếu Nhi"> Thiếu Nhi<br>
+            <input type="radio" name="theloai" value="Tiểu Thuyết"> Tiểu Thuyết<br>
+            <input type="radio" name="theloai" value="Văn Học"> Kỹ Năng
+            
+
+          </div>          
+
+      <div>
+        
+      </div>
+    </div>
+
+
+
+
+
+  </div>
     <div class="div12">
-      <h1></h1>
+        <div class="timkiem">
+          <p>Kết quả tìm kiếm với từ khóa: </p>
+        </div>
       <div class="div121">
         
-        </div>
       </div>
     <div class="phantrang">
-      
+      <b href="#">&laquo;</b>
+      <b href="#">&lt;</b>
+        <b href="#"class="trangchinh">1</b>
+      <b href="#">2</b>
+      <b href="#">3</b>
+      <b href="#">&gt;</b>
+      <b href="#">&raquo;</b>
     </div>
     </div>
-    
-    <div class="clearzone"></div>
-  </div>
-</script>
+</div>
+
 
 <div class="footer" id="footer">
   <div class="footer1">
@@ -135,7 +177,7 @@
         <img src="sagobomauxanh.png">
     </div>
     <div class="info">
-        <p>Địa chỉ văn phòng: 273 An Dương Vương, Phường 3, Quận 5, Hồ Chí Minh.</p>
+        <p>Địa chỉ văn phòng: 69/96 Đào Duy Từ, phường 6 quận 9 TP.HCM.</p>
         <p>Hotline: 1900 1234.</p>
         <p>Email: support@sagabo.com</p>
     </div>
@@ -147,7 +189,7 @@
         <a target="_blank" href="https://www.instagram.com/" title="Instagram">
                 <img alt="Instagram" src="social/Insta-on.png">
         </a> 
-        <a target="_blank" href="https://www.youtube.com/" title="Youtube">
+        <a target="_blank" href="https://www.youtube.com/channel/UCUZcVOLSxK1q6RfgzQ9-HYQ" title="Youtube">
                 <img alt="Youtube" src="social/Youtube-on.png">
         </a>
     </div>

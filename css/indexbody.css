@@ -4,11 +4,11 @@
 
 .trendingproducts,.bestseller{
     display:none;
-	margin-left: 50px;
-	max-width: 90%;
+    margin-left: 50px;
+    max-width: 90%;
 }
 .trendingproduct{
-	width: 241px;
+    width: 241px;
     height: 300px;
     position: relative;
     border: 0px solid white;
@@ -21,83 +21,80 @@
 }
 
 .trendingproduct img{
-	width: 230px;
-	height: 250px;
+    width: 230px;
+    height: 250px;
 }
 .container{
-	max-width: 90%;
-	margin-left: 50px;
+    max-width: 90%;
+    margin-left: 50px;
 }
 .tieude{
-	width:auto;
-	height: 100px;
-	margin-left: 50px;
-	
+    width:auto;
+    height: 100px;
 }
 .tieude>.tensach{
-	width: 20%;
-	margin-left: 50px;
-	color: black;
-	font-size: 1.8em;
-	font-weight: bold;
-	float: left;
+    width: 20%;
+    margin-left: 50px;
+    color: black;
+    font-size: 1.8em;
+    font-weight: bold;
+    float: left;
 }
 hr {
-	background-color: yellow;
+    background-color: yellow;
     position: relative;
     margin-right: 1px;
-	width: 80%;
-	border-top: 3px solid yellow;
-	z-index: -999;
+    width: 80%;
+    border-top: 3px solid yellow;
+    z-index: -999;
 }
 .tensach:hover{
-	color: #0092f2;
+    color: #0092f2;
 }
 .vanhoc,.kynang,.tieuthuyet,.thieunhi{
-	clear:both;
-	position: relative;
+    clear:both;
+    position: relative;
     border: 0px
-	border-top:20px;
-	margin-left: 50px;
+    border-top:20px;
+    margin-left: 50px;
 }
 .khung{
-
-	outline: 0;     
+    outline: 0;     
     outline-style: none;     
     outline-width: 0; 
 }
 .khung img{
-	width: 230px;
-	height: 250px;
+    width: 230px;
+    height: 250px;
 }
 .khung a{
     color:black;
     text-decoration: none;
 }
 .chitiet{
-	text-align: center;
-	color: black;
-	text-transform: capitalize;
-	line-height: 1.125rem;
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+    line-height: 1.125rem;
     height: 3.25rem;
 
 }
 .tacgia{
-	/*max-height:  15px;*/
-	font-style: italic;
-	color: #777777;
-	line-height: 1.125rem;
+    /*max-height:  15px;*/
+    font-style: italic;
+    color: #777777;
+    line-height: 1.125rem;
     height: 1.5rem;
-   	white-space: nowrap;
-   	text-overflow: ellipsis;
-   	overflow: hidden;
-   	text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
 }
 .gia{
-	/*max-height: 15px;*/
-	color: red;
-	font-weight: bold;
-	line-height: 1.125rem;
+    /*max-height: 15px;*/
+    color: red;
+    font-weight: bold;
+    line-height: 1.125rem;
     height: 2.25rem;
     text-align: center;
 }
@@ -123,11 +120,11 @@ hr {
 .slick-prev,
 .slick-next
 {
-	font-size: 20px;
+    font-size: 20px;
     line-height: 0;
     position: absolute;
     top: 50%;
- 	padding:30px;
+    padding:30px;
     display: block;
     width: 20px;
     height: 20px;

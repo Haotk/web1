@@ -1,4 +1,3 @@
-
 function getKey(){
 	return decodeURI(window.location.href).toString().split('?')[1];
 }
@@ -14,11 +13,11 @@ function getBookByType(type){
 function loadBooks(Books,currentPage,totalBook){
 	var content="";
 	for(let i=(currentPage-1)*12;i<totalBook;i++){
-			content+= `<div class="khung"><img src="img/`+Books[i].tensach+`.jpg" alt="sach1" width="200" height="200"><div class="chitiettrongkhung"><div class="tieude">`+Books[i].tensach+`</div><div class="tacgia">`+Books[i].tacgia+`</div><div class="gia">`+parseFloat(Books[i].gia).toFixed(3)+` VNĐ</div></div><div class="overlay" onclick="window.location='Detail.html?`+Books[i].tensach+`'">
+			content+= `<div class="khung" ><img src="img/`+Books[i].tensach+`.jpg" alt="sach1" width="200" height="200" onclick="window.location='Detail.html?`+Books[i].tensach+`'"><div class="chitiettrongkhung"  onclick="window.location='Detail.html?`+Books[i].tensach+`'"><div class="tieude"  onclick="window.location='Detail.html?`+Books[i].tensach+`'">`+Books[i].tensach+`</div><div class="tacgia">`+Books[i].tacgia+`</div><div class="gia">`+parseFloat(Books[i].gia).toFixed(3)+` VNĐ</div></div>
 							
 							<div class="text" width="25" height="25" href="#" ><img src="img/iconshoppingcart.png" width="25" height="25" onclick="addToCart('`+Books[i].tensach+`')"></div>
 							<div class="text2" width="25" height="25" href="#" onclick="window.location.href ='Detail.html?`+Books[i].tensach+`' "><img src="img/Seemore.png" width="25" height="25"></div>
-						</div></div>
+						</div>
 `;
 	}
 	return content;
@@ -31,7 +30,6 @@ function loadBookByType(currentPage){
 	var Books = getDataFromLocal(Books,key);
 	var totalBook = (currentPage)*12;	
 	var totalPage = Math.ceil(Books.length/12);
-	currentPage = currentPage > totalPage ? currentPage=totalPage : currentPage;
 	totalBook > Books.length ? totalBook = Books.length : totalBook=totalBook;  
 	var content=loadBooks(Books,currentPage,totalBook);
 	var Pages = loadPages(totalPage,currentPage);
@@ -114,19 +112,24 @@ var key = decodeURI(window.location.href).toString().split('?')[1];
 	var Books = getDataFromLocal(Books,key);
 	var temp = Books;
 	Books=Books.filter(a=>min<=parseFloat(a.gia)&&parseFloat(a.gia)<=max);
+	if(Books.length==0){
+		$(".div121").html('<p style="margin-left:40%;margin-top:5%">(Không có sản phẩm thỏa yêu cầu)</p>');
+		$(".phantrang").html("");
+	}
+	else{
 	setDataToLocal(Books,key);
 	$(".div121").fadeOut(300);
 	loadBookByType(1);
 	$(".div121").fadeIn(300);
 	setDataToLocal(temp,key);
-
+}
 }
 
 function filterFromTo(){
 	var min = parseInt(document.getElementById("min").value);
 	var max = parseInt(document.getElementById("max").value);
 	if(isNaN(min)&&isNaN(max)) {
-		alert("Giá trị không hợp lệ")
+		 swal("XẢY RA LỖI","Giá trị không hợp lệ","warning");
 		return;
 	}
 	if(isNaN(min)){sort(0,max); return;}

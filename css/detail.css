@@ -29,6 +29,26 @@ ul {
 .motasanpham{
 	
 }
+.anhsach{
+	width: 100%;
+	
+}
+.anhsach img{
+	width: 30%;
+	float: left;
+	margin-top: 5%;
+	margin-left: 10%;
+}
+.detail{
+	float:right;
+	width: 30%;
+	margin-right: 28%;
+	margin-top: 4%;
+}
+.tensach{
+	font-size: 30px;
+	color: #0092f2;
+}
 .stars {
   display: inline-block;
 }
@@ -114,11 +134,12 @@ ul {
 }
 .thongtin{
 	display: inline-block;
-	width: 50%;
+	width: 100%;
+	margin-bottom: 3%;
 }
 .thongtinsanpham p{
 	font-size: 25px;
-	margin-bottom: px;
+	margin-bottom: 0px;
 	margin-top: 0px;
 	font-family: helvetica;
 }

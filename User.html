@@ -14,6 +14,7 @@
       <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
       <script type="text/javascript "src="js/shoppingcart.js"></script>
       <script type="text/javascript "src="js/user.js"></script>
+      <script type="text/javascript"src="js/detail.js"></script>
       <script type="text/javascript" src="js/main.js"></script>
       <script type="text/javascript" src="js/login.js"></script>
       <script type="text/javascript" src="js/index_banner.js"></script>
@@ -42,6 +43,10 @@
     <div class="account-container">
       <i class="fa fa-user"></i>
       <a href="#" class="dangnhap" id="login"></a>
+            <div class="account-dropdown" style="display:none">
+          <a href="User.html">THÔNG TIN</a>
+          <a onclick="logout()">ĐĂNG XUẤT</a>
+      </div>
     </div>
 
     <div class="shoppingcart-box">
@@ -66,10 +71,10 @@
         Danh mục sản phẩm
       </span>
       <div class="dropdown-content">
-          <a href="VĂN HỌC.html">VĂN HỌC</a>
-          <a href="THIẾU NHI.html">THIẾU NHI</a>
-          <a href="TIỂU THUYẾT.html">TIỂU THUYẾT</a>
-          <a href="KỸ NĂNG.html">KỸ NĂNG</a>
+          <a href="Pagination.html?Văn Học">VĂN HỌC</a>
+          <a href="Pagination.html?Thiếu Nhi">THIẾU NHI</a>
+          <a href="Pagination.html?Tiểu Thuyết">TIỂU THUYẾT</a>
+          <a href="Pagination.html?Kỹ Năng">KỸ NĂNG</a>
       </div>
     </div>
 
@@ -91,7 +96,7 @@
 
 
     <!--tabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb-->
-    <div class="admin-interface"> 
+    <div class="user-interface"> 
     <div class="tab">
         <button class="tablinks" onclick="adminOption(event, 'thongtintaikhoan')" id="defaultOpen">Thông tin tài khoản</button>
         <button class="tablinks" onclick="adminOption(event, 'donhang')">Đơn hàng</button>
@@ -129,7 +134,7 @@
         </div>
         <div class="chitietdonhang">
           <div class="makhachhang"> 
-            <b>Mã Khách Hàng</b>
+            <b>Mã Đơn Hàng</b>
           </div>
           <div class="ngaydat">
             <b>Ngày Đặt</b>
@@ -140,11 +145,77 @@
           <div class="trangthai">
             <b>Trạng Thái</b>
           </div>
+          </div>
+
+          <div class="noidungdonhang" onclick="$('#SGB001').toggle()">
+              <div class="info-makh">
+                <p>SGB001</p>
+              </div>
+              <div class="info-ngaydat">
+                <p>07/11/2019</p>
+              </div>
+              <div class="info-tongtien">
+                <p>500.000 VNĐ</p>
+              </div>
+              <div class="info-trangthai">
+                <p>Đã Giao</p>
+              </div>
+        </div>
+
+        <div class="bill" id="SGB001">
+          <p>Tên sách 1.</p>
+          <p>Tên sách 2.</p>
+          <p>Tên sách 3.</p>
+          <p>Tên sách 4.</p>
+        </div>          
+        <div class="noidungdonhang" onclick="$('#SGB002').toggle()">
+              <div class="info-makh">
+                <p>SGB002</p>
+              </div>
+              <div class="info-ngaydat">
+                <p>10/11/2019</p>
+              </div>
+              <div class="info-tongtien">
+                <p>696.000 VNĐ</p>
+              </div>
+              <div class="info-trangthai">
+                <p>Chưa Giao</p>
+              </div>
+        </div>
+
+        <div class="bill" id="SGB002">
+          <p>Tên sách 1.</p>
+          <p>Tên sách 2.</p>
+          <p>Tên sách 3.</p>
+          <p>Tên sách 4.</p>
+        </div>
+                  <div class="noidungdonhang" onclick="$('#SGB003').toggle()">
+              <div class="info-makh">
+                <p>SGB001</p>
+              </div>
+              <div class="info-ngaydat">
+                <p>20/11/2019</p>
+              </div>
+              <div class="info-tongtien">
+                <p>400.000 VNĐ</p>
+              </div>
+              <div class="info-trangthai">
+                <p>Chưa Giao</p>
+              </div>
+        </div>
+
+        <div class="bill" id="SGB003">
+          <p>Tên sách 1.</p>
+          <p>Tên sách 2.</p>
+          <p>Tên sách 3.</p>
+          <p>Tên sách 4.</p>
         </div>
     </div>
 
   </div>
 </div>
+
+
   <script>
 function adminOption(evt, userOption) {
   var i, tabcontent, tablinks;

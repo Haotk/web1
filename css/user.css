@@ -20,6 +20,10 @@
 	height: 70px;
 	margin-top: 5%;
 }
+
+.noidungdonhang:hover{
+	background-color: red;
+}
 .donhangcuatoi h1{
 
 	width: 100%;
@@ -48,19 +52,52 @@
 .tongtien{
 	width: 10%;
 	float: left;
-	margin-left: 10%;
+	margin-left: 20%;
 }
 .trangthai{
-	width: 20%;
+	width: 15%;
 	float: left;
-	margin-left: 10%
+	margin-left: 10%;
 }
-.admin-interface{
+
+.noidungdonhang{
+	height: 50px;
+	clear: both;
+}
+.noidungdonhang:hover{
+	cursor: pointer;
+	background-color: #33333333;
+}
+.info-makh{
+	width: 20%;
+	margin-left: 3%;
+	float: left;
+}
+.info-ngaydat{
+	width: 10%;
+	float: left;
+	margin-left: 10%;
+}
+.info-tongtien{
+	width: 15%;
+	float: left;
+	margin-left: 20%;
+}
+.info-trangthai{
+	width: 15%;
+	float: left;
+	margin-left: 5%;
+}
+.user-interface{
 	width: 80%;
 	background-color:#fbfafa;
 	margin-top: 10%;
 	margin-left: 10%;
 	margin-right: 10%;
+}
+.bill{
+	display: none;
+	margin-left: 15%;
 }
 .tab {
   border-radius: 5px;

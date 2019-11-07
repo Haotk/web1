@@ -1,4 +1,3 @@
-
 /**GET/SET DATA FROM LOCAL STORAGE**/
 const getDataFromLocal = (data,key) =>{ 
 
@@ -17,25 +16,20 @@ const setDataToLocal = (data,key) => localStorage.setItem(key,JSON.stringify(dat
 function isLogged(){
   var login = document.getElementById("login");
   var accounts = getDataFromLocal(accounts,'user');
-<<<<<<< HEAD
-  var user = accounts.find(users => users.status==1);
-    if(typeof user==`undefined`)  { 
-=======
   accounts = !accounts ? [] : accounts;
   var user = accounts.find(users => users.status==1);
     if( accounts.status==`undefined` ||typeof user==`undefined`)  { 
->>>>>>> 0139f34c85a1ea486bd118e0170cd6dfad8bc3ea
       login.innerHTML = 'TÀI KHOẢN';
       login.setAttribute('href','LoginForm.html');
       return 0;
     }
     else{
       login.innerHTML=user.name;
+      $(".account-dropdown").css("display","");
       login.setAttribute("onclick","logout()");
     }
     return 1;
   }
-
 window.addEventListener("load",isLogged);
 
 
@@ -136,11 +130,7 @@ function register(){
             if(users.username!=newaccount.username && users.email !=newaccount.email){
                   accounts.push(newaccount);
                   setDataToLocal(accounts,"user");
-<<<<<<< HEAD
-                  swal("Đăng ký thành công!!", "Mời Bạn Đăng Nhập", "success").then(()=> window.location ="LoginForm.html");
-=======
                   swal("Đăng ký thành công!!", "Mời Bạn Đăng Nhập", "success").then(()=> $(".img__btn").click());
->>>>>>> 0139f34c85a1ea486bd118e0170cd6dfad8bc3ea
                   break;
                   }
                 else

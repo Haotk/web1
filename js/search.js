@@ -60,7 +60,8 @@ function loadBooks(Books,currentPage,totalBook){
   return content;
 }
 function loadPages(totalPage,currentPage){
-
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
   var paginate=`<b href="#" onclick="loadBookByType(`+1+`)">&laquo;</b>
       <b href="#" onclick="loadBookByType(`+(currentPage-1)+`)">&lt;</b>`;
   for(let i=1;i<=totalPage;i++){
@@ -101,17 +102,95 @@ function loadBookByType(currentPage){
 }
 
 
+
+
+function loadDataFromRadio(currentPage,current){
+ 
+    if ($(current).is(".checked")) {
+        $(current).prop("checked",false).removeClass("checked");
+    } else {
+        $("input:radio[name='"+$(current).prop("name")+"'].checked").removeClass("checked");
+        $(current).addClass("checked");
+    }
+
+
+  var keys = $("[type=radio]:checked");
+  var kw="";
+  for(let key of keys){
+     kw +=key.value + '|';
+  }
+  kw = kw.split('|');
+  kw.pop();
+  var Book;
+  var Books=[];
+  for(let key of kw){
+      Book = getDataFromLocal(Book,key);
+      Books=Books.concat(Book);
+  }
+  console.log(Books);
+   kw = kw.join();
+   keyword= kw;
+  var pages = $(".phantrang").children();
+  $(".timkiem").html(`<p>Tìm kiếm với từ khóa: `+kw+` (có `+Books.length+` kết quả)</p>`);
+  setDataToLocal(Books,"search");
+  var totalBook = (currentPage)*12;
+  var totalPage = Math.ceil(Books.length/12);
+  totalBook > Books.length ? totalBook = Books.length : totalBook=totalBook;  
+  var content=loadBooks(Books,currentPage,totalBook);
+  var Pages = loadPages(totalPage,currentPage);
+  $(".div121").html(content);
+  $(".phantrang").html(Pages);
+  for(let i=0;i<pages.length;i++){
+       pages[i].classList.remove("trangchinh");
+  }
+    document.getElementById(`page`+currentPage+``).classList.add("trangchinh"); 
+
+    setDataToLocal(Books,"search");
+
+}
+
+
+
 function findBook(){
+    var content="";
+    var result;
+    if(normalize(keyword.toLowerCase())==normalize("Văn Học").toLowerCase()) {
+      var Books = getDataFromLocal(Books,"Văn Học");
+        result=Books;
+              $(".timkiem").html(`<p>Tìm kiếm với từ khóa: `+keyword+` (có `+result.length+` kết quả)</p>`);
+      return result;
+      }
+      if(normalize(keyword.toLowerCase())==normalize("Thiếu Nhi").toLowerCase()){
+      var Books = getDataFromLocal(Books,"Thiếu Nhi");
+        result=Books;
+              $(".timkiem").html(`<p>Tìm kiếm với từ khóa: `+keyword+` (có `+result.length+` kết quả)</p>`);
+      return result;
+      }
+      if(normalize(keyword.toLowerCase())==normalize("Tiểu Thuyết").toLowerCase()) {
+      var Books = getDataFromLocal(Books,"Tiểu Thuyết");
+        result=Books;
+              $(".timkiem").html(`<p>Tìm kiếm với từ khóa: `+keyword+` (có `+result.length+` kết quả)</p>`);
+      return result;
+      }
+      if(normalize(keyword.toLowerCase())==normalize("Kỹ Năng").toLowerCase()) {
+      var Books = getDataFromLocal(Books,"Kỹ Năng");
+        result=Books;
+              $(".timkiem").html(`<p>Tìm kiếm với từ khóa: `+keyword+` (có `+result.length+` kết quả)</p>`);
+      return result;
+      }
+      
+
+  else{
   var Books = getDataFromLocal(Books,"sanpham");
-   var content="";
-  var result = Books.filter(book => normalize(book.tensach.toLowerCase())==normalize(keyword.toLowerCase()));
+      result = Books.filter(book => normalize(book.tensach.toLowerCase())==normalize(keyword.toLowerCase()));
+}
   if(keyword==""){
-    $(".timkiem").html(`<p>Tìm kiếm với từ khóa: `+keyword+` (có `+result.length+` kết quả)</p>`);
+      $(".timkiem").html(`<p>Tìm kiếm với từ khóa: `+keyword+` (có `+result.length+` kết quả)</p>`);
       return result;
   }
    if(result.length){
-  $(".timkiem").html(`<p>Tìm kiếm với từ khóa: `+keyword+` (có `+result.length+` kết quả)</p>`);
-  return result;
+    $(".timkiem").html(`<p>Tìm kiếm với từ khóa: `+keyword+` (có `+result.length+` kết quả)</p>`);
+    return result;
 }
 else {
    result = Books.filter(book => normalize(book.tensach.toLowerCase()).includes(normalize(keyword.toLowerCase())));
@@ -166,6 +245,7 @@ function sort(min,max){
   loadBookByType(1);
   $(".div121").fadeIn(300);
   setDataToLocal(temp,"search");
+
 }   if(max==100000000)
       
      $(".timkiem").html(`<p>Tìm kiếm với từ khóa: `+keyword+` có giá từ `+min+`   trở lên (có `+Books.length+` kết quả)</p>`);

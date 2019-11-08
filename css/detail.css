@@ -33,20 +33,34 @@ ul {
 	width: 100%;
 	
 }
-.anhsach img{
+.anhsach>img{
 	width: 30%;
 	float: left;
-	margin-top: 5%;
+	margin-top: 10%;
 	margin-left: 10%;
+}
+
+
+
+.direct{
+	margin-left: 5%;
+	margin-top: 1%;
+}
+.breadcrumb {
+    background: transparent;
+    display: inline-block;
+    zoom: 1;
+    padding: 0;
+    margin: 0;
 }
 .detail{
 	float:right;
-	width: 30%;
-	margin-right: 28%;
-	margin-top: 4%;
+	width: 50%;
+	margin-right: 9%;
+	margin-top: 5%;
 }
 .tensach{
-	font-size: 30px;
+	font-size: 25px;
 	color: #0092f2;
 }
 .stars {
@@ -54,7 +68,7 @@ ul {
 }
 .fa.fa-star{
   float: left;
-  padding: 5px;
+  padding: 4px;
   font-size: 25px;
   color: #ffc120;
 }

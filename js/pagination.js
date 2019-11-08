@@ -11,7 +11,7 @@ function getBookByType(type){
 }
 
 function loadBooks(Books,currentPage,totalBook){
-	var content="";
+	var content=``;
 	for(let i=(currentPage-1)*12;i<totalBook;i++){
 			content+= `<div class="khung" ><img src="img/`+Books[i].tensach+`.jpg" alt="sach1" width="200" height="200" onclick="window.location='Detail.html?`+Books[i].tensach+`'"><div class="chitiettrongkhung"  onclick="window.location='Detail.html?`+Books[i].tensach+`'"><div class="tieude"  onclick="window.location='Detail.html?`+Books[i].tensach+`'">`+Books[i].tensach+`</div><div class="tacgia">`+Books[i].tacgia+`</div><div class="gia">`+parseFloat(Books[i].gia).toFixed(3)+` VNĐ</div></div>
 							
@@ -23,6 +23,8 @@ function loadBooks(Books,currentPage,totalBook){
 	return content;
 }
 function loadBookByType(currentPage){
+	document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 	var key= getKey();
 	$(".div12").children()[0].innerText = "Sách "+key;
 	var currentPage =  getCurrentPage(currentPage);
@@ -46,11 +48,11 @@ function loadBookByType(currentPage){
 function loadPages(totalPage,currentPage){
 
 	var paginate=`<b href="#" onclick="loadBookByType(`+1+`)">&laquo;</b>
- 			<b href="#" onclick="loadBookByType(`+(currentPage+1)+`)">&lt;</b>`;
+ 			<b href="#" onclick="loadBookByType(`+(currentPage-1)+`)">&lt;</b>`;
 	for(let i=1;i<=totalPage;i++){
 		paginate+=`<b href="#" id="page`+i+`" onclick="loadBookByType(`+i+`)">`+i+`</b>`;
 	}
-	paginate+=` 			<b href="#" onclick="loadBookByType(`+(currentPage+1)+`)">&gt;</b>
+	paginate+=` 			<b href="#" onclick="loadBookByType(`+((currentPage+1) > totalPage ? totalPage : (currentPage+1))+`)">&gt;</b>
  			<b href="#" onclick="loadBookByType(`+totalPage+`)">&raquo;</b>`;
  		return paginate;
 }
@@ -71,30 +73,9 @@ function loadDataFromLocal(value){
 		   pages[i].classList.remove("trangchinh");
 	}
 		document.getElementById(`page`+currentPage+``).classList.add("trangchinh");	
-		setDataToLocal(Books,"Văn Học");
+		setDataToLocal(Books,key);
 }
 
-function loadData(currentPage){
-	var key = decodeURI(window.location.href).toString().split('?')[1];
-	console.log(key);
-	$(".div12").children()[0].innerText = "Sách "+key;
-	var pages = $(".phantrang").children();
-	var Books = getDataFromLocal(Books,"sanpham");
-	Books = Books.filter(book=>book.theloai==key);
-	setDataToLocal(Books,key);
-	var totalBook = (currentPage)*12;
-	var totalPage = Math.ceil(Books.length/12);
-	var content ="";
-
-	$(".div121").html(content);
-	$(".phantrang").html(paginate);
-	for(let i=0;i<pages.length;i++){
-		   pages[i].classList.remove("trangchinh");
-	}
-		document.getElementById(`page`+currentPage+``).classList.add("trangchinh");	
-
-
-}
 
 window.addEventListener("load",loadDataFromLocal);
 

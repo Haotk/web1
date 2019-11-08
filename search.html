@@ -29,7 +29,7 @@
 <body>
   <div class="header">
     <div class="logo">
-      <a href="index.html">
+      <a href="Index.html">
         <img class="logo" src="sagobomautrang.png">
       </a>
     </div>
@@ -118,10 +118,10 @@
          
         <p onclick="$(`.theoloai`).toggle(showMore(this))"><i class="indicator fa fa-caret-down" aria-hidden="true"></i> THỂ LOẠI</p>
           <div class="theoloai" >
-            <input type="radio" name="theloai" value="Văn Học" id=> Văn Học<br>
-            <input type="radio" name="theloai" value="Thiếu Nhi"> Thiếu Nhi<br>
-            <input type="radio" name="theloai" value="Tiểu Thuyết"> Tiểu Thuyết<br>
-            <input type="radio" name="theloai" value="Văn Học"> Kỹ Năng
+            <input type="radio" name="vanhoc" value="Văn Học" onclick="loadDataFromRadio(1,this)"> Văn Học<br>
+            <input type="radio" name="thieunhi" value="Thiếu Nhi"onclick="loadDataFromRadio(1,this)"> Thiếu Nhi<br>
+            <input type="radio" name="tieuthuyet" value="Tiểu Thuyết"onclick="loadDataFromRadio(1,this)"> Tiểu Thuyết<br>
+            <input type="radio" name="kynang" value="Kỹ Năng"onclick="loadDataFromRadio(1,this)"> Kỹ Năng
             
 
           </div>          

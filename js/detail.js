@@ -21,7 +21,27 @@ function getBook(){
 	var Book = findBook(Books,tenSach);
 	if(Book==0) console.log("Khoong");
 	else{
-		$(".chitietsanpham").html(`<div class="anhsach"><img src="img/`+Book.tensach+`.jpg"></div><div class="detail"><div class="tensach"><p>`+Book.tensach+`</p></div><div class="stars"><div class="sao"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><div class="luotdanhgia"><p>(có 1 lượt đánh giá)</p></div></div><hr><div class="gia"><h1>`+parseFloat(Book.gia).toFixed(3)+`đ</h1></div><div class="chonsoluong"><div class="soluong"><button onclick="updateQuan(this)">-</button><input type="tel" value="1" onchange="check(this)" max="30" ><button onclick="updateQuan(this)" onchange="check(this)">+</button></div><div class="chonmua"><button class="chon" onclick="addBook()"><span>CHỌN MUA</span></button></div><div class="yeuthich"><p><i class="fa fa-heart"></i> Yêu thích</p></div><hr></div><div class="thongtin"><div class="thongtinsanpham"><p>Thông Tin Chi Tiết : </p></div><div class="thongtinchitiet"><p>Tác giả : `+Book.tacgia+`</p><p>Nhà xuất bản : 	`+Book.nhaxuatban+`</p><p>Ngày xuất bản : `+Book.ngayxuatban+` </p><p>Dịch giả : `+Book.dichgia+` </p><p>Số trang  : `+Book.sotrang+` </p></div></div></div></div><div class="motasanpham"><hr><div class="motasp"><div class="mota"><h3>GIỚI THIỆU SÁCH:</h3></div><div class="motachitiet"><p>`+Book.gioithieusach+`</p></div></div><div class="danhgiasanpham">
+		$(".chitietsanpham").html(`    <div class="direct">
+        <div class="container-direct">
+                            <ol class="breadcrumb">
+                                            <li class="0">
+                                                            <a href="Index.html" title="Trang Chủ">Trang Chủ</a>
+                                                                                        <p style="margin-left: 15px;display:inline-block;">&gt;</p>
+                                                    </li>
+                                            <li class="1">
+                                                            <a href="Pagination.html?`+Book.theloai+`" title="`+Book.theloai+`">`+Book.theloai+`</a>
+                                                                                        <p style="margin-left: 15px;display:inline-block;">&gt;</p>
+                                                    </li>
+                                            <li class="2">
+                                                            <a href="Detail.html?`+Book.tensach+`" title="`+Book.tensach+`">`+Book.tensach+`</a>
+                                                                                        
+                                                    </li>
+                                          
+                                    </ol>
+                    </div>   
+    </div>
+
+<div class="anhsach"><img src="img/`+Book.tensach+`.jpg"></div><div class="detail"><div class="tensach"><p>`+Book.tensach+`</p></div><div class="stars"><div class="sao"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><div class="luotdanhgia"><p>(có 1 lượt đánh giá)</p></div></div><hr><div class="gia"><h1>`+parseFloat(Book.gia).toFixed(3)+`đ</h1></div><div class="chonsoluong"><div class="soluong"><button onclick="updateQuan(this)">-</button><input type="tel" value="1" onchange="check(this)" max="30" ><button onclick="updateQuan(this)" onchange="check(this)">+</button></div><div class="chonmua"><button class="chon" onclick="addBook()"><span>CHỌN MUA</span></button></div><div class="yeuthich"><p><i class="fa fa-heart"></i> Yêu thích</p></div><hr></div><div class="thongtin"><div class="thongtinsanpham"><p>Thông Tin Chi Tiết : </p></div><div class="thongtinchitiet"><p>Tác giả : `+Book.tacgia+`</p><p>Nhà xuất bản : 	`+Book.nhaxuatban+`</p><p>Ngày xuất bản : `+Book.ngayxuatban+` </p><p>Dịch giả : `+Book.dichgia+` </p><p>Số trang  : `+Book.sotrang+` </p></div></div></div></div><div class="motasanpham"><hr><div class="motasp"><div class="mota"><h3>GIỚI THIỆU SÁCH:</h3></div><div class="motachitiet"><p>`+Book.gioithieusach+`</p></div></div><div class="danhgiasanpham">
 	<div class="danhgiasp">
     <div class="danhgiachung">
 		<div class="danhgia">

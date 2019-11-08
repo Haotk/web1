@@ -162,42 +162,49 @@ a{
 	font-family: helvetica;
 	float:left;
 }
+
+.fa-user{
+	color:white;
+}
 .danhmucsanpham{
 	
 }
 .account-dropdown{
-	display: none;
+  display: none;
   position: absolute;
   background-color: #f9f9f9;
-  padding: 1px 5px;
-  max-width: 100px;
+
+  max-width: 9%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border: 1px solid white;
-  border-radius: 4px;
-
+  border-bottom-left-radius:  4px;
+  border-bottom-right-radius: 4px;
 }
 .account-dropdown a {
-	cursor: pointer;
-  width:100%;
+  cursor: pointer;
+  width:92%;
   text-align: center;
-  color: black;	
-  margin-top: 8px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  font-size: 14px;
+  color: black;
+ 	
+  padding: 5px;
+  font-size: 13px;
   font-family: helvetica;
   text-decoration: none;
   display: inline-block;
-  border-radius: 4px;
+ 
 }
 .account-dropdown a:hover {
 	background-color: #0092f2;
 	color:white;
 }
+.account-dropdown a:first-child {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
 .account-dropdown a:last-child {
-	margin-bottom: 5px;
-	padding-bottom: 5px;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
 }
 .account-container:hover .account-dropdown {
   display: block;

@@ -53,6 +53,9 @@ function sticky_relocate() {
   }
 }
 
+
+
+
 $(function() {
   $(window).scroll(sticky_relocate);
   sticky_relocate();
@@ -64,23 +67,68 @@ function countCheckOut(){
 	$("#soluongsanpham").fadeIn(150);
 }
 
-function remove(x){
-	$(x).parent().parent().parent().parent().remove();
-	cal();
-	sticky_relocate();
+function remove(x){	
+	var remove = $(x).parent().parent().parent().parent();
+	var containInfoBook  = remove.children().children()[1];
+	var name = containInfoBook.children[0].innerText;
+	var Books = getDataFromLocal(Books,"sanpham");
+	
+	for(let book of Books){
+		if(book.tensach==name) book.soluong=0;
+	}
+	setDataToLocal(Books,"sanpham");
+	remove.remove();
 	countCheckOut();
+	cal();
+
+	sticky_relocate();
+	
 }
 function check(x){
 	var parent = $(x).parent();
 	var value = parent.children("input");
 	if($(value).val()<0)
 		$(value).val(1);
-	if($(value).val()>50){ alert("Giới hạn 50 sản phẩm");
+	if($(value).val()>50){ swal("Giới hạn 50 sản phẩm","","warning");
 		$(value).val(50);
 	}
+	countCheckOut();
 	cal();
 }
 
+function thanhtoan(){
+	var isUser = isLogged();
+		if(isUser) {
+			if((parseFloat(document.getElementById("tamtinh").innerHTML))==0){
+				swal("Lỗi","Bạn chưa mua sản phẩm nào!!","error");
+				return;
+			}
+			
+			swal("Bạn có muốn thanh toán?", {
+  buttons: {
+  	yes: "Đồng Ý",
+    cancel: "Không",
+  },
+})
+.then((value) => {
+  switch (value) {
+    case "yes":
+      swal("THANH TOÁN THÀNH CÔNG", "", "success").then(function(){
+      		var Books = getDataFromLocal(Books,"sanpham");
+      			for(let book of Books) book.soluong=0;
+      				setDataToLocal(Books,"sanpham");
+      				window.location = "ShoppingCart.html";
+      });
+      break;
+  }
+
+});
+			
+		}
+		else swal("BẠN CHƯA ĐĂNG NHẬP","MỜI BẠN ĐĂNG NHẬP","warning").then(()=> window.location="LoginForm.html");
+			
+	
+}
 function cal(){
 	var tamtinh = 0;
 	var quantity =1;

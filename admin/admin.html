@@ -3,13 +3,16 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="admin.css">
-  <script type="text/javascript" src="../js/shoppingcart.js"></script>
+
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+  <div id="bgpopup"></div>
 	<div class="ad-header">
 		<a href="#"><img src="sagobomautrang.png"></a>
 	</div>
+    
 	<div class="sreach-bar">
 		<div class="search-container">
       				<div class="autocomplete">
@@ -20,6 +23,7 @@
       					</button>
       	</div>
 	</div>
+
 	<div class="admin-interface"> 
 		<div class="tab">
   			<button class="tablinks" onclick="adminOption(event, 'thongke')" id="defaultOpen">Thống kê</button>
@@ -44,7 +48,7 @@
 					</div>
 					<div class="edit-frame">
 						<button>Xóa</button>
-						<button onclick="$(`.popup`).toggle()">Sửa</button>
+						<button id="edit">Sửa</button>
 					</div>
 				</div>
 				<div class="frame">
@@ -230,8 +234,8 @@ function adminOption(evt, adminOption) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
-
-<div class="popup">
+  
+<div class="popup" id="popup">
   <div class="khung">
     <img src="imgwhile.png">
     <div class="buttonthem">
@@ -270,11 +274,23 @@ document.getElementById("defaultOpen").click();
       <textarea></textarea>
     </div>
     <div class="xong">
-      <button>Xong</button>
+      <button id="close-edit">Xong</button>
     </div>
   </div>
 </div>
 
+<script>
+  document.getElementById("edit").onclick = function () {
+                document.getElementById("popup").style.display = 'block';
+                document.getElementById("bgpopup").style.display = 'block';
+
+            };
+  document.getElementById("close-edit").onclick = function () {
+                document.getElementById("popup").style.display = 'none';
+                document.getElementById("bgpopup").style.display = 'none';
+            };
+ 
+</script>
 
 </body>
 </html>

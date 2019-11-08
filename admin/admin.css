@@ -1,9 +1,8 @@
-body{
+html, body{
 	  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-	background:#333;
-	margin:0;
-	padding:0;
-	background:white;
+	height: 100%;
+	width: 100%;
+	margin:0px;
 }
 h2,p{
 	text-align: center;
@@ -183,13 +182,25 @@ clear: both;
 	float: left;
 	margin-left: 20px;
 }
-
+#bgpopup{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.6;
+	display: none;
+}
 .popup{
-
-	margin-top: 5%;
+	background-color: white;
+	height: 700px;
+	padding-top: 100px;
+	position: relative;
+	margin-top: -65%;
 	width: 60%;
 	margin-left: 20%;
 	float: left;
+	display: none;
+	z-index: 1;
 }
 .khung {
 	width: 40%;

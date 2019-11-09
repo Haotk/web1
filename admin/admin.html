@@ -25,15 +25,18 @@
 	</div>
 
 	<div class="admin-interface"> 
+
 		<div class="tab">
   			<button class="tablinks" onclick="adminOption(event, 'thongke')" id="defaultOpen">Thống kê</button>
   			<button class="tablinks" onclick="adminOption(event, 'sanpham')">Quản lí sản phẩm</button>
   			<button class="tablinks" onclick="adminOption(event, 'nguoidung')">Quản lí người dùng</button>
   			<button class="tablinks" onclick="adminOption(event, 'donhang')">Quản lí đơn hàng</button>
 		</div>
+
 		<div id="thongke" class="tabcontent">
   			<p style="margin: 15%;text-align: center;font-size: 25px">Doanh thu của tháng: <span>10.000.000</span> đ</p>
 		</div>
+
 		<div id="sanpham" class="tabcontent">
 				<div class="frame">
 					<div class="pic-frame">
@@ -48,7 +51,7 @@
 					</div>
 					<div class="edit-frame">
 						<button>Xóa</button>
-						<button id="edit">Sửa</button>
+						<button onclick="popup()">Sửa</button>
 					</div>
 				</div>
 				<div class="frame">
@@ -64,7 +67,7 @@
 					</div>
 					<div class="edit-frame">
 						<button>Xóa</button>
-						<button>Sửa</button>
+						<button onclick="popup()">Sửa</button>
 					</div>
 				</div>
 				<div class="frame">
@@ -80,7 +83,7 @@
 					</div>
 					<div class="edit-frame">
 						<button>Xóa</button>
-						<button>Sửa</button>
+						<button onclick="popup()">Sửa</button>
 					</div>
 				</div>
   			
@@ -216,6 +219,7 @@
 		</div>
 	</div>
 </div>
+
 	<script>
 function adminOption(evt, adminOption) {
   var i, tabcontent, tablinks;
@@ -274,18 +278,18 @@ document.getElementById("defaultOpen").click();
       <textarea></textarea>
     </div>
     <div class="xong">
-      <button id="close-edit">Xong</button>
+      <button onclick="closepopup()">Xong</button>
     </div>
   </div>
 </div>
 
 <script>
-  document.getElementById("edit").onclick = function () {
+  	function popup() {
                 document.getElementById("popup").style.display = 'block';
                 document.getElementById("bgpopup").style.display = 'block';
 
             };
-  document.getElementById("close-edit").onclick = function () {
+	 function closepopup() {
                 document.getElementById("popup").style.display = 'none';
                 document.getElementById("bgpopup").style.display = 'none';
             };

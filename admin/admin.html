@@ -3,91 +3,80 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="admin.css">
+  <script type="text/javascript" src="../js/sweetalert.min.js"></script>
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/shoppingcart.js"></script>
 
-
+  <script type="text/javascript" src="../js/main.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="admin.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <div id="bgpopup"></div>
 	<div class="ad-header">
 		<a href="#"><img src="sagobomautrang.png"></a>
+    <div class="dangxuatadmin">
+      <a href="index.html" onclick="logoutAdmin()">Đăng xuất</a>
+    </div>
 	</div>
+	<div class="header-bot">
     
-	<div class="sreach-bar">
-		<div class="search-container">
-      				<div class="autocomplete">
-      				<input id="suggest"class="search-box" type="text" placeholder="Tìm kiếm..." >
-    				</div>
-      					<button type="submit" class=search-icon onclick="search()"><i class="fa fa-search"></i>
-        				Tìm kiếm
-      					</button>
-      	</div>
+      <p>CHÀO MỪNG BẠN ĐẾN VỚI TRANG QUẢN LÝ CỦA SAGOBO</p>
+    
+      				
 	</div>
-
 	<div class="admin-interface"> 
-
 		<div class="tab">
   			<button class="tablinks" onclick="adminOption(event, 'thongke')" id="defaultOpen">Thống kê</button>
   			<button class="tablinks" onclick="adminOption(event, 'sanpham')">Quản lí sản phẩm</button>
   			<button class="tablinks" onclick="adminOption(event, 'nguoidung')">Quản lí người dùng</button>
   			<button class="tablinks" onclick="adminOption(event, 'donhang')">Quản lí đơn hàng</button>
 		</div>
-
 		<div id="thongke" class="tabcontent">
-  			<p style="margin: 15%;text-align: center;font-size: 25px">Doanh thu của tháng: <span>10.000.000</span> đ</p>
+  			         <div class="chart chart-bgred">
+                    <div class="chart__label">NGƯỜI TRUY CẬP THEO NGÀY</div>
+                    <div class="chart__num">1.590</div>
+                    <div class="chart__img chart__img-img1"></div>
+                  </div>
+                  <div class="chart chart-bgred">
+                    <div class="chart__label">DOANH THU THEO NGÀY</div>
+                    <div class="chart__num">3.450.000 VNĐ</div>
+                    <div class="chart__img chart__img-img1"></div>
+                  </div>
+                  <div class="chart chart-bgskyblue">
+                    <div class="chart__label">NGƯỜI TRUY CẬP THEO TUẦN</div>
+                    <div class="chart__num">14.150</div>
+                    <div class="chart__img chart__img-img3"></div>
+                  </div>
+                  <div class="chart chart-bgskyblue">
+                    <div class="chart__label">DOANH THU THEO TUẦN</div>
+                    <div class="chart__num">30.450.000 VNĐ</div>
+                    <div class="chart__img chart__img-img3"></div>
+                  </div>      
+                  <div class="chart chart-bgblue">
+                    <div class="chart__label">NGƯỜI TRUY CẬP THEO THÁNG</div>
+                    <div class="chart__num">543.126</div>
+                    <div class="chart__img chart__img-img2"></div>
+                  </div>
+                  <div class="chart chart-bgblue">
+                    <div class="chart__label">DOANH THU THEO THÁNG</div>
+                    <div class="chart__num">921.522.000 VNĐ</div>
+                    <div class="chart__img chart__img-img2"></div>
+                  </div>                                 
 		</div>
+    <div class="tabcontent" id="sanpham">
+      <div class="filter"><select onchange="getData(1,value)">
+        <option  selected>Số lượng</option>
+  <option value="10">10</option>
+  <option value="15">15</option>
+  <option value="20">20</option>
+</select></div>
+		<div id="products">
 
-		<div id="sanpham" class="tabcontent">
-				<div class="frame">
-					<div class="pic-frame">
-						<img src="5 Centimet Trên Giấy.jpg">
-					</div>
-					<div class="cont-frame">
-						<h2>Tên Sách</h2>
-						<h3>10.000 đ</h3>
-						<div class="soluong">
-							<span>Số lượng hiện có:</span>
-						</div>
-					</div>
-					<div class="edit-frame">
-						<button>Xóa</button>
-						<button onclick="popup()">Sửa</button>
-					</div>
-				</div>
-				<div class="frame">
-					<div class="pic-frame">
-						<img src="5 Centimet Trên Giấy.jpg">
-					</div>
-					<div class="cont-frame">
-						<h2>Tên Sách</h2>
-						<h3>10.000 đ</h3>
-						<div class="soluong">
-							<span>Số lượng hiện có:</span>
-						</div>
-					</div>
-					<div class="edit-frame">
-						<button>Xóa</button>
-						<button onclick="popup()">Sửa</button>
-					</div>
-				</div>
-				<div class="frame">
-					<div class="pic-frame">
-						<img src="5 Centimet Trên Giấy.jpg">
-					</div>
-					<div class="cont-frame">
-						<h2>Tên Sách</h2>
-						<h3>10.000 đ</h3>
-						<div class="soluong">
-							<span>Số lượng hiện có:</span>
-						</div>
-					</div>
-					<div class="edit-frame">
-						<button>Xóa</button>
-						<button onclick="popup()">Sửa</button>
-					</div>
-				</div>
   			
 		</div>
+      <div class="phantrang"></div>
+    </div>
 		<div id="nguoidung" class="tabcontent">
   			<div class="hoten1">
   				<h2>Họ Tên</h2>
@@ -219,7 +208,6 @@
 		</div>
 	</div>
 </div>
-
 	<script>
 function adminOption(evt, adminOption) {
   var i, tabcontent, tablinks;
@@ -238,63 +226,55 @@ function adminOption(evt, adminOption) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
-  
+
 <div class="popup" id="popup">
-  <div class="khung">
-    <img src="imgwhile.png">
-    <div class="buttonthem">
-      <button>Thêm</button>
-      <button>Xoá</button>
+  <div class="popup-content">
+     <span class="close">&times;</span>
+    <div class="popup-content-img">
+  
+    <div class="btn">
+      <button class="btnEdit">Thêm</button>
+      <button class="btnDelete">Xoá</button>
     </div>
-  </div>
-  <div class="popupchitiet">
-    <div class="tensach">
-        <p>Tên Sách</p>
+     </div>
+  <div class="content">
+    <div class="Book">
+  
     </div>
-    <div class="gia">
-        <h1>50.000đ</h1>
+    <div class="Price">
+        
     </div>
-        <div class="soluong">
-            <input type="tel" value="1" onchange="check(this)" max="30">
-        </div>
+        
     <div class="thongtin">
         <div class="thongtinsanpham">
-            <p>Thông Tin Chi Tiết : </p>
+            <h2>Thông Tin Chi Tiết</h2>
         </div>
         <div class="thongtinchitiet">
-            <p>Tác giả : </p>
-            <p>Nhà xuất bản : </p>
-            <p>Ngày xuất bản : </p>
-            <p>Dịch giả : </p>
-            <p>Số trang : </p>
+            <div class="tacgia"></div>
+            <div class="ngayxuatban"></div>
+            <div class="dichgia"></div>
+            <div class="sotrang"></div>
+            <div class="nhaxuatban"></div>
         </div>
     </div>
-  </div>
+
   <div class="motasp">
     <div class="ten">
-      <p>Mô tả sản phẩm : </p>
+      <p>Mô tả sản phẩm :</p>
     </div>
     <div class="nhapmota">
-      <textarea></textarea>
+      <textarea id="mota">Lần đầu tiên 12 chòm sao được cụ thể hóa thành những nhân vật có số phận, có tính cách đặc trưng trong những câu chuyện tình lãng mạn đến bất ngờ.
+Một quý phi Thần Nông mưu trí đã vượt qua những sóng gió hậu cung để lên ngôi hoàng hậu, một Song Tử luôn phải đắn đo giữa hai chàng trai mình đều yêu, một Bảo Bình đứng trước Bàn tay khỉ với 3 điều ước oan nghiệt, một nàng tiên Bạch Dương dùng sinh mạng hy sinh cho tình yêu của mình trên đảo Đào Hoa, một Cư Giải chân chất ở xứ dừa Bến Tre, một Thiên Bình thức trắng trong đêm đầy nước mắt, một Sư Tử điềm tĩnh trong những buổi trà chiều, một ca sĩ Kim Ngưu đầy nghị lực, một cô vợ Xử Nữ lém lỉnh, một Song Ngư mơ mộng khó hiểu và chuyện gì sẽ đến khi Ma Kết xuyên không? 12 chòm sao với những tính cách riêng biệt sẽ xử lý tình huống như thế nào?</textarea>
     </div>
+      </div>
     <div class="xong">
-      <button onclick="closepopup()">Xong</button>
-    </div>
+      <button onclick="save()">Lưu lại</button>
+    </div>  
   </div>
 </div>
-
-<script>
-  	function popup() {
-                document.getElementById("popup").style.display = 'block';
-                document.getElementById("bgpopup").style.display = 'block';
-
-            };
-	 function closepopup() {
-                document.getElementById("popup").style.display = 'none';
-                document.getElementById("bgpopup").style.display = 'none';
-            };
- 
+</div>
+<script type="text/javascript">
+  window.addEventListener("load",checkAdmin);
 </script>
-
 </body>
 </html>

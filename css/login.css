@@ -155,8 +155,7 @@ body {
 .img__text h2 {
 
   margin-bottom: 10px;
-  font-weight: bold;
-  font-size: 22px;
+  font-weight: normal;
 }
 .img__text p {
 
@@ -336,9 +335,7 @@ h2 {
   color: #00aaff
   ;
 }
-.fb-btn, .gg-btn, .zalo-btn{
-  display: none;
-}
+
 .sign-in {
   transition-timing-function: ease-out;
 }

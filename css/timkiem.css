@@ -1,3 +1,4 @@
+
 .container{
 	width: 100%;
 	padding: 0;
@@ -30,7 +31,7 @@
     padding: 0 10px;
     font-weight: bold;
     font-family: Helvetica,serif;
-    text-transform: uppercase;	
+    text-transform: uppercase;
 }
 .blockcontent p{
 	margin-left: 6px;
@@ -38,10 +39,11 @@
 .blockcontent p:hover{
 	cursor: pointer;
 	color:#0092f2;
-	text-decoration: bold;
+	text-decoration: underline;
 }
 .theogia button:hover{
-	cursor: pointer;
+	color: #0092f2;
+	background-color: white;
 }
 .theogia{
 	display: flex;
@@ -77,11 +79,7 @@
 .theoloai{
 	height: 105px;
 }
-.khung:hover .text{
-	background-color: #0092F2;
-	margin-left: -28px;
-	opacity: 1;
-}
+
 .tieudegia{
 	text-align: center;
 }
@@ -98,9 +96,7 @@
 	width: 915px;
 	margin-bottom: 20px;
 }
-
 .div121{
-
 	min-height: 500px;
 	display: flex;
     flex-wrap: wrap;
@@ -113,12 +109,48 @@
 .h1{
 	font-size: 40px;
 }
-	
+.khung{
+	width: 25%!important;
+    height: 100%;
 
+    /*cursor: pointer;*/
+}
+.chitiettrongkhung{
+	position: relative;
+	margin:10px auto;
+	padding: 5px;
+}
+.tieude{
+	/*max-height:  15px;*/
+	text-align: center;
+	color: black;
+	text-transform: capitalize;
+	line-height: 1.125rem;
+    height: 3.25rem;
+}
+.tacgia{
+	/*max-height:  15px;*/
+	font-style: italic;
+	color: #777777;
+	line-height: 1.125rem;
+    height: 1.5rem;
+   	white-space: nowrap;
+   	text-overflow: ellipsis;
+   	overflow: hidden;
+
+}
+.gia{
+	/*max-height: 15px;*/
+	color: #242424;
+	font-weight: bold;
+	line-height: 1.125rem;
+    height: 2.25rem;
+    
+}
 
 .phantrang{
 	display: inline-block;
-	margin-left: 5%;
+	margin-left: 25%;
 	margin-bottom: 2%;
 }
 .phantrang b{

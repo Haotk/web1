@@ -1,12 +1,11 @@
-html, body{
+body{
 	  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-	height: 100%;
-	width: 100%;
-	margin:0px;
+	background:#333;
+	margin:0;
+	padding:0;
+	background:white;
 }
-h2,p{
-	text-align: center;
-}
+
 hr{
 }
 .ad-header{
@@ -15,47 +14,79 @@ hr{
 	background-color: #0092f2;
 
 }
+.dangxuatadmin{
+	float: right;
+	margin-top: 30px;
+	margin-right: 50px;
+}
+.dangxuatadmin a{
+	text-decoration: none;
+	color: white;
+}
+.chart {
+    display: inline-block;
+    width: 249px;
+    height: 160px;
+    margin-top: 40px;
+    margin-left: 30px;
+    border-radius: 5px;
+    margin-right: -5px;
+}
+.chart__num {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding-top: 20px;
+    margin-left: 21px;
+}
+
+.chart__label {
+    color: white;
+    font-size: 13px;
+    margin-left: 21px;
+    padding-top: 7px;
+}
+.chart-bgred {
+    border: 1px solid #F86C6B;
+    background: #F86C6B;
+}
+.chart-bgblue {
+    border: 1px solid skyblue;
+    background: #20A8D8;
+}
+.chart-bgskyblue {
+    border: 1px solid skyblue;
+    background: #63C2DE;
+}
+.chart__img {
+    height: 76px;
+    width: 249px;
+}
+.chart__img-img2 {
+    background: url(image/chart_2.jpg);
+}
+.chart__img-img3 {
+    background: url(image/chart_3.jpg);
+}
+.chart__img-img1 {
+    background-image: url("image/chart.jpg");
+    margin-left: -1px;
+}
 .ad-header img{
 	margin: 15px 0 15px 70px;
 	width: 180px;
 	float:left;
 }
-.sreach-bar{
+.header-bot{
+	clear: both;
 	width: 80%;
-	background-color: #0092f2;
+	color: #0092f2;
+	margin-left: 10%;
 	height: 70px;
-	margin-top: 10px;
-	margin-left: 10%;
-	margin-right: 10%;
 }
-.search-container{
-	margin-left: 10%;
-
-	margin-top: 16px;
-	width:80%; 	
-	float:left;
-}
-.search-icon{
-	background: #edeef2;
-	width: 110px;
-	height: 36px;
-	border: 0px;
-	margin-left: 5px;
-	border-radius: 3px;
-	font-size: 16px;
-	outline: none;
-	cursor:pointer;
-	float:left;
-}
-.search-box{
-	width: 420px;
-	height: 24px;
-	font-size: 16px;
-	border-radius: 3px;
-	border: 0px;
-	padding: 6px;	
-	outline: none;
-	float:left;
+.header-bot p{
+	font-size: 2em;
+	text-align: center;
 }
 /*admin----------------------------------------------------*/
 .admin-interface{
@@ -94,7 +125,7 @@ hr{
   color: #ffffff;	
 }
 .tabcontent {
-	background-color: #f1f1f1;
+	background-color: white;
   	float: right;
   	width: 74%;	
 }
@@ -143,7 +174,7 @@ clear: both;
 }
 .pic-frame{
 	float: left;
-	width: 30%;
+	width: 20%;
 }
 .pic-frame img{
 	width: 100%;
@@ -151,29 +182,82 @@ clear: both;
 }
 .cont-frame{
 	float: left;
-	width: 60%;
+	width:60%;
 	background-color: white;
 }
 .cont-frame h2{
-	float: left;
 	margin: 0 70% 15px 20px;
-	clear: both;
+	width: 80%;
+	font-size: 16px;
+	overflow: hidden;
+	color: #0092f2;
 }
 .cont-frame h3{
-	float: left;
 	margin: 0 70% 15px 20px;
 	color: red;
+
+}
+.addproduct{
+	margin:0 auto;
+	background-color: white;
+}
+.filter{
+	margin: 0 auto;
+	float:right;
+	font-size: 15px;
+
+}
+.filter select{
+	outline: none;
+   background: transparent;
+   width: 100%;
+   padding: 2px;
+   border:1px solid #0092f2;
+   font-size: 17px;
+   height: 34px;
+ }
+ .addProduct{
+  background-color: #0092f2;
+  margin-bottom: 5%;
+  width:40%;
+  margin-left: 5%;
+  border: none;
+  color: white;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius:5px;
+  cursor: pointer;
 }
 .edit-frame{
-	width: 10%;
-	float: left;
-    margin-top: 10%; 
+	width:	20%;
+	float:left;
 }
 .edit-frame button{
-	height: 20px;
-	background-color:white;
-	outline: none;
-	border: 1px solid white;
+
+  margin-bottom: 5%;
+  width:40%;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius:5px;
+}
+.btnDelete{
+	width: 20%;
+	background-color: red;
+	padding:10;
+}
+.btnEdit{
+	width: 20%;
+
+	background-color: red;
+	padding:10;
+	background-color: #0092f2;
 }
 .edit-frame button:hover{
 	cursor: pointer;
@@ -182,118 +266,127 @@ clear: both;
 	float: left;
 	margin-left: 20px;
 }
-#bgpopup{
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	background-color: black;
-	opacity: 0.6;
-	display: none;
-}
+
 .popup{
-	background-color: white;
-	height: 700px;
-	padding-top: 100px;
-	position: relative;
-	margin-top: -65%;
-	width: 60%;
-	margin-left: 20%;
-	float: left;
-	display: none;
-	z-index: 1;
+ display: none;
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+ 
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-.khung {
-	width: 40%;
-	float: left; 
-	background-color: transparent;
-	
+.popup-content{
+	width:80%;
+	border: 1px solid #888;
+	border-radius: 5px;
+	margin: auto;
+	margin-top:3%;
+	padding: 20px;
+	background-color: white;
+	height: 80%;
+}
+.popup-content-img{
+	position: relative;
+	float:left;
 
 }
-.buttonthem{
-	margin-left: 25%;
-}
-.khung img{
-	width:60%;
-	margin-top: 20px;
-	height: 250px;
-	margin-left: 10%;
-}
-.popupchitiet{
-	width: 59%;
-	float: right;
+.popup-content-img img{
+	width:450px;
+	height: 430px;
 	background-color: transparent;
+	margin-bottom: 1%;
 }
-.gia h1{
-	display: inline-block;
-	font-size: 200%;
-	color: red;
-	margin-bottom: 0px;
-	margin-top: 10px;
-	margin-left: 7px;
+.btn button{
+	cursor: pointer;
+	border:none;
+	width:15%;
+	color: white;
+	height: 30px;
+	border-radius: 5px;
 }
-.gia{
-	margin-bottom: 20px;
+.btn>.btnEdit{
+	margin-left: 35%;
 }
-.chitietsanpham hr{
-	margin-right: 100px;
+.inct{
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	color: blue;
+	font-size: 12.5px;
+	font-weight: bold;
+	text-align: center;
+	float: right;
+	width: 35%;
 }
-.soluong{
-	max-width: 200px;
-	width: 100%;
-	margin-bottom: 20px;
+.inct:hover,.inct:focus{
+	border-color: #0092f2;
 }
-.soluong>input{
-  width: 50px;
-  height: 10%;
-  border: 5px solid white;
-  text-align: center;
+.content{
+	float: left;
+	width: 40%;
 }
-.thongtin{
-	width: 50%;
+.Book{
+	color:#0092f2;
+	font-weight: bold;
+	font-size: 16px;
 }
-.tensach p{
-	text-align: left;
-	font-size: 25px;
-}
-.thongtinsanpham p{
-	font-size: 25px;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	font-family: helvetica;
-	text-align: left;
-}
-.thongtinchitiet p{
-	color: #333444;
-	font-size: 15px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	font-family: helvetica;
-	text-align: left;
+.Price{
+	color:red;
 }
 .thongtinchitiet{
-	float: left;
-	margin-left: 80px;
-
-}
-.motasp{
-	margin-top: 350px;
-}
-.ten p{
 	text-align: left;
-	margin-left: 5%;
-	font-size: 25px;
+	font-size: 15px;
 }
 .nhapmota textarea{
-	width: 80%;
-	height: 150px;	
-	margin-left: 10%;
+	font-size: 15px;
+	height: 75px;
+	overflow-y:auto;
+	width: 100%;
 }
-.xong{
-	margin-left: 45%;
-}
+
 .xong button{
-	width: 20%;
-	border: 1px solid #0092f2;
-	border-radius: 5px;
+	border:none;
+	width:20%;
 	background-color: #0092f2;
+	color: white;
+	height: 30px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.phantrang{
+	background-color: white;
+	display: inline-block;
+	margin-top: 50px;
+}
+.phantrang b{
+	color: black;
+	float: left;
+	padding: 16px 20px;
+	text-decoration: none;
+	transition: background-color .3s;
+}
+.phantrang b.trangchinh{
+	background-color: #0092F2;
+	color: white;
+}
+.phantrang b:hover:not(.trangchinh){
+	background-color: #ddd;
 }

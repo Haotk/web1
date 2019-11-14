@@ -1,0 +1,332 @@
+body{
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+.wrapper{
+	width: 100%;
+	height: 100%;
+}
+/*header*/
+.header{    
+    height: 90px;
+    width: 100%;
+    background:black;
+}
+.header-logo{
+    float: left;
+}
+.header-logo img{
+    margin-left: 5%;
+    margin-top: 5%;
+    height: 80px;
+    width: 130px;
+}
+.header-search{
+    margin-top:25px;
+    float: left;
+}
+.header-details{
+    float: left;
+    margin-left:100px;
+    margin-top: 40px;
+}
+.header-details a{
+    font-family: Verdana;
+    color: white;
+    margin-right: 20px;
+    font-size: 1em;
+    text-decoration: none;
+}
+.header-details a:hover{
+    color:#EAC47D;
+}
+.header-icons{
+    float: left;
+    margin-top: 35px;
+}
+.header-icons a{
+    text-decoration: none;
+    font-size:26px;
+    color: white;
+    margin-right: 20px;
+}
+.header-icons a:hover{
+    color:#EAC47D;
+}
+/*USER INTERFACE*/
+.user{
+	float: left;
+	width: 90%;
+	margin:5%; 
+}
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  border-right:  none;
+  background-color: #fff;
+  width: 20%;
+}
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: #333;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  min-height: 300px;
+}
+.thongtin{
+	width: 100%;
+	float: left;
+}
+.thongtin-left{
+	float: left;
+	width: 30%;
+}
+.info-left{
+	float: right;
+	font-size: 20px;
+}
+.info-left p{
+	margin-top:16px;
+	margin-bottom: 16px;
+	padding: 7px;
+}
+.thongtin-right{
+	float: left;
+	width: 70%;
+}
+.thongtin-right input{
+	width: 70%;
+	height: 22px;
+	margin-top:16px;
+	padding: 5px;
+}
+.thongtin-set{
+	float: left;
+	width: 50%;
+	margin: 0 25%
+}
+.thongtin-set button{
+	background-color: transparent;
+	border: 2px solid #eee;
+	padding: 2%;
+}
+/*Hoadon*/
+.bill{
+	width: 100%;
+	float: left;
+	margin-bottom: 1%;
+}
+.bill-tab{
+	float: left;
+	width: 100%;
+	border: 1px solid #eee;
+}
+.bill-code{
+	float: left;
+	width: 10%;
+	margin-left:1%;
+}
+.bill-date{
+	float: left;
+	width: 29%;
+	margin-left:2%;
+}
+.bill-cost{
+	float: left;
+	width: 30%;
+}
+.bill-status{
+	float: left;
+	width: 28%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+.footer{
+    clear: both;
+    width:100%;
+    background-image: url("footer.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.footer-top{ 
+    clear: both;
+    height: 200px;
+}
+.footer-bot{
+    padding:0.5px;
+}
+.footer-bot p{
+    margin-left: 20px;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Helvetica,sans-serif;
+}
+.footer-logo{
+    padding: 0px 0px 0px 50px;
+    float: left;
+}
+.footer-logo img{
+    height: 200px;
+    width: 200px;
+}
+.footer-cont{
+    float: right;
+    margin:0;
+    margin-right: 50px;
+}
+.footer-cont h4{
+    font-family: Helvetica, serif;
+    line-height:1.5;
+    font-size: 21px;
+    color: #ffffff;
+}
+.footer-cont a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    line-height: 2.0;
+    font-height:500;
+}
+.footer-cont a:hover{
+    color:#EAC47D;
+}
+.information{
+    text-align: center;
+    float: left;
+    margin-right: 50px;
+    margin-top: -5px;
+}
+.wineshop{
+    text-align: center;
+    float: left ;
+    margin-right: 50px;
+    margin-top: -5px;
+}
+.link{
+    text-align: center;
+    float: left;
+    margin-right: 100px;
+    margin-top:-5px;
+}
+.mail{
+    float: left;
+    margin-right: 30px;
+    margin-top:-5px;
+}
+.mail-box{
+    float: left;
+}
+.mail-box input{
+    height: 46px;
+    padding: 0px 20px;
+    background: #ffffff;
+    outline: none;
+    width: 100%;
+    border:1px solid black;
+    border-radius: 3px;
+    color: #333;
+    font-weight:550;
+    margin-bottom: 15px;
+    font-family: Verdana, sans-serif;
+
+}
+.mail-but{
+    float:right;
+    margin-left: 50px;
+}
+.mail-but button{
+    height: 48px;
+    padding: 12px 20px 12px 20px;
+    background-color:#dc4c46;
+    color:#ffffff;
+    font-weight: 500;
+    border:0px;
+    border-radius: 3px;
+    font-size: 15px;
+}
+.mail-but:hover{
+    cursor: pointer;
+}
+/*SEARCH HEADER*/
+.search-container{
+    width: 500px;
+    margin-left: 5%;
+}
+.search-container input[type=text]:hover{
+    outline: none;
+}
+.search-container input[type=text]{
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('../images/searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 10px 10px 12px 45px;
+  -webkit-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out;
+}

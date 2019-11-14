@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thông tin tài khoản</title>
+	<link rel="stylesheet" type="text/css" href="user.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<div class="header-logo">
+				<a href=""><img src="logo.png"></a>
+			</div>
+			<div class="header-search">
+		
+  				<form class="search-container">
+    				<input type="text" name="search" placeholder="Tìm kiếm...">
+  				</form>
+			</div>
+			<div class="header-details">
+				<a href="index.html">TRANG CHỦ</a>
+				<a href="about.html">GIỚI THIỆU</a>
+				<a href="product.html">SẢN PHẨM</a>
+			</div>
+			<div class="header-icons">
+				<a><i class="fa fa-user"></i></a>
+				<a href="shopping.htm"><i class="fa fa-shopping-bag" ></i></a>
+			</div>
+		</div>
+		<div class="user">
+			<div class="tab">
+			  <button class="tablinks" onclick="userOption(event, 'Thongtin')" id="defaultOpen">Thông tin tài khoản</button>
+			  <button class="tablinks" onclick="userOption(event, 'Hoadon')">Hóa đơn</button>
+			</div>
+
+			<div id="Thongtin" class="tabcontent">
+				<div class="thongtin">
+					<div class="thongtin-left">
+						<div class="info-left">
+						<p>Họ tên: </p>
+						<p>Email: </p>
+						<p>Địa chỉ: </p>
+						<p>Số điện thoại: </p>
+						</div>
+					</div>
+					<div class="thongtin-right">
+						<input type="text" placeholder="Nguyen Van A">
+						<input type="text" placeholder="nguyenvana@gmail.com">
+						<input type="text" placeholder="237 An duong vuong P.5 Q.5">
+						<input type="text" placeholder="115113114">
+					</div>
+					<div class="thongtin-set">
+						<button>Lưu</button>
+						<button>Hủy</button>
+					</div>					
+				</div>
+			</div>
+			<div id="Hoadon" class="tabcontent">
+				<div class="hoadon">
+					<div class="bill-tab">
+				          <div class="bill-code">
+				            <h3>Mã hóa đơn</h3>
+				          </div>
+				          <div class="bill-date">
+				            <h3>Ngày đặt</h3>
+				          </div>
+				          <div class="bill-cost">
+				            <h3>Tổng tiền</h3>
+				          </div>
+				          <div class="bill-status">
+				            <h3>Trạng thái</h3>
+				          </div>          
+		        	</div>
+			        <div class="bill">
+			          <div class="bill-code">
+			            <p>HD001</p>
+			          </div>
+			          <div class="bill-date">
+			            <p>11/11/2019</p>
+			          </div>
+			          <div class="bill-cost">
+			            <p>200.000 vnđ</p>
+			          </div>
+			          <div class="bill-status">
+			            <p>Đang giao</p>
+			          </div>
+			        </div>
+			        <div class="bill">
+			          <div class="bill-code">
+			            <p>HD002</p>
+			          </div>
+			          <div class="bill-date">
+			            <p>12/11/2019</p>
+			          </div>
+			          <div class="bill-cost">
+			            <p>200.000 vnđ</p>
+			          </div>
+			          <div class="bill-status">
+			            <p>Đang giao</p>
+			          </div>
+			        </div>
+			        <div class="bill">
+			          <div class="bill-code">
+			            <p>HD003</p>
+			          </div>
+			          <div class="bill-date">
+			            <p>13/11/2019</p>
+			          </div>
+			          <div class="bill-cost">
+			            <p>200.000 vnđ</p>
+			          </div>
+			          <div class="bill-status">
+			            <p>Đang giao</p>
+			          </div>
+			        </div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="footer-top">
+					<div class="footer-logo">
+						<a href="#"><img src="logo.png" alt="logo"></a>
+					</div>
+					<div class="footer-cont">
+						<div class="information">
+							<h4>Thông tin</h4>
+							<a href="#">Chính Sách</a>
+							<br>
+							<a href="#">Trung Tâm Trợ Giúp
+							</a>		
+							<br>			
+							<a href="#">Liên Hệ Quảng Cáo</a>
+							<br>
+							<a href="#">Điều Khoản Dịch Vụ</a>
+						</div>
+						<div class="wineshop">
+							<h4>Cửa Hàng</h4>
+							<a href="#">Rượu hoa hồng</a>
+							<br>
+							<a href="#">Rượu vang đỏ</a>
+							<br>
+							<a href="#">Rượu vang trắng</a>
+							<br>
+							<a href="#">Xâm panh</a>
+						</div>
+						<div class="link">
+							<h4>Trang Khác</h4>
+							<a href="#">Nổi Bật</a>
+							<br>
+							<a href="#">Chi Nhánh</a>
+							<br>	
+							<a href="#">Thương Hiệu</a>
+							<br>
+							<a href="#">Phiếu Quà Tặng</a>
+						</div>
+						<div class="mail">
+								<h4>Tham gia với chúng tôi</h4>
+								<form>
+									<div class="mail-box">	
+										<input type="text" placeholder="Nhập email tại đây..">
+									</div>
+									<div class="mail-but">
+										<button>GỬI</button>
+									</div>
+								</form>
+						</div>
+					</div>
+			</div>
+			<div class="footer-bot">
+				<p>2019 Công ty cổ phần Sagowine</p>
+			</div>	
+		</div>
+	</div>
+<script>
+function userOption(evt, option) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(option).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>

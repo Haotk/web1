@@ -6,28 +6,24 @@ body{
 	background:white;
 }
 .header{
-	max-width:100%;
+	width: 100%;
+	max-width: 100%;
+	height: 80px;
+	max-height: 200px;
 	background:#0092f2;
-	min-height: 80px;
 
 }
 .hotline{
-	margin-left: 40px;
-	margin-top: -5px;
+	margin-left: 3%;
+	margin-top: 1%;
 	float:left;
 }
 .hotline p{
+	margin-top: 0;
 	font-family: Helvetica;
 	font-size: 17px;
 }
-.shoppingcart-box{
-	margin-top: 10px;
-	margin-left: 20px;
-}
-#soluongsanpham{
-	color: #FADA5E;
-	font-weight: bold;
-}
+
 .fa.fa-shopping-cart{
 	color: white;
 }
@@ -40,27 +36,30 @@ body{
 }
 .logo{
 	position: relative;
-	margin-top: 5px;
-	margin-left:30px;
-	width: 180px;
+	margin-top: 1%;
+	margin-left:3%;
+	width: 10%;
 	float:left;
 }
-
+.logo img{
+	width: 120%;
+}
 .autocomplete{
 	position: relative;
 	display: inline-block;
+	width: 42%;
 }
-.search-container{
-	margin-left: 70px;
-	margin-top: 16px;
+.search-container{ 	
 	float:left;
+	width: 42%;
+	margin-left: 5%;
+	margin-top: 1.2%;
 }
 .search-icon{
 	background: #edeef2;
-	width: 110px;
+	width: 20%;
 	height: 36px;
 	border: 0px;
-	margin-left: 5px;
 	border-radius: 3px;
 	font-size: 16px;
 	outline: none;
@@ -68,7 +67,7 @@ body{
 	float:right;
 }
 .search-box{
-	width: 420px;
+	width: 184%;
 	height: 24px;
 	font-size: 16px;
 	border-radius: 3px;
@@ -103,8 +102,11 @@ body{
   color: #ffffff; 
 }
 .account-container{
+	width: 8%;
 	float:left;
 	max-height: 40px;
+	margin-top: 2%;
+	margin-left: 3%;
 }
 .dangnhap{
 	text-align: center;
@@ -113,6 +115,8 @@ body{
 	color: white;
 	font-size: 15px;
 	font-family: helvetica;
+	margin-top: 1%;
+	margin-left: 2%;
 }
 a{
 	text-decoration: none;
@@ -128,9 +132,12 @@ a{
 	border: 2px solid white;
 	border-radius: 4px;
 	padding: 10px;
+	margin-top: 15px;
 }
 .policy-container{
 	float:right;
+	max-height: 200px;
+
 }
 .lienhe{
 	text-align: center;
@@ -150,8 +157,7 @@ a{
 /**DROPDOWN MENU**/
 .danhmuc{	
 	clear:both;
-	margin-top: 5px;
-	margin-left: 45px;
+	margin-left: 4%;
  	display: inline-block;
 	width: 181px;
 	border: 2px solid white;
@@ -162,7 +168,6 @@ a{
 	font-family: helvetica;
 	float:left;
 }
-
 .fa-user{
 	color:white;
 }
@@ -248,12 +253,13 @@ a{
 }
 /**END OF DROPDOWN MENU**/
 .policy-container{
-	margin-top: -10px;
-	float:left;
-	margin-left: 600px;
+	margin-top: -0.5%;	
+	float:right;
+	width: 45%;
 }
 .camketsanpham{
-	width: 150px;
+	margin-top: -0.6%;
+	width: 30%;
 	text-align: center;
 	color: white;
 	font-size: 15px;
@@ -261,8 +267,8 @@ a{
 	float:left;
 }
 .giaohangnhanhchong{
-	margin-left: 10px;
-	width: 100px;
+	margin-top: -0.6%;
+	width: 20%;
 	text-align: center;
 	color: white;
 	font-size: 15px;
@@ -271,8 +277,8 @@ a{
 	margin-right: 10px;
 }
 .doitradedang{
-	margin-left: 10px;
-	width: 60px;
+	margin-top: -0.6%;
+	width: 20%;
 	text-align: center;
 	color: white;
 	font-size: 15px;
@@ -281,9 +287,9 @@ a{
 	margin-right: 10px;
 }
 .bocsachmienphi{
-	margin-left: 10px;
-	float:right;
-	width: 70px;
+	margin-top: -0.6%;
+	float:left;
+	width:15%;
 	text-align: center;
 	color: white;
 	font-size: 15px;
@@ -426,7 +432,7 @@ cursor: pointer;
   	min-height: 60px;
 }
 .sub-email{
-	margin-left: 140px;
+	margin-left: 15%;
 	float: left;
 	margin-top: 10px;
     font-size: 20px;
@@ -469,21 +475,22 @@ cursor: pointer;
 	clear:both;
 	background-color: #fbfafa;
   	overflow: hidden;
-  	max-height: 120px;
+  	max-height: 200px;
 }
 .logofooter{
+	width: 20%;
+	margin-left:14%;
+	margin-top: 2%;
 	min-height: 120px;
 	float:left;
 }
 .logofooter>img{
-	margin-top:20px;
-	margin-left: 120px;
-	width: 250px;
+	width: 100%;
 }
 .info{
 	font-size: 16px;
 	min-height: 120px;
-	margin-left: 50px;
+	width: 30%;
 	font-family: helvetica;
 	float: left;
 }
@@ -499,11 +506,15 @@ cursor: pointer;
 	font-size: 15px;
 }
 .cpyright p{
-	margin-left: 140px;
+	width: 20%;
+	float: left;
+	margin-left:9%;
+	margin-left: 15%;
+	width: 100%;
+	 max-height: 120px;
 }
 .Social{
-	float: right;
-	margin-right: 100px;
+
 	font-size: 16px;
     padding: 0px;
 }

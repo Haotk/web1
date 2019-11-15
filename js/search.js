@@ -223,7 +223,7 @@ window.addEventListener("load",getBookFromLocal);
 
 
 function sort(min,max){
-  if(min > max) {alert("Sai giá trị"); 
+  if(min > max) {swal("Sai giá trị","chu ben duoi","error"); 
   return;
 }
 

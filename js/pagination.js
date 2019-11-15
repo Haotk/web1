@@ -86,9 +86,9 @@ $(function() {
 });
 
 function sort(min,max){
-	if(min > max) {alert("Sai giá trị"); 
+	if(min > max) {swal("LỖI","Giá trị không hợp lệ","error");}
 	return;
-}
+	
 var key = decodeURI(window.location.href).toString().split('?')[1];
 	var Books = getDataFromLocal(Books,key);
 	var temp = Books;
